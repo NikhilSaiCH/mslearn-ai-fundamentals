@@ -1,5 +1,4 @@
-
-# Lab 05: Extract data from documents in the Azure AI Foundry portal
+# Lab: Extract data from documents in the Microsoft Foundry portal
 
 ## Lab overview
 
@@ -7,30 +6,30 @@
 
 How does Document Intelligence build upon optical character recognition (OCR)? While OCR can read printed or handwritten documents, OCR extracts text in an unstructured format which is difficult to store in a database or analyze. Document intelligence makes sense of the unstructured data by capturing the structure of the text, such as data fields and information in tables. 
 
-In this exercise, you will use Azure AI Document Intelligence's prebuilt models in the Azure AI Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from a receipt. 
+In this exercise, you will use Azure AI Document Intelligence's prebuilt models in the Azure AI Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from a receipt.
 
 ## Lab Objectives
 
 In this lab, you will perform:
-- Task 1: Create a project in the Azure AI Foundry portal
-- Task 2: Analyze a receipt with Azure AI Document Intelligence in Azure AI Foundry
+- Task 1: Create a project in the Microsoft Foundry portal
+- Task 2: Analyze a receipt with Azure AI Document Intelligence in Microsoft Foundry
 
-## Task 1: Create a project in the Azure AI Foundry portal
+## Task 1: Create a project in the Microsoft Foundry portal
 
-In this task, we are creating an Azure AI Foundry project and setting up AI resources to explore Vision and Document capabilities.
+In this task, we are creating an Microsoft Foundry project and setting up AI resources to explore Vision and Document capabilities.
 
-1. On the Azure Portal page, in the **Search resources, services, and docs (G+/)** box at the top of the portal, enter **Azure AI Foundry (1)**, and then select **Azure AI Foundry (2)** under **Services**.
+1. On the Azure Portal page, in the **Search resources, services, and docs (G+/)** box at the top of the portal, enter **Foundry (1)**, and then select **Microsoft Foundry (2)** under **Services**.
 
-    ![](./media/AI-l3-1.png) 
+    ![](./media/av1.png) 
 
 1. In the left navigation pane for the AI Foundry, select **AI Hubs (2)** under **Use with AI Foundry (1)**. On the AI Hubs page, click on **+ Create (3)** and select **Hub (4)** from the drop-down.
 
-    ![](./media/010725(01).png) 
+    ![](./media/av2.png) 
 
 1. On the **Create an AI hub resource** pane, enter the following details:
 
     - Subscription: **Leave default subscription (1)** 
-    - Resource Group : Select **AI-900-Module-10 (2)** 
+    - Resource Group : Select **AI-900-Module-10-<inject key="Deployment ID" enableCopy="false"></inject> (2)** 
     - Region : **<inject key="location" enableCopy="false"></inject>** **(3)**
     - Name : Use the format **Myhub-<inject key="Deployment ID" enableCopy="false"></inject> (4)** 
     - Connect AI Services incl. OpenAI : Click on **Create New (5)**
@@ -44,61 +43,35 @@ In this task, we are creating an Azure AI Foundry project and setting up AI reso
 
     ![](./media/AI-l10-1.png)
 
-1. Right-click on the [Azure AI Foundry](https://ai.azure.com?azure-portal=true) **(1)** link, select **Copy link (2)** from the context menu, then paste it into a new tab to access the Azure AI Foundry portal.
+1. Once the deployment completes, click on **Go to resources**.
 
-   ![](./media/3-27.png)
+1. Click on **Launch Azure AI Foundry**.
 
-1. On the Welcome to Azure AI Foundry page, click on **Sign in** in the top right corner.
+    ![](./media/av4.png)
 
-   ![](./media/17-18.png)
+1. Within the **Microsoft Foudry** portal, scroll down and select **+ New project**.
 
-1. If prompted to sign in, enter your credentials:
- 
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)** and click on **Next (2)**.
- 
-      ![Enter Your Username](./media/19-4(1).png)
- 
-   - **Password:** <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Next (2)**.
- 
-     ![Enter Your Password](./media/19-5(1).png)
+    ![](./media/av3.png)
 
-1. If prompted to **Stay signed in**, you can click **No**.
+1. Provide the Project name as **Myproject<inject key="DeploymentID" enableCopy="false" /> (1)** and then **Create (2)**.   
 
-   ![](./media/9-8(1).png)
-
-1. If prompted with **Streamlined from the start**, click on **Got it** to proceed.
-
-   ![](./media/3-23.png)
-
-1. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the **Azure AI Foundry** logo at the top left to navigate to the home page, which looks similar to the following image (close the **Help** pane if it's open)
-
-1. In the browser, navigate to `https://ai.azure.com/managementCenter/allResources` and select **Create new**.
-
-   ![](./media/AI-l6-1.png)
-
-1. On **Create project** choose the option to create a **AI hub resource (1)** and then select **Next (2)**.
-
-   ![](./media/lab3-20.png) 
-
-1. In the **Create a new project** wizard, enter project name **Myproject<inject key="DeploymentID" enableCopy="false" /> (1)**, and select newly created **Myhub-<inject key="DeploymentID" enableCopy="false" /> (2)** and select **Create (3)**.
-
-    ![](./media/T1S13new-0906(1).png)
+    ![](./media/av5.png)
 
 1. Wait for your project to be created.
 
-1. When the project is created, you will be taken to an **Overview** page of the project details. Select **AI services** on the left-hand menu. 
+1. When the project is created, you will be taken to an **Overview** page of the project details. Select **AI services** on the left-hand menu.
 
-## Task 2: Analyze a receipt with Azure AI Document Intelligence in Azure AI Foundry 
+## Task 2: Analyze a Receipt with Azure AI Document Intelligence in Microsoft Foundry
 
-In this task, we are using Azure AI Foundry to analyze a receipt image with prebuilt AI models, extracting key details like merchant information, transaction date, and total amount.
+In this task, you will use Azure AI Foundry to analyze a receipt image using prebuilt AI models, extracting key details such as merchant information, transaction date, and total amount.
 
-You are now ready to analyze a fictitious Northwind Traders retail company receipt.
+You are now ready to analyze a fictitious receipt from the Northwind Traders retail company.
 
-1. In the **Overview (1)** page of your project, on the left-hand menu on the screen, select **AI Services (2)**.
- 
-    ![Screenshot of the left-hand menu on the project screen with AI Services selected.](./media/17-5.png)  
+1. In the **Overview (1)** page of your project, select **AI Services (2)** from the left-hand menu.
 
-    >**Note**: If a pop-up appears, please click **Close**.
+   ![Screenshot of the left-hand menu on the project screen with AI Services selected.](./media/17-5.png)
+
+   > **Note:** If a pop-up appears, please click **Close**.
 
 1. On the **AI Services** page, select the **Vision + Document** tile to try out Azure AI Vision and Document capabilities.
 
@@ -108,9 +81,9 @@ You are now ready to analyze a fictitious Northwind Traders retail company recei
 
     ![](media/19-1(1).png)
 
-1. On the Receipts page, select **Connect to or create an Azure AI Services resource** **(1)**. From the dropdown, choose **AI<inject key="DeploymentID" enableCopy="false" />** **(2)** under Azure AI Services, and then click **Connect** **(3)**.
+1. On the Receipts page, select **Connect to or create an Azure AI Services resource** (1). From the dropdown, choose **AI<inject key="DeploymentID" enableCopy="false" />** (2) under Azure AI Services, and then click **Connect** (3).
 
-    ![](./media/AI-l10-2.png)
+    ![](./media/ai9872.png)
 
 1. Open a new tab and go to [**https://aka.ms/mslearn-receipt**](https://aka.ms/mslearn-receipt) to view a sample image of a receipt.
 
@@ -122,7 +95,7 @@ You are now ready to analyze a fictitious Northwind Traders retail company recei
 
    ![](media/ai900m10-6.png)
  
-1. Go back to the Azure AI Foundry portal and upload the **receipt.jpg** image by clicking **Browse files (1)**. Then, navigate to the **C:\Users\azureuser\Downloads (2)** folder, select **receipt (3)**, and click **Open (4)**.
+1. Go back to the Microsoft Foundry portal and upload the **receipt.jpg** image by clicking **Browse files (1)**. Then, navigate to the **C:\Users\azureuser\Downloads (2)** folder, select **receipt (3)**, and click **Open (4)**.
 
    ![](media/10-3.png)
 
@@ -132,7 +105,7 @@ You are now ready to analyze a fictitious Northwind Traders retail company recei
 
 1. When the analysis has run, the results are returned. Notice that the service has recognized specific data fields such as the merchant’s name, address, phone number, and transaction date and time, as well as the line items, subtotal, tax, and total amounts. Next to each field is a percentage probability that the field is correct.
 
-    ![](media/AI-l10-3.png)
+    ![](media/receipt-lab-result.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
@@ -144,11 +117,11 @@ You are now ready to analyze a fictitious Northwind Traders retail company recei
 
 ### Review
 
-In this Module, you have used Azure AI Document Intelligence's prebuilt receipts model in the Azure AI Foundry portal. From the results that were returned, you saw how Document Intelligence was able to identify specific fields, enabling data from everyday documents to be more easily processed. Before you close the demo, why not try some of the sample receipts, including those in different languages?
+In this Module, you have used Azure AI Document Intelligence's prebuilt receipts model in the Microsoft Foundry portal. From the results that were returned, you saw how Document Intelligence was able to identify specific fields, enabling data from everyday documents to be more easily processed. Before you close the demo, why not try some of the sample receipts, including those in different languages?
 
 In this Module, you have completed the following tasks:
-- Created a project in the Azure AI Foundry portal
-- Analyzed a receipt with Azure AI Document Intelligence in Azure AI Foundry 
+- Created a project in the Microsoft Foundry portal
+- Analyzed a receipt with Azure AI Document Intelligence in Microsoft Foundry 
 
 ## Learn more
 
