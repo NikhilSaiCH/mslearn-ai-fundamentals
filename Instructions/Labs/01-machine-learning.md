@@ -1,4 +1,4 @@
-# Lab 01: Explore Automated Machine Learning in Azure Machine Learning
+# Lab: Explore Automated Machine Learning in Azure Machine Learning
 
 ## Lab overview
 
@@ -18,11 +18,11 @@ In this lab, you will perform:
 
 In this task, you will create an Azure Machine Learning workspace. You will search for Machine Learning, configure the necessary settings like subscription, resource group, and workspace name, and deploy the resource. Once deployed, you will access the workspace through Azure Machine Learning Studio.
 
-1. In the Azure Portal, select **+ Create a resource** and search for **Machine Learning**.
+1. In the Azure Portal, select **+ Create a resource**.
 
-    ![Picture1](media/ai900mod1img1.png)
+    ![Picture1](media/mod1-e1t1p1.png)
 
-2. In the Marketplace page search for **Azure Machine Learning (1)** and Select **Azure Machine Learning (2)**.
+2. In the Marketplace page search for **Azure Machine Learning (1)** and select **Azure Machine Learning (2)**.
  
    ![Picture1](media/ai900-12.png)
 
@@ -33,7 +33,7 @@ In this task, you will create an Azure Machine Learning workspace. You will sear
 4. Create a new **Azure Machine Learning** resource with an *Azure Machine Learning* plan. Use the following settings:
 
     - **Subscription**: Use existing Azure subscription. **(1)**
-    - **Resource group**: Select **AI-900-Module-01 (2)**
+    - **Resource group**: Select **AI-900-Module-01** **(2)**
     - **Name**: Give name **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" /> (3)**
     - **Region**: Select <inject key="location" enableCopy="false" /> **(4)**
     - **Storage account**: Note the default new storage account that will be created for your workspace. **(5)**
@@ -43,11 +43,11 @@ In this task, you will create an Azure Machine Learning workspace. You will sear
 
 5. Select **Review + create (9)**.
 
-    ![](media/LABB1.png)
+    ![](media/mod1-e1t1p2.png)
 
 6. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
 
-   ![](media/lab1-9.png)
+   ![](media/mod1-e1t1p3.png)
    
 7. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your workspace resource.
 
@@ -55,11 +55,15 @@ In this task, you will create an Azure Machine Learning workspace. You will sear
 
 8. Select **Launch studio** (or open a new browser tab and navigate to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and if prompted, sign into **Azure Machine Learning studio** using your Microsoft account). Close any messages that are displayed.
 
-   ![](media/ai900-1.png)
+   ![](media/mod1-e1t1p4.png)
 
-9. In Azure Machine Learning studio, navigate to **Workspaces (1)**, you should see your newly created workspace **(2)**. If not, select **All workspaces** in the left-hand menu and then select the workspace you just created.
+   ![](media/mod1-e1t1p5.png)
 
-    ![Picture1](media/ai900-2.png)
+9. In Azure Machine Learning studio, click on **All workspaces (1)** and the navigate to **Workspaces (2)**, you should see your newly created workspace **(3)**.
+
+    ![](media/mod1-e1t1p6.png)
+
+    ![](media/mod1-e1t1p6(1).png)
 
 ## Validation
 
@@ -81,7 +85,7 @@ Some features of Azure Machine Learning are in preview and need to be explicitly
 
 1. Enable the following preview feature, if not enabled.
 
-     ![](media/lab1-7.png)
+     ![](media/mod1-e1t1p7.png)
 
 ### Task 2: Use automated machine learning to train a model
 
@@ -127,7 +131,6 @@ Automated machine learning enables you to try multiple algorithms and parameters
             - Click **Next (2)**
 
               ![](media/AI-900-lab1-2.png)
-
         - **Destination storage type**:
             - **Datastore type**: Azure Blob Storage **(1)**
             - **Name**: workspaceblobstore **(2)**
@@ -147,21 +150,20 @@ Automated machine learning enables you to try multiple algorithms and parameters
 
               ![](media/AI-900-lab1-5.png)
 
-      - On the **Create data asset – Settings** page, Leave everything default click **Next**:
+        - On the **Create data asset – Settings** page, Leave everything default click **Next**:
 
-        ![](media/AI-900-lab1-7.png)
+          ![](media/AI-900-lab1-7.png)
+        - On the **Create data asset – Schema** page, review detected columns and types, then click **Next**
 
-      - On the **Create data asset – Schema** page, review detected columns and types, then click **Next**
+          ![](media/AI-900-lab1-8.png)
 
-        ![](media/AI-900-lab1-8.png)
-
-      - Select **Create**. 
+        - Select **Create**. 
   
-          ![](media/AI-900-lab1-9.png)
+          ![](media/mod1-e1t2p1.png)
       
-      - After the dataset is created, select the **bike-rentals (1)** dataset to continue to submit the Automated ML job. Select **Next (2)**
+        - After the dataset is created, select the **bike-rentals (1)** dataset to continue to submit the Automated ML job. Select **Next (2)**
 
-          ![](media/ai900j8.png)
+          ![](media/mod1-e1t2p2.png)
         
     **Task settings**:
 
@@ -169,24 +171,24 @@ Automated machine learning enables you to try multiple algorithms and parameters
     - **Data**: bike-rentals
     - **Target column**: rentals (integer) **(1)**
 
-       ![](media/ai900j9.png)
+       ![](media/mod1-e1t2p3.png)
 
     - Select **View additional configuration settings (2)** under Target Column:
         - Primary metric: **Normalized root mean squared error** **(3)**
         - Explain best model: **Unselected** **(4)**
         - **Use all supported models**: <u>Un</u>selected.  You'll restrict the job to try only a few specific algorithms.
-        - **Allowed models**: Select only **RandomForest** and **LightGBM** **(5)** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.
+        - **Allowed models**: Select only **RandomForest** and **LightGBM** **(5)** - normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.
 
     - **Limits**: **Expand this section**
         - Max trials: **3** **(1)**
         - Max concurrent trials: **3** **(2)**
         - Max nodes: **3** **(3)**
-        - Metric score threshold: **0.085** **(4)** (so that if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.)
+        - Metric score threshold: **0.085** **(4)** (*so that if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.*)
         - Experiment Timeout: **15** **(5)**
         - Iteration timeout: **15** **(6)**
-        - Enable early termination: *Selected* **(7)**
+        - Enable early termination: Selected **(7)**
 
-          ![](media/AI-900-lab1-10.png)
+           ![](media/AI-900-lab1-10.png)
 
     - **Validation and test**:
         - **Validation type**: Train-validation split **(1)**
@@ -206,7 +208,7 @@ Automated machine learning enables you to try multiple algorithms and parameters
 
 1. Select **Submit training job**. It starts automatically.
 
-   ![](media/ai900j13.png)
+   ![](media/mod1-e1t2p4.png)
 
 1. Wait for the job to finish. It might take around `10-15 minutes`, while — now might be a good time for a coffee break!
 
@@ -220,7 +222,7 @@ When the automated machine learning job has completed, you can review the best m
 
     > **Note**: You may see a message under the status "Warning: User specified exit score reached...". This is an expected message. Please continue to the next step.
   
-1. Select the **text** under Algorithm name for the best model to view its details.
+1. Select the text under **Algorithm name** for the best model to view its details.
 
     ![](media/ai900-4.png)
 
@@ -234,17 +236,17 @@ When the automated machine learning job has completed, you can review the best m
 
 1. On the **Model** tab for the best model trained by your automated machine learning job, select **Deploy (1)** and use the **Real-time endpoint (2)** option to deploy the model with the following settings:
 
-   - **Instance count**: 3 (1) 
-    - **Virtual machine**: Standard_DS3_v2 (2)
-    - **Endpoint**: New (3)
-    - **Endpoint name**: *Leave the default name* (4)
-    - **Deployment name**: *Leave default* (5)
-    - **Inferencing data collection**: *Disabled* (6)
-    - **Package Model**: *Disabled* (7)
+   - **Instance count**: 3 **(1)** 
+    - **Virtual machine**: Standard_DS3_v2 **(2)**
+    - **Endpoint**: New **(3)**
+    - **Endpoint name**: *Leave the default name* **(4)**
+    - **Deployment name**: *Leave default* **(5)**
+    - **Inferencing data collection**: *Disabled* **(6)**
+    - **Package Model**: *Disabled* **(7)**
 
-    ![](media/ai900j15.png)
+      ![](media/mod1-e1t3p1.png)
 
-    ![](media/ai900j16.png)
+      ![](media/mod1-e1t3p2.png)
 
 1. Select **Deploy (8)**
 
@@ -256,11 +258,13 @@ When the automated machine learning job has completed, you can review the best m
 
 Now you can test your deployed service.
 
-1. In Azure Machine Learning studio, on the left hand menu, select **Endpoints** and open the **Real-timeendpoint**. in the page.
+1. In Azure Machine Learning studio, on the left hand menu, select **Endpoints (1)** and open the **Real-time endpoints (2)**. in the page.
+
+    ![](media/mod1-e1t4p1.png)
 
 1. On the *real-time endpoint* page view the **Test** tab.
 
-    ![](media/ai900j17.png)
+    ![](media/mod1-e1t4p2.png)
 
 1. In the **Input data to test endpoint** pane, replace the template JSON with the following input data:
 
@@ -290,7 +294,7 @@ Now you can test your deployed service.
 
 1. Click the **Test** button.
 
-    ![](media/ai900j18.png)
+    ![](media/mod1-e1t4p3.png)
 
 1. Review the test results, which include a predicted number of rentals based on the input features - similar to this:
 
