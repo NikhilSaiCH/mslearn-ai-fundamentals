@@ -57,11 +57,11 @@ In this task, you will learn how to create an **AI Services** resource in Azure 
 
 You'll need to provision an **Azure AI services** resource that's in the same location as your Azure AI Search resource. Your search solution will use this resource to enrich the data in the datastore with AI-generated insights.
 
-1. In the Azure portal, search for **Azure AI services (1)**. Select an **Azure AI Foundry (2)**.
+1. In the Azure portal, search for **Azure AI services (1)**. Select an **Microsoft Foundry (2)**.
 
     ![The image and its captions are displayed.](./media/upd-1.png)
 
-1. In the **Azure AI Foundry**, Expand the **Classic AI services (1)** section from the left-hand menu and select **Azure AI services multi-service account (classic) (2)** to view classic AI resources.
+1. In the **Microsoft Foundry**, Expand the **Classic AI services (1)** section from the left-hand menu and select **Azure AI services multi-service account (classic) (2)** to view classic AI resources.
 
     ![Expand Classic AI services and select Azure AI services multi-service account (classic)](./media/upd-2.png)
  

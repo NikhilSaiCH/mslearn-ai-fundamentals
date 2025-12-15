@@ -1,4 +1,4 @@
-# Lab: Explore generative AI in the Azure AI Foundry portal
+# Lab: Explore generative AI in the Microsoft Foundry portal
 
 Generative AI describes a category of capabilities within AI that create content. People typically interact with generative AI that has been built into chat applications. In this exercise, you try out generative AI in the Microsoft Foundry portal, Microsoft's platform for creating intelligent applications.
 
