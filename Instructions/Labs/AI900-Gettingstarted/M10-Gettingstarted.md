@@ -3,7 +3,7 @@
 
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared a seamless environment for you to explore and learn Azure Services. Let's begin by making the most of this experience.
 
-# Lab 05: Extract data from documents in Azure AI Foundry portal
+# Lab 05: Extract data from documents in Microsoft Foundry portal
 
 ### Overall Estimated timing: 30 Minutes
 
@@ -13,13 +13,13 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
 
 How does Document Intelligence build upon optical character recognition (OCR)? While OCR can read printed or handwritten documents, OCR extracts text in an unstructured format which is difficult to store in a database or analyze. Document intelligence makes sense of the unstructured data by capturing the structure of the text, such as data fields and information in tables. 
 
-In this exercise, you will use Azure AI Document Intelligence's prebuilt models in Azure AI Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from a receipt. 
+In this exercise, you will use Azure AI Document Intelligence's prebuilt models in Microsoft Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from a receipt. 
 
 ## Objectives
 
-By the end of this lab, you will be able to create a project in Azure AI Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
+By the end of this lab, you will be able to create a project in Azure Microsoft Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
 
-1. **Create a project in Azure AI Foundry portal**: You will learn about configuring an Azure AI Foundry project, provisioning necessary AI resources, and exploring Vision and Document Intelligence capabilities for automated data extraction.
+1. **Create a project in Microsoft Foundry portal**: You will learn about configuring an Azure Microsoft Foundry project, provisioning necessary AI resources, and exploring Vision and Document Intelligence capabilities for automated data extraction.
 
 2. **Analyze a receipt with Azure AI Document Intelligence in Azure AI Foundry**: You will learn about using Azure AI Document Intelligence to analyze receipts, extract key information such as merchant details, transaction date, and total amount, and interpret the results for further processing.
 
@@ -31,7 +31,7 @@ Basic knowledge of Azure AI services and Document Intelligence.
 
 In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Create a project in Azure AI Foundry portal**: Understanding how to set up a new project in Azure AI Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
+1. **Create a project in Microsoft Foundry portal**: Understanding how to set up a new project in Azure AI Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
 
 1. **Analyze a receipt with Azure AI Document Intelligence in Azure AI Foundry**:  Learning how to upload and analyze a receipt using Azure AI Document Intelligence. This includes extracting key details such as the merchant name, transaction date, and total amount, and understanding how to interpret the extracted data for further processing or integration into business applications.
 
@@ -41,7 +41,7 @@ In this hands-on lab, the architecture flow includes several essential component
 
 ## Explanation of Components
 
-1. **Azure AI Foundry Portal**: A centralized platform for managing AI projects, resources, and models.
+1. **Microsoft Foundry portal**: A centralized platform for managing AI projects, resources, and models.
 
 1. **Azure AI Document Intelligence**: A service that extracts and interprets data from structured and unstructured documents.
 
