@@ -2,7 +2,7 @@
 
 ## Lab overview
 
-In this lab, you will create an Azure AI multi-service resource, retrieve its keys and endpoint, and explore its capabilities using the Azure AI Foundry portal. You'll get hands-on experience with services like Face detection, without needing any coding skills.
+In this lab, you will create an Azure AI multi-service resource, retrieve its keys and endpoint, and explore its capabilities using the Microsoft Foundry portal. You'll get hands-on experience with services like Face detection, without needing any coding skills.
 
 ## Lab Objectives
 
@@ -68,7 +68,7 @@ In order to incorporate Azure AI services into applications, developers need a s
 
 ### Task 3: See Azure AI services in action
 
-Let's start by creating an Azure AI Foundry project.
+Let's start by creating an Microsoft Foundry project.
 
 1. In a web browser, open the [Microsoft Foundry portal](https://ai.azure.com) at `https://ai.azure.com`.
 
@@ -102,7 +102,7 @@ Let's start by creating an Azure AI Foundry project.
 
 1. If you were to build an application that used Azure AI services, you could start with the provided code. By replacing the placeholders with your own service's key and endpoint, your application would be able to send requests and receive responses that utilize Azure AI services. In the case of the Face service, the *request* is for the Face service to analyze the image. The *response* is the detected attributes. 
 
-    >**Note**: You do not need to know programming to complete any of the exercises in this course. We will continue to take a look at Azure AI services in action through the Azure AI Foundry portal.  
+    >**Note**: You do not need to know programming to complete any of the exercises in this course. We will continue to take a look at Azure AI services in action through the Microsoft Foundry portal.  
 
 ## Validation
 

@@ -1,8 +1,8 @@
-# Lab 13: Azure AI Foundry
+# Lab 13: Microsoft Foundry
 
 ## Lab overview
 
-In this exercise, you will explore the Azure AI Foundry portal and learn how to create, manage, and deploy generative AI models within the Azure ecosystem. You will gain hands-on experience working with Azure AI hubs, projects, and deploying AI models like GPT-40.
+In this exercise, you will explore the Microsoft Foundry portal and learn how to create, manage, and deploy generative AI models within the Azure ecosystem. You will gain hands-on experience working with Azure AI hubs, projects, and deploying AI models like GPT-40.
 
 ## Lab objectives
 
@@ -119,7 +119,7 @@ In this task, you will gain hands-on experience in setting up a collaborative wo
 
 ### Summary
 
-In this exercise, you’ve explored Azure AI Foundry and seen how to create projects and explore Azure AI Services and Azure OpenAI models in the Azure AI Foundry portal.
+In this exercise, you’ve explored Microsoft Foundry and seen how to create projects and explore Azure AI Services and Azure OpenAI models in the Microsoft Foundry portal.
 
 ### Review
 

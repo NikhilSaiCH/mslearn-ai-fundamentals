@@ -1,28 +1,28 @@
-# Lab 03: Analyze images in the Azure AI Foundry portal
+# Lab 03: Analyze images in the Microsoft Foundry portal
 
 ## Lab overview
 
-**Azure AI Vision** includes numerous capabilities for understanding image content and context and extracting information from images. In this exercise, you will use Azure AI Vision in Azure AI Foundry portal, Microsoft's platform for creating intelligent applications, to analyze images using the built-in try-it-out experiences. 
+**Azure AI Vision** includes numerous capabilities for understanding image content and context and extracting information from images. In this exercise, you will use Azure AI Vision in Microsoft Foundry portal, Microsoft's platform for creating intelligent applications, to analyze images using the built-in try-it-out experiences. 
 
 Suppose the fictitious retailer **Northwind Traders** has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using Azure AI Vision, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
 
 ## Lab Objectives
 
 In this lab, you will perform:
-- Task 1: Create a project in the Azure AI Foundry portal
+- Task 1: Create a project in the Microsoft Foundry portal
 - Task 2: Generate captions for an image
 - Task 3: Tagging images 
 - Task 4: Object detection
 
-## Task 1: Create a project in the Azure AI Foundry portal
+## Task 1: Create a project in the Microsoft Foundry portal
 
-In this task, we are setting up a project in Azure AI Foundry by creating and configuring an AI services environment for further experimentation.
+In this task, we are setting up a project in Microsoft Foundry by creating and configuring an AI services environment for further experimentation.
 
-1. Right-click on the [Azure AI Foundry](https://ai.azure.com?azure-portal=true) **(1)** link, select **Copy link (2)** from the context menu, then paste it into a new tab to access the Azure AI Foundry portal.
+1. Right-click on the [Microsoft Foundry](https://ai.azure.com?azure-portal=true) **(1)** link, select **Copy link (2)** from the context menu, then paste it into a new tab to access the Microsoft Foundry portal.
 
    ![](./media/3-27.png)
 
-1. On the Welcome to Azure AI Foundry page, Click on **Sign in** in the top right corner.
+1. On the Welcome to Microsoft Foundry page, Click on **Sign in** in the top right corner.
 
    ![](./media/mod3-p2t1p1.png)
 
@@ -44,7 +44,7 @@ In this task, we are setting up a project in Azure AI Foundry by creating and co
 
    ![](./media/3-23.png)
 
-1. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the **Azure AI Foundry** logo at the top left to navigate to the home page, which looks similar to the following image (close the **Help** pane if it's open)
+1. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the **Microsoft Foundry** logo at the top left to navigate to the home page, which looks similar to the following image (close the **Help** pane if it's open)
 
 1. In the browser, navigate to `https://ai.azure.com/managementCenter/allResources`, select **Create new**.
 
@@ -111,7 +111,7 @@ Let's use the image captioning functionality of Azure AI Vision to analyze image
 
     ![](./media/analyze-images-vision/store-camera-1.jpg)
 
-1. Go back to the Azure AI Foundry portal and upload the **store-camera-1.jpg** image by clicking **Browse for a file (1)**. Then, navigate to the **C:\Users\azureuser\Downloads\image-analysis (2)** folder, select **store-camera-1 (3)**, and click **Open (4)**.
+1. Go back to the Microsoft Foundry portal and upload the **store-camera-1.jpg** image by clicking **Browse for a file (1)**. Then, navigate to the **C:\Users\azureuser\Downloads\image-analysis (2)** folder, select **store-camera-1 (3)**, and click **Open (4)**.
 
    ![](./media/3-10.png)
 
@@ -210,7 +210,7 @@ In this task, you use the **Object detection** feature of Image Analysis. Object
 
 ### Review
 In this exercise, you have completed the following tasks:
-- Created a project in the Azure AI Foundry portal
+- Created a project in the Microsoft Foundry portal
 - Generated captions for an image
 - Tagged images 
 - Detected Object 
