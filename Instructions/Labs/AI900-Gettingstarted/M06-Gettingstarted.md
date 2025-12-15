@@ -42,7 +42,7 @@ Extracting named entities using Azure AI Language in Microsoft Foundry helps bus
 
 ## Architecture Diagram
 
-![](../media/ex18.PNG)
+![](../media/gg10.png)
 
 ## Explanation of Components:
 
