@@ -13,11 +13,11 @@ In this hands-on lab, you'll gain practical experience in building and managing 
 
 ## Objectives
 
-By the end of this lab, you will be able to create a project in Azure AI Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
+By the end of this lab, you will be able to create a project in Microsoft Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
 
-1. **Create a project in Azure AI Foundry portal**: You will learn about configuring an Azure AI Foundry project, provisioning necessary AI resources, and exploring Vision and Document Intelligence capabilities for automated data extraction.
+1. **Create a project in Microsoft Foundry portal**: You will learn about configuring an Microsoft Foundry project, provisioning necessary AI resources, and exploring Vision and Document Intelligence capabilities for automated data extraction.
 
-2. **Analyze a receipt with Azure AI Document Intelligence in Azure AI Foundry**: You will learn about using Azure AI Document Intelligence to analyze receipts, extract key information such as merchant details, transaction date, and total amount, and interpret the results for further processing.
+2. **Analyze a receipt with Azure AI Document Intelligence in Microsoft Foundry**: You will learn about using Azure AI Document Intelligence to analyze receipts, extract key information such as merchant details, transaction date, and total amount, and interpret the results for further processing.
 
 ## Pre-requisites Required
 
@@ -36,9 +36,9 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Create a project in Azure AI Foundry portal**: Understanding how to set up a new project in Azure AI Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
+1. **Create a project in Microsoft Foundry portal**: Understanding how to set up a new project in Microsoft Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
 
-1. **Analyze a receipt with Azure AI Document Intelligence in Azure AI Foundry**:  Learning how to upload and analyze a receipt using Azure AI Document Intelligence. This includes extracting key details such as the merchant name, transaction date, and total amount, and understanding how to interpret the extracted data for further processing or integration into business applications.
+1. **Analyze a receipt with Azure AI Document Intelligence in Microsoft Foundry**:  Learning how to upload and analyze a receipt using Azure AI Document Intelligence. This includes extracting key details such as the merchant name, transaction date, and total amount, and understanding how to interpret the extracted data for further processing or integration into business applications.
 
 ## Architecture Diagram
 

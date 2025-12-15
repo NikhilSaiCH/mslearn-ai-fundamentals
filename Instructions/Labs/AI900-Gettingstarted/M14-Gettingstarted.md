@@ -3,19 +3,19 @@
 
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared a seamless environment for you to explore and learn Azure Services. Let's begin by making the most of this experience.
 
-# Module 14: Explore content filters in Azure AI Foundry
+# Module 14: Explore content filters in Microsoft Foundry
 
 ### Overall Estimated timing: 30 minutes
 
 ## Overview
 
-In this lab, you’ll explore the content filters in Azure AI Foundry to ensure responsible AI behavior. You’ll deploy a model, set up content filters to manage harmful outputs, and generate natural language content using Azure's generative AI capabilities. This exercise is vital for understanding how to ensure ethical AI development and deployment.
+In this lab, you’ll explore the content filters in Microsoft Foundry to ensure responsible AI behavior. You’ll deploy a model, set up content filters to manage harmful outputs, and generate natural language content using Azure's generative AI capabilities. This exercise is vital for understanding how to ensure ethical AI development and deployment.
 
 ## Objectives
 
-By the end of this lab, you will be able to create a project in Azure AI Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
+By the end of this lab, you will be able to create a project in Microsoft Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
 
-1. Create an AI hub and project in Azure AI Foundry.
+1. Create an AI hub and project in Microsoft Foundry.
 
 2. Deploy the GPT-4o model for natural language generation.
 
@@ -31,7 +31,7 @@ Familiarity with Azure AI services and deploying models in a cloud environment a
 
 In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Azure AI Foundry Portal**: Centralized platform for managing AI projects, models, and services.
+1. **Microsoft Foundry Portal**: Centralized platform for managing AI projects, models, and services.
 
 2. **AI Hub**: A container for organizing AI projects.
 
@@ -45,11 +45,11 @@ In this hands-on lab, the architecture flow includes several essential component
 
 ## Explanation of Components
 
-1. **Azure AI Foundry Portal**: The portal provides a user-friendly interface for managing AI models and resources. It allows users to deploy, configure, and monitor generative AI models.
+1. **Microsoft Foundry Portal**: The portal provides a user-friendly interface for managing AI models and resources. It allows users to deploy, configure, and monitor generative AI models.
 
-2. **AI Hub**: An organizational structure within Azure AI Foundry. It enables you to manage and track multiple projects and related resources, keeping your AI work organized.
+2. **AI Hub**: An organizational structure within Microsoft Foundry. It enables you to manage and track multiple projects and related resources, keeping your AI work organized.
 
-3. **GPT-4o Model**: A generative language model deployed in Azure AI Foundry to produce text. You can customize it and apply content filters to ensure outputs are ethical and adhere to guidelines.
+3. **GPT-4o Model**: A generative language model deployed in Microsoft Foundry to produce text. You can customize it and apply content filters to ensure outputs are ethical and adhere to guidelines.
 
 4. **Content Filters**: These filters help monitor and control the output of generative AI models. Filters can be set for different levels of severity (safe, low, medium, high) for categories like hate speech, sexual content, violence, and self-harm.
 

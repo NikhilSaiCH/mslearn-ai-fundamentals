@@ -3,21 +3,21 @@
 
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared a seamless environment for you to explore and learn Azure Services. Let's begin by making the most of this experience.
 
-# Module 09 : Explore Speech in Azure AI Foundry portal
+# Module 09 : Explore Speech in Microsoft Foundry portal
 
 ### Overall Estimated timing: 30 minutes
 
 ## Overview
 
-In this hands-on lab, you'll gain practical experience in leveraging Azure AI Speech services within the Azure AI Foundry portal. You will learn how to create and configure an Azure AI Speech project, explore real-time speech-to-text transcription, and work with Azure AI Speech Playground. Through interactive exercises, you will transcribe audio files into text and understand how speech services can be integrated into intelligent applications. By the end of this lab, you will be proficient in using Azure AI Speech for audio transcription, equipping you with the skills to build AI-powered voice applications in your organization’s Azure environment.
+In this hands-on lab, you'll gain practical experience in leveraging Azure AI Speech services within the Microsoft Foundry portal. You will learn how to create and configure an Azure AI Speech project, explore real-time speech-to-text transcription, and work with Azure AI Speech Playground. Through interactive exercises, you will transcribe audio files into text and understand how speech services can be integrated into intelligent applications. By the end of this lab, you will be proficient in using Azure AI Speech for audio transcription, equipping you with the skills to build AI-powered voice applications in your organization’s Azure environment.
 
 ## Objective
 
-By the end of this lab, you will be able to create a project in Azure AI Foundry and use Azure AI Speech to Text to convert spoken language into written text, extract key insights from audio data, and interpret the results for further processing efficiently.
+By the end of this lab, you will be able to create a project in Microsoft Foundry and use Azure AI Speech to Text to convert spoken language into written text, extract key insights from audio data, and interpret the results for further processing efficiently.
 
-1. **Create a project in Azure AI Foundry portal**: You will learn about configuring an Azure AI Foundry project, provisioning necessary AI resources, and exploring Vision and Document Intelligence capabilities for automated data extraction.
+1. **Create a project in Microsoft Foundry portal**: You will learn about configuring an Microsoft Foundry project, provisioning necessary AI resources, and exploring Vision and Document Intelligence capabilities for automated data extraction.
 
-2. **Explore speech to text in Azure AI Foundry's Speech Playground**: You will learn about using Azure AI Speech to Text to convert spoken language into written text, extract key insights from audio data, and interpret the results for further processing.
+2. **Explore speech to text in Microsoft Foundry's Speech Playground**: You will learn about using Azure AI Speech to Text to convert spoken language into written text, extract key insights from audio data, and interpret the results for further processing.
 
 ## Pre-requisites
 
@@ -27,17 +27,17 @@ Basic knowledge of Azure AI services and Azure Speech Service.
 
 In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Create a project in Azure AI Foundry portal**: Understanding how to set up a new project in Azure AI Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
+1. **Create a project in Microsoft Foundry portal**: Understanding how to set up a new project in Microsoft Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
 
-1. **Explore Speech to Text in Azure AI Foundry's Speech Playground**: Learning how to convert spoken language into text using Azure AI Foundry's Speech Playground. This includes uploading or recording audio, analyzing transcriptions, and extracting key insights such as speaker identification, timestamps, and sentiment analysis. Additionally, understanding how to integrate the transcribed data into business applications for automation and enhanced accessibility.
+1. **Explore Speech to Text in Microsoft Foundry's Speech Playground**: Learning how to convert spoken language into text using Microsoft Foundry's Speech Playground. This includes uploading or recording audio, analyzing transcriptions, and extracting key insights such as speaker identification, timestamps, and sentiment analysis. Additionally, understanding how to integrate the transcribed data into business applications for automation and enhanced accessibility.
 
 ## Architecture Diagram
 
-![](../media/ex19.png)
+![](../media/g7.png)
 
 ## Explanation of Components
 
-1. **Azure AI Foundry**: A centralized platform for managing AI projects, models, and experiments. It provides tools for building, testing, and deploying AI solutions.  
+1. **Microsoft Foundry**: A centralized platform for managing AI projects, models, and experiments. It provides tools for building, testing, and deploying AI solutions.  
 
 2. **Azure Speech Service**: A cloud-based service that provides advanced speech capabilities, including speech-to-text, text-to-speech, speech translation, and speaker recognition. It enables developers to integrate real-time transcription, natural-sounding voice synthesis, and multilingual speech processing into applications.
 

@@ -13,7 +13,7 @@ In this hands-on lab, you will learn how to use the Conversational Language Unde
 
 ## Objectives
 
-By the end of this lab, you will be able to create a project in Azure AI Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
+By the end of this lab, you will be able to create a project in Microsoft Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
 
 1. Create a Language Resource in Azure to use Conversational Language Understanding (CLU).
 

@@ -9,13 +9,13 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
 
 ## Overview
 
-In this hands-on lab, you'll gain practical experience in leveraging Azure AI Foundry to build and manage AI solutions. You will learn how to navigate the Azure AI Foundry portal, create an Azure AI hub and project, and integrate connected resources to enhance your AI capabilities. Additionally, you'll explore various AI services available in Azure AI Foundry and deploy a generative AI model, testing its functionality in real-world scenarios. By the end of this lab, you'll be proficient in setting up AI projects, integrating resources, and deploying generative AI models, equipping you with essential skills to develop and manage AI-powered solutions in Azure.
+In this hands-on lab, you'll gain practical experience in leveraging Microsoft Foundry to build and manage AI solutions. You will learn how to navigate the Microsoft Foundry portal, create an Azure AI hub and project, and integrate connected resources to enhance your AI capabilities. Additionally, you'll explore various AI services available in Microsoft Foundry and deploy a generative AI model, testing its functionality in real-world scenarios. By the end of this lab, you'll be proficient in setting up AI projects, integrating resources, and deploying generative AI models, equipping you with essential skills to develop and manage AI-powered solutions in Azure.
 
 ## Objectives
 
-By the end of this lab, you will be able to create a project in Azure AI Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
+By the end of this lab, you will be able to create a project in Microsoft Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
 
-- **Open Azure AI Foundry portal**
+- **Open Microsoft Foundry portal**
 - **Create an Azure AI hub and project**
 - **Add a connected resource**
 - **Explore AI Services**
@@ -38,9 +38,9 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Create a project in Azure AI Foundry portal**: Understanding how to set up a new project in Azure AI Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
+1. **Create a project in Microsoft Foundry portal**: Understanding how to set up a new project in Microsoft Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
 
-1. **Analyze a receipt with Azure AI Document Intelligence in Azure AI Foundry**:  Learning how to upload and analyze a receipt using Azure AI Document Intelligence. This includes extracting key details such as the merchant name, transaction date, and total amount, and understanding how to interpret the extracted data for further processing or integration into business applications.
+1. **Analyze a receipt with Azure AI Document Intelligence in Microsoft Foundry**:  Learning how to upload and analyze a receipt using Azure AI Document Intelligence. This includes extracting key details such as the merchant name, transaction date, and total amount, and understanding how to interpret the extracted data for further processing or integration into business applications.
 
 ## Architecture Diagram
 

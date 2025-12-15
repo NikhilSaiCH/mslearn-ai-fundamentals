@@ -9,13 +9,13 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
 
 ## Overview
 
-In this lab, you'll learn how to create and deploy a generative AI model using Azure AI Foundry. You'll then build and test an AI agent capable of performing language tasks like translation and detection.
+In this lab, you'll learn how to create and deploy a generative AI model using Microsoft Foundry. You'll then build and test an AI agent capable of performing language tasks like translation and detection.
 
 ## Objectives
 
 By the end of this lab, you will:
 
-1. Create an Azure AI Foundry project using the gpt-4o model
+1. Create an Microsoft Foundry project using the gpt-4o model
 2. Create an AI agent
 3. Test your agent
 
@@ -27,7 +27,7 @@ Familiarity with a language generative AI model.
 
 In this hands-on lab, you will work with a streamlined architecture integrating Azure services to build and test an AI agent. The key components include:
 
-1. **Azure AI Foundry Portal**: Centralized platform for managing AI projects, models, and services.
+1. **Microsoft Foundry Portal**: Centralized platform for managing AI projects, models, and services.
 
 2. **AI Hub**: A container for organizing AI projects.
 
@@ -41,11 +41,11 @@ In this hands-on lab, you will work with a streamlined architecture integrating 
 
 ## Explanation of Components
 
-1. **Azure AI Foundry Portal**: The portal provides a user-friendly interface for managing AI models and resources. It allows users to deploy, configure, and monitor generative AI models.
+1. **Microsoft Foundry Portal**: The portal provides a user-friendly interface for managing AI models and resources. It allows users to deploy, configure, and monitor generative AI models.
 
-2. **AI Hub**: An organizational structure within Azure AI Foundry. It enables you to manage and track multiple projects and related resources, keeping your AI work organized.
+2. **AI Hub**: An organizational structure within Microsoft Foundry. It enables you to manage and track multiple projects and related resources, keeping your AI work organized.
 
-3. **GPT-4o Model**: A generative language model deployed in Azure AI Foundry to produce text. You can customize it and apply content filters to ensure outputs are ethical and adhere to guidelines.
+3. **GPT-4o Model**: A generative language model deployed in Microsoft Foundry to produce text. You can customize it and apply content filters to ensure outputs are ethical and adhere to guidelines.
 
 4. **AI agent**: A custom-built agent that uses API calls to interact with the Generative AI and Translator services for tasks like text translation and language detection.
 
