@@ -1,5 +1,5 @@
 
-# Lab 10: Extract data from documents in the Microsoft Foundry portal
+# Lab 5: Extract data from documents in the Microsoft Foundry portal
 
 ## Lab overview
 
