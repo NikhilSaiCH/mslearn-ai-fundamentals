@@ -6,7 +6,7 @@
 
 How does Document Intelligence build upon optical character recognition (OCR)? While OCR can read printed or handwritten documents, OCR extracts text in an unstructured format which is difficult to store in a database or analyze. Document intelligence makes sense of the unstructured data by capturing the structure of the text, such as data fields and information in tables. 
 
-In this exercise, you will use Azure AI Document Intelligence's prebuilt models in the Azure AI Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from a receipt.
+In this exercise, you will use Azure AI Document Intelligence's prebuilt models in the Microsoft Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from a receipt.
 
 ## Lab Objectives
 
@@ -45,7 +45,7 @@ In this task, we are creating an Microsoft Foundry project and setting up AI res
 
 1. Once the deployment completes, click on **Go to resources**.
 
-1. Click on **Launch Azure AI Foundry**.
+1. Click on **Launch Microsoft Foundry**.
 
     ![](./media/av4.png)
 
@@ -63,7 +63,7 @@ In this task, we are creating an Microsoft Foundry project and setting up AI res
 
 ## Task 2: Analyze a Receipt with Azure AI Document Intelligence in Microsoft Foundry
 
-In this task, you will use Azure AI Foundry to analyze a receipt image using prebuilt AI models, extracting key details such as merchant information, transaction date, and total amount.
+In this task, you will use Microsoft Foundry to analyze a receipt image using prebuilt AI models, extracting key details such as merchant information, transaction date, and total amount.
 
 You are now ready to analyze a fictitious receipt from the Northwind Traders retail company.
 

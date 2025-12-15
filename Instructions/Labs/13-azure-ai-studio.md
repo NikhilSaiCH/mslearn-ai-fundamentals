@@ -1,22 +1,22 @@
-# Lab 13: Azure AI Foundry
+# Lab 13: Microsoft Foundry
 
 ## Lab overview
 
-In this exercise, you will explore the Azure AI Foundry portal and learn how to create, manage, and deploy generative AI models within the Azure ecosystem. You will gain hands-on experience working with Azure AI hubs, projects, and deploying AI models like GPT-40.
+In this exercise, you will explore the Microsoft Foundry portal and learn how to create, manage, and deploy generative AI models within the Azure ecosystem. You will gain hands-on experience working with Azure AI hubs, projects, and deploying AI models like GPT-40.
 
 ## Lab objectives
 
 In this exercise, you will perform:
 
-- Task 1: Open the Azure AI Foundry portal
+- Task 1: Open the Microsoft Foundry portal
 - Task 2: Create an Azure AI project
 - Task 3: Deploy and test a generative AI model
 
-## Exercise 1: Explore the components and tools of the Azure AI Foundry
+## Exercise 1: Explore the components and tools of the Microsoft Foundry
 
-### Task 1: Open the Azure AI Foundry portal
+### Task 1: Open the Microsoft Foundry portal
 
-In this task, you will sign in to the Azure AI Foundry portal and explore its interface, learning how to navigate the platform and access its various features for managing AI resources.
+In this task, you will sign in to the Microsoft Foundry portal and explore its interface, learning how to navigate the platform and access its various features for managing AI resources.
 
 1. In a edge browser, open https://ai.azure.com and **Sign in** using your Azure credentials. The home page of Azure AI Studio looks similar to the following image:
 
@@ -25,13 +25,13 @@ In this task, you will sign in to the Azure AI Foundry portal and explore its in
 
     ![](media/lab13-a1n.png)
 
-### Task 2: Create an Azure AI Foundry Resources
+### Task 2: Create an Microsoft Foundry Resources
 
 In this task, you will gain hands-on experience in setting up a collaborative workspace for AI projects and configuring essential resources.
 
-1. On the Azure AI Foundry portal home page, in the **Help** window, select **Create a project**. In Azure AI Foundry, projects are containers that help organize your work.  
+1. On the Microsoft Foundry portal home page, in the **Help** window, select **Create a project**. In Microsoft Foundry, projects are containers that help organize your work.  
 
-    ![Screenshot of Azure AI Foundry home page with create a project selected.](./media/xxai1.png)
+    ![Screenshot of Microsoft Foundry home page with create a project selected.](./media/xxai1.png)
 
 1. On the **Create a project** pane, enter the following:
 
@@ -42,7 +42,7 @@ In this task, you will gain hands-on experience in setting up a collaborative wo
 
      ![](media/xxai2.png)
 
-1. When your project is created, close any tips that are displayed and review the project page in the Azure AI Foundry portal, which should look similar to the following image. Review the Endpoints and keys section.
+1. When your project is created, close any tips that are displayed and review the project page in the Microsoft Foundry portal, which should look similar to the following image. Review the Endpoints and keys section.
 
    ![](media/xxai4.png)
 
@@ -76,7 +76,7 @@ In this task, you will gain hands-on experience in setting up a collaborative wo
 
     ![](media/xxai9.png)
 
-6. Return to the Azure AI Foundry browser tab.
+6. Return to the Microsoft Foundry browser tab.
 
 ## Task 3: Test a generative AI model
 
@@ -106,7 +106,7 @@ In this task, you will gain hands-on experience in setting up a collaborative wo
 
 ### Summary
 
-In this exercise, you’ve explored Azure AI Foundry and seen how to create projects and explore Azure AI Services and Azure OpenAI models in the Azure AI Foundry portal.
+In this exercise, you’ve explored Microsoft Foundry and seen how to create projects and explore Azure AI Services and Azure OpenAI models in the Microsoft Foundry portal.
 
 ### Review
 

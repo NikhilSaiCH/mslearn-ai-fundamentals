@@ -1,25 +1,25 @@
 # Lab 16: Explore AI Agent development
 
-In this Module, you use the Azure AI Agent service tools in the Azure AI Foundry portal to create a simple AI agent that answers questions about expense claims.
+In this Module, you use the Azure AI Agent service tools in the Microsoft Foundry portal to create a simple AI agent that answers questions about expense claims.
 
 ## Lab objectives
 
 In this lab, you will perform:
-- Task 1: Create an Azure AI Foundry project using the gpt-4o model.
+- Task 1: Create an Microsoft Foundry project using the gpt-4o model.
 - Task 2: Create an AI agent
 - Task 3: Test your agent
 
 > **Note**: Some of the technologies used in this exercise are in preview or in active development. You may experience some unexpected behavior, warnings, or errors.
 
-### Task 1: Create an Azure AI Foundry project using the gpt-4o model
+### Task 1: Create an Microsoft Foundry project using the gpt-4o model
 
-In this task, we are creating an Azure AI Foundry project and setting up AI resources to explore content filters in Azure AI Foundry.
+In this task, we are creating an Microsoft Foundry project and setting up AI resources to explore content filters in Microsoft Foundry.
 
-1. Right-click on the [Azure AI Foundry](https://ai.azure.com?azure-portal=true) **(1)** link, select **Copy link (2)** from the context menu, then paste it into a new tab to access the Azure AI Foundry portal.
+1. Right-click on the [Microsoft Foundry](https://ai.azure.com?azure-portal=true) **(1)** link, select **Copy link (2)** from the context menu, then paste it into a new tab to access the Microsoft Foundry portal.
 
    ![](./media/3-27.png)
 
-1. On the Welcome to Azure AI Foundry page, click on **Sign in** in the top right corner.
+1. On the Welcome to Microsoft Foundry page, click on **Sign in** in the top right corner.
 
    ![](./media/17-18.png)
 
@@ -37,7 +37,7 @@ In this task, we are creating an Azure AI Foundry project and setting up AI reso
 
    ![](./media/9-8.png)
 
-1. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the **Azure AI Foundry** logo at the top left to navigate to the home page, which looks similar to the following image (close the **Help** pane if it’s open).
+1. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the **Microsoft Foundry** logo at the top left to navigate to the home page, which looks similar to the following image (close the **Help** pane if it’s open).
 
 1. We will start by choosing a model that we want to work with and creating a project to use it in. 
 
@@ -53,7 +53,7 @@ In this task, we are creating an Azure AI Foundry project and setting up AI reso
 
     - **Project**: **MyProject-<inject key="DeploymentID" enableCopy="false" /> (1)**
     - **Subscription**: **Use existing Azure subscription (2)**
-    - **Azure AI Foundry resource**: Keep it default (3)
+    - **Microsoft Foundry resource**: Keep it default (3)
     - **Resource group**: Select **AI-900-Module-16-<inject key="DeploymentID" enableCopy="false" /> (4)**
     - **Location**: Select **<inject key="location" enableCopy="false"/> (5)**
     - Click on **Create (6)**
@@ -103,7 +103,7 @@ Now that you have a model deployed, you're ready to build an AI agent. In this e
 
 1. Open another browser tab, and download [Expenses_policy.docx](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-agents/main/Labfiles/01-agent-fundamentals/Expenses_Policy.docx) from `https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-agents/main/Labfiles/01-agent-fundamentals/Expenses_Policy.docx` and save it locally. This document contains details of the expenses policy for the fictional Contoso corporation.
 
-1. Return to the browser tab with the Azure AI Foundry portal. In the left navigation pane, under the **Build and customize** section, select the **Agents (1)** page, then go to the **My Agents (2)** tab. A new agent with a name like **AgentXYZ (3)** should be created automatically.
+1. Return to the browser tab with the Microsoft Foundry portal. In the left navigation pane, under the **Build and customize** section, select the **Agents (1)** page, then go to the **My Agents (2)** tab. A new agent with a name like **AgentXYZ (3)** should be created automatically.
 
    ![](./media/agents-2005.png)
 
@@ -133,7 +133,7 @@ Now that you have a model deployed, you're ready to build an AI agent. In this e
 
 ### Task 3: Test your agent
 
-Now that you've created an agent, you can test it in the Azure AI Foundry portal playground.
+Now that you've created an agent, you can test it in the Microsoft Foundry portal playground.
 
 1. At the top of the **Setup** pane for your agent, select **Try in playground**.
 
@@ -152,7 +152,7 @@ Now that you've created an agent, you can test it in the Azure AI Foundry portal
 ### Review
 
 In this exercise, you have completed the following tasks:
-- Created an Azure AI Foundry project using a GPT-4o model.
+- Created an Microsoft Foundry project using a GPT-4o model.
 - Created an AI agent
 - Tested your agent
 
