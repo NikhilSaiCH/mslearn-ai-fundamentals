@@ -35,7 +35,7 @@ In this hands-on lab, the architecture flow includes several key components that
 
 ## Architecture Diagram
 
-   ![](../media/Module1.1.png)
+   ![](../media/gg8.png)
 
 ## Explanation of Components
 
