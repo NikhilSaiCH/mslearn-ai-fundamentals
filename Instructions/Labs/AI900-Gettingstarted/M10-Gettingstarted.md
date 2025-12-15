@@ -3,7 +3,7 @@
 
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared a seamless environment for you to explore and learn Azure Services. Let's begin by making the most of this experience.
 
-# Module 10: Extract data from documents in Azure AI Foundry portal
+# Module 10: Extract data from documents in Microsoft Foundry portal
 
 ### Overall Estimated timing: 30 minutes
 
@@ -13,15 +13,15 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
 
 How does Document Intelligence build upon optical character recognition (OCR)? While OCR can read printed or handwritten documents, OCR extracts text in an unstructured format which is difficult to store in a database or analyze. Document intelligence makes sense of the unstructured data by capturing the structure of the text, such as data fields and information in tables. 
 
-In this exercise, you will use Azure AI Document Intelligence's prebuilt models in Azure AI Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from a receipt. 
+In this exercise, you will use Azure AI Document Intelligence's prebuilt models in Microsoft Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from a receipt. 
 
 ## Objectives
 
-By the end of this lab, you will be able to create a project in Azure AI Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
+By the end of this lab, you will be able to create a project in Microsoft Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
 
-1. **Create a project in Azure AI Foundry portal**: You will learn about configuring an Azure AI Foundry project, provisioning necessary AI resources, and exploring Vision and Document Intelligence capabilities for automated data extraction.
+1. **Create a project in Microsoft Foundry portal**: You will learn about configuring an Microsoft Foundry project, provisioning necessary AI resources, and exploring Vision and Document Intelligence capabilities for automated data extraction.
 
-2. **Analyze a receipt with Azure AI Document Intelligence in Azure AI Foundry**: You will learn about using Azure AI Document Intelligence to analyze receipts, extract key information such as merchant details, transaction date, and total amount, and interpret the results for further processing.
+2. **Analyze a receipt with Azure AI Document Intelligence in Microsoft Foundry**: You will learn about using Azure AI Document Intelligence to analyze receipts, extract key information such as merchant details, transaction date, and total amount, and interpret the results for further processing.
 
 ## Pre-requisites
 
@@ -31,17 +31,17 @@ Basic knowledge of Azure AI services and Document Intelligence.
 
 In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Create a project in Azure AI Foundry portal**: Understanding how to set up a new project in Azure AI Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
+1. **Create a project in Microsoft Foundry portal**: Understanding how to set up a new project in Microsoft Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
 
-1. **Analyze a receipt with Azure AI Document Intelligence in Azure AI Foundry**:  Learning how to upload and analyze a receipt using Azure AI Document Intelligence. This includes extracting key details such as the merchant name, transaction date, and total amount, and understanding how to interpret the extracted data for further processing or integration into business applications.
+1. **Analyze a receipt with Azure AI Document Intelligence in Microsoft Foundry**:  Learning how to upload and analyze a receipt using Azure AI Document Intelligence. This includes extracting key details such as the merchant name, transaction date, and total amount, and understanding how to interpret the extracted data for further processing or integration into business applications.
 
 ## Architecture Diagram
 
-![](../media/ex19.png)
+![](../media/g7.png)
 
 ## Explanation of Components
 
-1. **Azure AI Foundry Portal**: A centralized platform for managing AI projects, resources, and models.
+1. **Microsoft Foundry Portal**: A centralized platform for managing AI projects, resources, and models.
 
 1. **Azure AI Document Intelligence**: A service that extracts and interprets data from structured and unstructured documents.
 
@@ -55,7 +55,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
 ![Access Your VM and Lab Guide](../media/4-7.png)
 
@@ -131,48 +131,54 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
 7. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel**.
 
-## Steps to Proceed with MFA Setup if the "Ask Later" Option is Not Visible
+    >**Note:** **Follow the below steps, if MFA prompted:**
 
-1. If you see the pop-up **Stay Signed in?**, click **No**.
+    - Click **Next** in **Lets keep your account secure**.
 
-1. If **Action required** pop-up window appears, click on **Next**.
+       ![ws name.](../media/gg1.png)       
 
-   
-   ![](../media/mfa1(1).png)
+     - On **Install Microsoft Authenticator**, click **Next**.
 
-1. On **Start by getting the app** page, click on **Next**.
-1. Click on **Next** twice.
-1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
+       ![ws name.](../media/gg2.png)  
 
-   ![Install](../media/mfa2.png)
+     - Click **Next**.
 
-   > Note: For Ios, Open the app store and repeat the steps.
+       ![ws name.](../media/gg3.png)  
 
-   > Note: Skip if already installed.
+     - In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.      
 
-1. Open the app and tap on **Scan a QR code**.
+       ![ws name.](../media/gg7.png) 
 
-1. Scan the **QR code (1)** visible on the screen and click on **Next (2)**.
+        >Note: For iOS, open the App Store and repeat the steps.
 
-   ![QR code](../media/mfa3.png)
+        >Note: Skip if already installed.       
 
-1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
+     - Open the app and tap on **Scan a QR code**.
 
-1. Once the notification is approved, click on **Next**.
+     - Scan the QR code visible on the screen **(1)** and click on **Next (2)**.
 
-   ![Approved](../media/mfa4.png)
+       ![ws name.](../media/gg4.png)
 
-1. Click on **Done**.
+     - Enter the digit displayed on the Screen in the Authenticator app on your mobile and tap on **Yes**.
 
-1. If prompted to stay signed in, you can click **"No"**.
+       ![ws name.](../media/gg5.png)     
+
+     - Once the notification is approved, click on **Next**.
+
+     - Click on **Done**.
+
+       ![ws name.](../media/gg6.png)     
 
 1. Tap on **Finish** in the Mobile Device.
 
-   > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
+    >**NOTE:** While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
+
+1. If prompted to stay signed in, you can click **"No"**.    
 
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+
 
 
 ## Support Contact
