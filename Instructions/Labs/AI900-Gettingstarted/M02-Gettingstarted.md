@@ -19,7 +19,7 @@ By the end of this lab, you will be able to use Azure AI services effectively. Y
 
 2. **Check out the keys and endpoint**: Locate the authentication credentials required to access Azure AI services via APIs.
 
-3. **See Azure AI services in action**: Explore AI capabilities like face detection using interactive demos in the Azure AI Foundry portal.
+3. **See Azure AI services in action**: Explore AI capabilities like face detection using interactive demos in the Microsoft Foundry portal.
 
 ## Pre-requisites
 
@@ -31,7 +31,7 @@ In this hands-on lab, the architecture flow includes several key components that
 
 1. **Provision an Azure AI multi-service resource**: Learn how to create a centralized Azure AI service resource that provides access to multiple AI capabilities, such as Vision, Language, and Decision services. This involves configuring resource settings like region, pricing tier, and deployment details within the Azure portal.
 
-2. **Explore and test AI capabilities using Azure AI Foundry**: Use the Azure AI Foundry portal to interact with AI services such as Face Detection. This includes accessing demos, analyzing images with AI models, and viewing sample code that integrates the service's keys and endpoints—demonstrating how developers can connect their applications to Azure AI services..
+2. **Explore and test AI capabilities using Microsoft Foundry**: Use the Microsoft Foundry portal to interact with AI services such as Face Detection. This includes accessing demos, analyzing images with AI models, and viewing sample code that integrates the service's keys and endpoints—demonstrating how developers can connect their applications to Azure AI services..
 
 ## Architecture Diagram
 
