@@ -41,7 +41,7 @@ In this hands-on lab, the architecture flow includes several essential component
 
 ## Architecture Diagram
 
-![](../media/ai900m14arc.png)
+![](../media/gg13.png)
 
 ## Explanation of Components
 

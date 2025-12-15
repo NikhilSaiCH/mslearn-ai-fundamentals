@@ -37,7 +37,7 @@ In this hands-on lab, you will work with a streamlined architecture integrating 
 
 ## Architecture Diagram
 
- ![](../media/arch16.png)
+ ![](../media/gg14.png)
 
 ## Explanation of Components
 
