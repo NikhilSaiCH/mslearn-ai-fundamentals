@@ -37,7 +37,7 @@ In this task, we are creating an Microsoft Foundry project and configuring the n
  
    - **Password:** <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Next (2)**.
  
-     ![Enter Your Password](./media/19-5(1).png)
+     ![Enter Your Password](./media/mod6-p2t1p2(1).png)
 
 1. If prompted to stay signed in, you can click **No**.
 
