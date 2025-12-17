@@ -68,9 +68,10 @@ In this task, we are setting up a project in Microsoft Foundry by creating and c
 
 1. Wait for your project created.
 
-1. When the project is created, you will be taken to an **Overview** page of the project details. Select **AI services** on the left-hand menu. 
+1. When the project is created, you will be taken to an **Overview** page of the project details. Select **AI services** on the left-hand menu.
 
-   
+   ![](./media/mod3-p2t1p6.png)
+
 ## Task 2: Generate captions for an image
 
 In this task, we are exploring Azure Vision's image captioning and dense captioning capabilities by uploading an image and observing how AI generates descriptive text for the entire image and specific objects within it.
