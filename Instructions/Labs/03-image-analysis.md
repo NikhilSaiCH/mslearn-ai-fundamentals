@@ -1,10 +1,10 @@
-# Lab 02: Analyze images in the Microsoft Foundry
+# Lab 02: Analyze images in the Microsoft Foundry portal
 
 ## Lab overview
 
-**Azure Vision** includes numerous capabilities for understanding image content and context and extracting information from images. In this exercise, you will use Azure Vision in Microsoft Foundry, Microsoft's platform for creating intelligent applications, to analyze images using the built-in try-it-out experiences. 
+**Azure AI Vision** includes numerous capabilities for understanding image content and context and extracting information from images. In this exercise, you will use Azure AI Vision in Microsoft Foundry, Microsoft's platform for creating intelligent applications, to analyze images using the built-in try-it-out experiences. 
 
-Suppose the fictitious retailer *Northwind Traders* has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using Azure Vision, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
+Suppose the fictitious retailer *Northwind Traders* has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using Azure AI Vision, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
 
 ## Lab Objectives
 
@@ -49,7 +49,7 @@ In this task, we are setting up a project in Microsoft Foundry by creating and c
 
 1. In the browser, navigate to `https://ai.azure.com/managementCenter/allResources`, Select **Create new**.
 
-    ![](./media/010725(15).png)
+    ![](./media/mod3-p2t1p3(1).png)
 
 1. Choose the option to create a **AI hub resource (1)** then select **Next (2)**.
 
