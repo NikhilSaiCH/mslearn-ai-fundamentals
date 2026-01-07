@@ -1,6 +1,7 @@
 # Lab 07: Use Question Answering with the Language Studio
 
 ## Lab overview
+
 In this exercise, you will use Language Studio to create and train a knowledge base of questions and answers. Content for the knowledge base will come from an existing FAQ page on the website of Margie’s Travel, a fictitious travel agency. You will then use Language Studio to see how it would work when used by customers.
 
 Azure AI Language includes *question answering* capabilities, which you will use to create a knowledge base. Knowledge bases can be created either by entering question and answer pairs manually or from an existing document or web page. Margie’s Travel wants to use its existing FAQ document.
@@ -15,7 +16,7 @@ In this lab, you will perform:
 - Task 2: Create a new project
 - Task 3: Edit the knowledge base
 - Task 4: Train and test the knowledge base
-- Task 5: Create a bot for the knowledge base
+- Task 5: Deploy your project
 
 ## Exercise 1: Use Question Answering model with Language Studio
 
@@ -105,35 +106,6 @@ Studio** pop up by clicking on the **X**.
    > - At the top of the page, select **Language Studio** to return to the Language Studio home page.
 
 1. At the top of the Language Studio portal, in the **Create new (1)** menu, select **Custom question answering (2)**.
-
-    ![Creating a Language Service resource with custom question answering enabled.](media/mod7-p2t2p4.png)
-
-1. On the **Connect to Azure search** pop-up, click on **Connect to Azure search**. 
-
-   ![](media/mod7-p2t2p5.png)
-
-1. On the Azure Search page, click on **Select Azure Search resource (1)** drop-down and then select **Add Arure Search resource (2)**.
-
-   ![](media/mod7-p2t2p6.png)
-
-1. On the **Create Azure Search** window:
-
-      - **Azure Search Service name**: **search<inject key="DeploymentID" enableCopy="false"/> (1)**
-      - **Azure search region**: Select **<inject key="location" enableCopy="false"/> (2)**
-      - **Azure search pricing tier**: **Free F (3)** (3 Indexes) - (*If this tier is not available, select Basic*)
-      - Click on **Create (4)**.
-
-         ![An image of the text in the image outlined](media/mod7-p2t2p7.png)
-
-1. On the **Are you sure you want to select search<inject key="DeploymentID" enableCopy="false"/> ?** dialog, click on **Select resource and delete projects**.
-
-   ![An image of the text in the image outlined](media/mod7-p2t2p8.png)
-
-1. Now, click on the **Language Studio** from the top.
-
-   ![An image of the text in the image outlined](media/mod7-p2t2p9.png)
-
-1. Again from the home page, click on the **Create new (1)** menu, and select **Custom question answering (2)**.
 
     ![Creating a Language Service resource with custom question answering enabled.](media/mod7-p2t2p4.png)
 
@@ -240,10 +212,9 @@ You can deploy the knowledge base as a client application to answer questions
 ## Validation
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Hit the Validate button for the corresponding task. You will receive a success message. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="11faa70c-17f5-4a89-8275-059ac6273139" />
   
@@ -252,6 +223,7 @@ You can deploy the knowledge base as a client application to answer questions
 - To learn more about the Question Answering service, view [the documentation](https://docs.microsoft.com/azure/cognitive-services/language-service/question-answering/overview).
 
 ### Review
+
 In this lab, you have completed the following tasks:
 - Created a *Language* resource
 - Created a new project
