@@ -1,4 +1,4 @@
-# Lab: Analyze images in the Microsoft Foundry portal
+# Lab 03: Analyze images in the Microsoft Foundry portal
 
 ## Lab overview
 
