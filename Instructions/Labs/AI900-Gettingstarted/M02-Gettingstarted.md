@@ -1,9 +1,8 @@
-
 # AI-900: Microsoft Azure AI Fundamentals Workshop
 
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared a seamless environment for you to explore and learn Azure Services. Let's begin by making the most of this experience.
 
-# Module 02: Explore the Content Safety Studio
+# Lab 02: Explore the Content Safety Studio
 
 ### Overall Estimated timing: 30 minutes
 
@@ -101,21 +100,21 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
    ![Launch Azure Portal](../media/sc900-image(1).png)
 
-2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your **credentials (1)** and click on **Next (2)**:
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-       ![Enter Your Username](../media/sc900-image-1.png)
+       ![Enter Your Username](../media/sign-in-page.png)
  
-3. Next, provide your password:
+3. Next, provide your **password (1)** and click on **Sign in (2)**:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-     ![Enter Your Password](../media/pwd.png)
+     ![Enter Your Password](../media/tap-password.png)
  
-4. If prompted to stay signed in, you can click **No**.
+4. If you see the pop-up Stay-Signed in?, click **No**.
 
-    ![](../media/staysigned2.png)
+    ![](../media/Sign-in-no.png)
  
 5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel**.
 
