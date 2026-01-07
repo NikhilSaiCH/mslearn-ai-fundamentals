@@ -99,22 +99,25 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
    ![Launch Azure Portal](../media/sc900-image(1).png)
 
-2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials and click on **Next (2)**:
+2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your **credentials (1)** and click on **Next (2)**:
  
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> 
  
-       ![Enter Your Password](.././media/mod3-p2t1p2.png)
+       ![Enter Your Username](../media/sign-in-page.png)
  
-3. Next, provide your password and click on **Sign in (2)**:
+3. Next, provide your **password (1)** and click on **Sign in (2)**:
  
-   - **Password:** <inject key="AzureAdUserPassword"></inject> **(1)**
+   - **Password:** <inject key="AzureAdUserPassword"></inject> 
  
-      ![Enter Your Password](.././media/mod3-p2t1p2(1).png)
+       ![Enter Your Password](../media/tap-password.png)
  
-4. If prompted to stay signed in, you can click **No**.
+4. If you see the pop-up Stay-Signed in?, click **No**.
 
-   ![Enter Your Password](.././media/mod3-p2t1p2(2).png)
+    ![](../media/Sign-in-no.png)
 
+5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel**.
+
+    ![](../media/AI-l6-4.png)
 
 ## Support Contact
  
