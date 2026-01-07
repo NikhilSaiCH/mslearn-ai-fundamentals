@@ -68,14 +68,13 @@ In this task, you will create an Azure Machine Learning workspace. You will sear
 ## Validation
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Hit the Validate button for the corresponding task. You will receive a success message. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
   <validation step="0e571ab6-2856-478e-afa3-41efc38df116" />
 
-#### Enable preview features
+### Enable preview features
 
 Some features of Azure Machine Learning are in preview and need to be explicitly enabled in your workspace.
 
@@ -95,7 +94,7 @@ Automated machine learning enables you to try multiple algorithms and parameters
 
 > **Citation**: *The data used in this exercise is derived from [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) and is used in accordance with the published data [license agreement](https://www.capitalbikeshare.com/data-license-agreement)*.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), naviage to the **Automated ML (1)** page (under **Authoring**), select  **+ New Automated ML job (2)**.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), navigate to the **Automated ML (1)** page (under **Authoring**), select  **+ New Automated ML job (2)**.
 
    ![](media/ai900-3.png)  
 
@@ -311,10 +310,9 @@ Let's review what you have done. You used a dataset of historical bicycle rental
 ## Validation
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Hit the Validate button for the corresponding task. You will receive a success message. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
   <validation step="d5b3d279-a696-4a1d-b7c5-370eca8ae53a" />
 
@@ -323,7 +321,5 @@ In this lab, you have completed the following tasks:
 - Created an *Azure Machine Learning workspace* resource
 - Utilized automated machine learning to train a model
 - Deployed the model
-
-Let me know if you'd like any changes!
   
 ## You have successfully completed this lab.
