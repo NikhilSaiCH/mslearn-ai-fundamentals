@@ -1,4 +1,4 @@
-# Lab 01: Explore Automated Machine Learning in Azure Machine Learning
+# Explore Automated Machine Learning in Azure Machine Learning
 
 ## Lab overview
 
@@ -11,8 +11,6 @@ In this lab, you will perform:
 - Task 1: Creating an Azure Machine Learning workspace resource
 - Task 2: Use automated machine learning to train a model
 - Task 3: Deploy the model
-
-## Exercise 1: Explore Automated Machine Learning in Azure Machine Learning
 
 ### Task 1: Create an Azure Machine Learning workspace
 
