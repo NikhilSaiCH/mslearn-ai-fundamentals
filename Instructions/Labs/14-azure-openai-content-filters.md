@@ -1,4 +1,4 @@
-# Lab 2b: Explore content filters in Microsoft Foundry
+# Lab: Explore content filters in Microsoft Foundry
 
 ## Lab overview
 
