@@ -1,4 +1,4 @@
-# Lab 06: Analyze text in the Microsoft Foundry portal
+# Analyze text in the Microsoft Foundry portal
 
 ## Lab overview
 
