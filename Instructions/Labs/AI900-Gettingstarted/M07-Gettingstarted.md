@@ -2,7 +2,7 @@
 
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared a seamless environment for you to explore and learn Azure Services. Let's begin by making the most of this experience.
 
-# Lab 07: Use Question Answering with the Language Studio
+# Use Question Answering with the Language Studio
 
 ### Overall Estimated timing: 45 minutes
 
