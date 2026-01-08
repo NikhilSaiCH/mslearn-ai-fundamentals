@@ -12,6 +12,7 @@ In this lab, you will perform:
 
 - Task 1: Create a project in the Microsoft Foundry portal
 - Task 2: Explore speech-to-text in Microsoft Foundry's Speech Playground
+- Task 3: Explore text to speech in Microsoft Foundry's Speech Playground
 
 ### Task 1: Create a project in the Microsoft Foundry portal
 
@@ -124,12 +125,27 @@ Let's try out *real-time speech-to-text* in Microsoft Foundry's Speech Playgroun
 
    ![Browse files](media/mod9-p2t2p8.png)
 
+### Task 3: Explore text to speech in Microsoft Foundry's Speech Playground
+
+In this task, we are using available voice from the gallary provided by Foundry to synthesize text to speech in real time using the Speech Playground.
+
+1. In the Speech playground, select the **Text to speech (1)** tab and ensure **Voice gallery (2)** is selected. Make sure that **Foundry name (3)** is displayed in **Connected resource** placeholder.
+
+   ![](./media/mod9-t3s1.png)
+
+1. View the available voices, and **select any one (1)** (such as *Ava Dragon HD latest*).
+
+1. In the **Voice details** pane, select the **Try it out (2)** tab. Then enter some **text (3)** (for example, `The rain in Spain stays mainly in the plain`) and use the **Play (4)** button to synthesize speech from the text.
+
+   ![](./media/mod9-t3s2.png)
+
 ### Review
 
 In this exercise, you have completed the following tasks:
 
 - Explored Azure AI Speech services in the Speech Playground
 - Transcribed audio to text using the Real-time speech-to-text service
+- Synthesized text to audio using the Real-time speech-to-text service
 
 ## Learn more
 
