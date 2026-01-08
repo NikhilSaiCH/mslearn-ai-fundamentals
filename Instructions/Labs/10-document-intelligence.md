@@ -40,7 +40,7 @@ In this task, you will create a Microsoft Foundry project for Content Understand
 
     ![](./media/af4.png)
 
-1. Then in the **Create project** dialog, select the **Microsoft Foundry resource**.
+1. Then in the **Create project** dialog, select the **Microsoft Foundry resource (1)** and then **Next (2)**.
 
     ![](./media/af5.png)
 
