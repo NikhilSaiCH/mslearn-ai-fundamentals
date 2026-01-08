@@ -1,4 +1,4 @@
-# Lab 07: Use Question Answering with the Language Studio
+# Use Question Answering with the Language Studio
 
 ## Lab overview
 
@@ -17,8 +17,6 @@ In this lab, you will perform:
 - Task 3: Edit the knowledge base
 - Task 4: Train and test the knowledge base
 - Task 5: Deploy your project
-
-## Exercise 1: Use Question Answering model with Language Studio
 
 ### Task 1: Create a *Language* resource
 
