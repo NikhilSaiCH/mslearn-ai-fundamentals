@@ -18,17 +18,13 @@ In this lab, you will:
 
 In this task, you will learn how to create an **Azure AI Search** resource to enable powerful search capabilities and AI-driven content exploration for your applications.
 
-1. On the **Azure Portal** homepage, select **+ Create a resource**.
+1. On the **Azure Portal** homepage, search and select **AI Search**.
 
-     ![Picture1](media/lab11-01.png)
+     ![Picture1](media/mod11n1.png)
 
-1. In the Marketplace page search for **Azure AI Search (1)** press **Enter** and select **Azure AI Search (2)**.
- 
-    ![Picture1](media/lab11-02.png)
+1. On  the **AI Search** page, click on **Create**.
 
-1. On  the **Azure AI Search** page, click on **Create**.
-
-    ![Picture1](media/lab11-03.png)
+    ![Picture1](media/mod11n2.png)
 
 1. Create a new **AI Search** resource with an AI Search plan. Use the following settings:
 
@@ -91,17 +87,13 @@ You'll need to provision an **Azure AI services** resource that's in the same lo
 
 In this task, you will create a Storage account in Azure, configure its settings, and enable Blob anonymous access. This will allow you to store and manage data securely within your Azure environment.
 
-1. Return to the home page of the Azure portal. Select **+ Create a resource**.
+1. Return to the home page of the Azure portal. Search and Select **Storage account**.
 
-    ![Picture1](media/lab11-01.png)
-
-1. In the Marketplace page search for **Storage account (1)** Press **Enter** and select **Storage account (2)**.
- 
-    ![Picture1](media/lab11-11.png)
+    ![Picture1](media/mod11n3.png)
 
 1. On the **Storage account** Page, Click on **Create**.
 
-    ![Picture1](media/lab11-12.png)
+    ![Picture1](media/mod11n4.png)
     
 1. Create a **Storage account** resource with the following settings:
 
@@ -123,9 +115,9 @@ In this task, you will create a Storage account in Azure, configure its settings
 
     ![Picture1](media/deployment.png)
 
-1. In the Azure Storage account you created, in the left-hand menu pane, select **Configuration (1)** (under **Settings**), Change the setting for **Allow Blob anonymous access** to **Enabled (2)**, and then select **Save (3)**.
+1. In the Azure Storage account you created, from the left-hand navigation pane, select **Configuration (1)** under **Settings**. Set **Allow Blob anonymous access** to **Enabled (2)**, set **Allow storage account key access** to **Enabled (3)**, and then select **Save (4)** to apply the changes.
 
-    ![Picture1](media/storageaccount(1).png)
+    ![Picture1](media/mod11n5.png)
 
 ## Task 4: Upload Documents to Azure Storage
 
