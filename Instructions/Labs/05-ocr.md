@@ -1,4 +1,4 @@
-# Lab 05: Read text in Vision Studio
+# Read text in Vision Studio
 
 ## Lab overview
 
@@ -13,8 +13,6 @@ In this lab, you will perform:
 - Task 1: Creating an *Azure AI services* resource
 - Task 2: Connect your Azure AI service resource to Vision Studio
 - Task 3: Extract text from images in the Vision Studio
-
-## Exercise 1: Read the text in Vision Studio
 
 ### Task 1: Create an *Azure AI services* resource
 
