@@ -3,51 +3,27 @@
 
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared a seamless environment for you to explore and learn Azure Services. Let's begin by making the most of this experience.
 
-# Lab 05: Extract data from documents in Azure AI Foundry portal
+# Lab 10: Extract data with Content Understanding in Microsoft Foundry
 
 ### Overall Estimated timing: 30 Minutes
 
 ## Overview
 
-**Azure AI Document Intelligence** service enables you to analyze and extract information from forms and documents, and then identify field names and data. 
-
-How does Document Intelligence build upon optical character recognition (OCR)? While OCR can read printed or handwritten documents, OCR extracts text in an unstructured format which is difficult to store in a database or analyze. Document intelligence makes sense of the unstructured data by capturing the structure of the text, such as data fields and information in tables. 
-
-In this exercise, you will use Azure AI Document Intelligence's prebuilt models in Azure AI Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from a receipt. 
+**Azure AI Content Understanding** enables multi-modal analysis of documents, images, audio, and video to extract structured information. In this lab, you will use Content Understanding within Microsoft Foundry to create a project and analyze an invoice document, reviewing the extracted fields and JSON output for downstream use.
 
 ## Objectives
 
-By the end of this lab, you will be able to create a project in Azure AI Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
+By the end of this lab, you will be able to create a project in Microsoft Foundry and use Azure AI Content Understanding to extract key information from an invoice efficiently.
 
-1. **Create a project in Azure AI Foundry portal**: You will learn about configuring an Azure AI Foundry project, provisioning necessary AI resources, and exploring Vision and Document Intelligence capabilities for automated data extraction.
+1. **Create a project in Microsoft Foundry:** You will learn how to create and configure a project using the Microsoft Foundry portal and understand how Foundry provisions the required AI resources.
 
-2. **Analyze a receipt with Azure AI Document Intelligence in Azure AI Foundry**: You will learn about using Azure AI Document Intelligence to analyze receipts, extract key information such as merchant details, transaction date, and total amount, and interpret the results for further processing.
+2. **Extract information from an invoice using Content Understanding:** You will learn how to use Azure AI Content Understanding to analyze invoice documents, extract structured fields, and review the JSON response for use in client applications.
 
 ## Pre-requisites
 
-Basic knowledge of Azure AI services and Document Intelligence.
+- Basic understanding of Azure concepts.
 
-## Architecture
-
-In this hands-on lab, the architecture flow includes several essential components.
-
-1. **Create a project in Azure AI Foundry portal**: Understanding how to set up a new project in Azure AI Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
-
-1. **Analyze a receipt with Azure AI Document Intelligence in Azure AI Foundry**:  Learning how to upload and analyze a receipt using Azure AI Document Intelligence. This includes extracting key details such as the merchant name, transaction date, and total amount, and understanding how to interpret the extracted data for further processing or integration into business applications.
-
-## Architecture Diagram
-
-![](../media/ex19.png)
-
-## Explanation of Components
-
-1. **Azure AI Foundry Portal**: A centralized platform for managing AI projects, resources, and models.
-
-1. **Azure AI Document Intelligence**: A service that extracts and interprets data from structured and unstructured documents.
-
-1. **Receipt Analysis**: Using AI models to identify key information such as merchant name, date, and total amount.
-
-
+- Familiarity with Azure AI services and document analysis concepts.
 
 # Getting Started with lab
  
