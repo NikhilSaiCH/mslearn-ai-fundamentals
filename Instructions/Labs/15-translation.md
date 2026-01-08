@@ -18,7 +18,7 @@ In this task, you will learn how to create a **Translator** resource in Azure to
 
     ![](media/Lab1-0.png) 
 
-1. On **Microsoft Foundry** Page, expand **More services (1)** and scroll down to select **Translator (2)** and click **create (3)** to create a Translator resource. 
+1. On **Microsoft Foundry** Page, expand **More services (1)** and scroll down, select **Translator (2)** and click **+ Create (3)** to create a Translator resource. 
 
    ![Picture1](media/transl.png)
   
@@ -27,13 +27,13 @@ In this task, you will learn how to create a **Translator** resource in Azure to
     - **Subscription**: **Use existing Azure subscription (1)**.
     - **Resource group**: Select **AI-900-Module-15-<inject key="DeploymentID" enableCopy="false" /> (2)**
     - **Region**: **<inject key="location" enableCopy="false"/>(3)**
-    - **Name**: Enter **translator<inject key="DeploymentID" enableCopy="false" />(4)**
+    - **Name**: **translator<inject key="DeploymentID" enableCopy="false" />(4)**
     - **Pricing tier**: Free F0 **(5)**
     - Click on **Review and create (6)**.
 
       ![Picture1](media/trandet.png)
 
-1. Click **Create**
+1. Click **Create**.
 
    ![Picture1](media/crt.png)
 
