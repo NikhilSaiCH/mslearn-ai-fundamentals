@@ -1,111 +1,59 @@
-# Lab: Extract data from documents in the Microsoft Foundry portal
+# Lab: Extract data with Content Understanding in Microsoft Foundry
 
-## Lab overview
+## Lab Overview
 
-**Azure AI Document Intelligence** service enables you to analyze and extract information from forms and documents, and then identify field names and data. 
+**Azure Content Understanding** provides multi-modal analysis of documents, audio files, video, and images to extract information.
 
-How does Document Intelligence build upon optical character recognition (OCR)? While OCR can read printed or handwritten documents, OCR extracts text in an unstructured format which is difficult to store in a database or analyze. Document intelligence makes sense of the unstructured data by capturing the structure of the text, such as data fields and information in tables. 
-
-In this exercise, you will use Azure AI Document Intelligence's prebuilt models in the Microsoft Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from a receipt.
+In this lab, you will use Azure Content Understanding in Foundry, Microsoft's platform for creating intelligent applications, to extract information from invoices.
 
 ## Lab Objectives
 
 In this lab, you will perform:
-- Task 1: Create a project in the Microsoft Foundry portal
-- Task 2: Analyze a receipt with Azure AI Document Intelligence in Microsoft Foundry
+- Task 1: Create a Microsoft Foundry project for content understanding
+- Task 2: Extract information from an invoice
 
-## Task 1: Create a project in the Microsoft Foundry portal
+## Task 1: Create a Microsoft Foundry project for content understanding
 
-In this task, we are creating an Microsoft Foundry project and setting up AI resources to explore Vision and Document capabilities.
+In this task, you will create a Microsoft Foundry project for Content Understanding using the Microsoft Foundry portal.
 
-1. On the Azure Portal page, in the **Search resources, services, and docs (G+/)** box at the top of the portal, enter **Foundry (1)**, and then select **Microsoft Foundry (2)** under **Services**.
+1. Right click on the following link [Microsoft Foundry](https://ai.azure.com) then select **Copy link** and then paste it on the web browser to navigate to **Microsoft Foundry**.
 
-    ![](./media/av1.png) 
+1. Click on **Sign in**.
 
-1. In the left navigation pane for the AI Foundry, select **AI Hubs (2)** under **Use with AI Foundry (1)**. On the AI Hubs page, click on **+ Create (3)** and select **Hub (4)** from the drop-down.
+    ![](./media/af1.png)
 
-    ![](./media/av2.png) 
+1. If prompted, sign in using your Azure credentials.
 
-1. On the **Create an AI hub resource** pane, enter the following details:
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-    - Subscription: **Leave default subscription (1)** 
-    - Resource Group : Select **AI-900-Module-10-<inject key="Deployment ID" enableCopy="false"></inject> (2)** 
-    - Region : **<inject key="location" enableCopy="false"></inject>** **(3)**
-    - Name : Use the format **Myhub-<inject key="Deployment ID" enableCopy="false"></inject> (4)** 
-    - Connect AI Services incl. OpenAI : Click on **Create New (5)**
-    - Create new Azure AI Services: Provide a name to the AI Service, Use the format **AI<inject key="Deployment ID" enableCopy="false"></inject> (6)**  
-    - Click on **Save (7)**.
-    - Click on **Review + Create (8)**
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-       ![](./media/T1S3new-0906(1).png) 
+1. Scroll to the bottom of the page, and select the **Explore Azure AI Services** tile. 
 
-1. Click on the **Create** button to begin the deployment process.
+    ![](./media/af2.png)
 
-    ![](./media/AI-l10-1.png)
+1. On the Azure AI Services page, select **Try Content Understanding**.
 
-1. Once the deployment completes, click on **Go to resources**.
+    ![](./media/af3.png)
 
-1. Click on **Launch Microsoft Foundry**.
+1. In the Content Understanding page, select **Create a project to start**.
 
-    ![](./media/av4.png)
+    ![](./media/af4.png)
 
-1. Within the **Microsoft Foudry** portal, scroll down and select **+ New project**.
+1. Then in the **Create project** dialog, select the **Microsoft Foundry resource (1)** and then **Next (2)**.
 
-    ![](./media/av3.png)
+    ![](./media/af5.png)
 
-1. Provide the Project name as **Myproject<inject key="DeploymentID" enableCopy="false" /> (1)** and then **Create (2)**.   
+1. On the **Create a project** page, enter the project name as **Myproject<inject key="DeploymentID" enableCopy="false" /> (1)** then expand **Advanced options**:
 
-    ![](./media/av5.png)
+    - Subscription: **Leave default subscription (2)** 
+    - Resource Group : Select **AI-900-Module-10-<inject key="Deployment ID" enableCopy="false"></inject> (3)** 
+    - Region : **<inject key="location" enableCopy="false"></inject>** **(4)**
+    - Select **Create (5)**
 
-1. Wait for your project to be created.
+      ![](./media/af6.png)
 
-1. When the project is created, you will be taken to an **Overview** page of the project details. Select **AI services** on the left-hand menu.
-
-## Task 2: Analyze a Receipt with Azure AI Document Intelligence in Microsoft Foundry
-
-In this task, you will use Microsoft Foundry to analyze a receipt image using prebuilt AI models, extracting key details such as merchant information, transaction date, and total amount.
-
-You are now ready to analyze a fictitious receipt from the Northwind Traders retail company.
-
-1. In the **Overview (1)** page of your project, select **AI Services (2)** from the left-hand menu.
-
-   ![Screenshot of the left-hand menu on the project screen with AI Services selected.](./media/17-5.png)
-
-   > **Note:** If a pop-up appears, please click **Close**.
-
-1. On the **AI Services** page, select the **Vision + Document** tile to try out Azure AI Vision and Document capabilities.
-
-    ![Screenshot of the Vision and Document tile selected on the AI Services page.](./media/17-6(2).png)
-
-1. On the **Vision + Document** page, scroll down and select **Document (1)**. Under **Prebuilt models for specific documents**, select the **Receipts (2)** tile.
-
-    ![](media/19-1(1).png)
-
-1. On the Receipts page, select **Connect to or create an Azure AI Services resource** (1). From the dropdown, choose **AI<inject key="DeploymentID" enableCopy="false" />** (2) under Azure AI Services, and then click **Connect** (3).
-
-    ![](./media/ai9872.png)
-
-1. Open a new tab and go to [**https://aka.ms/mslearn-receipt**](https://aka.ms/mslearn-receipt) to view a sample image of a receipt.
-
-1. Right-click on the image and choose **"Save image as"** to save it in your Downloads folder or to your Desktop.
-
-   ![](media/ai900m10-5.png)
-
-1. Click on **Save**.
-
-   ![](media/ai900m10-6.png)
- 
-1. Go back to the Microsoft Foundry portal and upload the **receipt.jpg** image by clicking **Browse files (1)**. Then, navigate to the **C:\Users\azureuser\Downloads (2)** folder, select **receipt (3)**, and click **Open (4)**.
-
-   ![](media/10-3.png)
-
-1. Click **Run analysis** to process the document.
-
-   ![](media/10-1.png)
-
-1. When the analysis has run, the results are returned. Notice that the service has recognized specific data fields such as the merchant’s name, address, phone number, and transaction date and time, as well as the line items, subtotal, tax, and total amounts. Next to each field is a percentage probability that the field is correct.
-
-    ![](media/receipt-lab-result.png)
+1. Wait for the set up process to complete. It may take a few minutes.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
@@ -115,16 +63,52 @@ You are now ready to analyze a fictitious receipt from the Northwind Traders ret
 
    <validation step="348e3976-3f47-4302-b53a-c2bd7195d99b" />
 
+## Task 2: Extract information from an invoice
+
+In this task, you will use Azure AI Content Understanding to extract structured information from an invoice document.
+
+1. Right click on the following link [contoso-invoice-1.pdf](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/refs/heads/main/data/contoso-invoice-1.pdf) then select **Copy link** and then paste it on the browser to download the **contoso-invoice-1.pdf**. 
+
+    ![](./media/af7.png)
+
+1. On the **Content Understanding (1)** page, select the **Try it out (2)** tab, and then select the **Invoice Data Extraction (3)** tile.
+
+    ![](./media/af8.png)
+
+1. A sample invoice is provided, select the **sample invoice (1)** and use the **Run analysis (2)** button to extract information from it. 
+
+    ![](./media/af9.png)
+
+1. When analysis is complete, view the results.
+
+    ![](./media/af10.png)
+
+1. Use the **Browse for files** link to upload the **contoso-invoice-1.pdf** document you downloaded previously.
+
+    ![](./media/af11.png)
+
+1. Navigate to **Downloads (1)**, select **contoso-invoice-1.pdf (2)** and then **Open (3)**.    
+
+    ![](./media/af12.png)
+
+1. select **contoso-invoice (1)** and **Run analysis (2)** on that file.
+
+    ![](./media/af13.png)
+
+1. Note that the Content Understanding analyzer is able to extract information from this invoice, even though it is formatted diffferently from the sample.
+
+    ![](./media/af14.png)
+
+1. In the pane pn the right where the extracted fields are displayed, view the **Result** tab to see the JSON response that would be sent to a client application. A developer would write code to process this response and do something with the extracted fields.
+
+    ![](./media/af15.png)
+
 ### Review
 
-In this Module, you have used Azure AI Document Intelligence's prebuilt receipts model in the Microsoft Foundry portal. From the results that were returned, you saw how Document Intelligence was able to identify specific fields, enabling data from everyday documents to be more easily processed. Before you close the demo, why not try some of the sample receipts, including those in different languages?
+In this lab, you have completed the following tasks:
 
-In this Module, you have completed the following tasks:
-- Created a project in the Microsoft Foundry portal
-- Analyzed a receipt with Azure AI Document Intelligence in Microsoft Foundry 
+- Created a Microsoft Foundry project for content understanding
+- Extracted information from an invoice
 
-## Learn more
-
-This lab demonstrated only some of the capabilities of the AI Document Intelligence service. To learn more about what you can do with this service, see the [Document Intelligence](https://learn.microsoft.com/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0) page.
 
 ## You have successfully completed this lab.
