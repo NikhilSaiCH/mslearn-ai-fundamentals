@@ -1,4 +1,4 @@
-# Lab 15: Explore Azure AI Translator
+# Explore Azure AI Translator
 
 Artificial Intelligence (AI) can help simplify translation between languages, helping to remove barriers to communication across countries and cultures.
 
@@ -68,10 +68,9 @@ We can explore the capabilities of the Translator service in the Azure Portal.
    ![Picture1](media/trnkey.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - Hit the Validate button for the corresponding task. you will receive a success message.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="026548d7-4a64-4ebe-b70d-f68db2713d43" />
 
@@ -87,4 +86,3 @@ To learn more about what you can do with this service, see the [Translator page]
 
 
 ## You have successfully completed this lab.
-

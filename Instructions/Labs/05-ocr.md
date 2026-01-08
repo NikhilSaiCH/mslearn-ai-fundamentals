@@ -1,4 +1,4 @@
-# Lab 05: Read text in Vision Studio
+# Read text in Vision Studio
 
 ## Lab overview
 
@@ -10,11 +10,9 @@ A common computer vision challenge is to detect and interpret text embedded with
 
 In this lab, you will perform:
 
-- Task 1: Creating an *Azure AI Speech* resource
+- Task 1: Creating an *Azure AI services* resource
 - Task 2: Connect your Azure AI service resource to Vision Studio
 - Task 3: Extract text from images in the Vision Studio
-
-## Exercise 1: Read the text in Vision Studio
 
 ### Task 1: Create an *Azure AI services* resource
 
@@ -146,10 +144,9 @@ In this task, you will learn how to extract text from images in Vision Studio us
 1. It should return the text and bounding boxes of the text. If you have time, try **note.jpg** and **receipt.jpg**.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
   <validation step="6533434a-a8ba-4666-85d3-c3bc79b972d7" />
   

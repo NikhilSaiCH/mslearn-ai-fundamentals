@@ -1,4 +1,4 @@
-# Lab 02: Explore Azure AI Services
+# Explore Azure AI Services
 
 ## Lab overview
 
@@ -82,7 +82,7 @@ Let's start by creating an Microsoft Foundry project.
 
 1. On the *AI Services* page, select the **Vision + Document** tile to try out Azure AI Vision and Document capabilities.
 
-    ![](./media/mod2-p2t3p1(1).png)
+    ![](./media/mod2-p2t3p1-1.png)
 
 1. Under *View all other vision capabilities* select the **Face (1)** tab. Select the **Detect faces in an image (2)** demo tile.
 
@@ -107,10 +107,9 @@ Let's start by creating an Microsoft Foundry project.
 ## Validation
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Hit the Validate button for the corresponding task. You will receive a success message. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
   <validation step="5371378e-8511-44ed-9037-3a000338132f" />
 
