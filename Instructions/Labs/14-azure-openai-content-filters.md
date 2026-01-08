@@ -32,6 +32,10 @@ In this lab, you will perform:
 
    ![](./media/aii25.png)
 
+1. Click on **+ Create a new Project**
+
+   ![](./media/mod11n6.png)
+
 1. On the Create a project page, provide the following details:
 
    - Project name: Enter **Myproject<inject key="DeploymentID" enableCopy="false" /> (1)**
@@ -39,9 +43,9 @@ In this lab, you will perform:
    - Subscription: Leave the default one **(3)**
    - Resource group: Select **AI-900-Module-14 (4)**
    - **Location**: Select **<inject key="location" enableCopy="false"/> (5)**
-   - Click on **Create (6)**
+   - Click on **Create and continue (6)**
 
-     ![](./media/aii26.png)
+     ![](./media/mod11n7.png)
 
 1. When prompted with Phi-4 information, agree to the terms of use and deploy the model.
 
@@ -158,7 +162,6 @@ When the default content filter doesn’t meet your needs, you can create custom
 1. Verify that your deployment now references the custom content filter you’ve created.
 
    ![](./media/aii43.png)
-
 
 ### Task 4: Test your custom content filter   
 
