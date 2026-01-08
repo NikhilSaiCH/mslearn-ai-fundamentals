@@ -1,4 +1,4 @@
-# Lab: Explore Speech in the Microsoft Foundry portal
+# Explore Speech in the Microsoft Foundry portal
 
 ## Lab overview
 
@@ -16,33 +16,6 @@ In this lab, you will perform:
 ### Task 1: Create a project in the Microsoft Foundry portal
 
 In this task, we are creating and configuring a project in Microsoft Foundry to explore AI services and speech capabilities.
-
-1. On the Azure Portal home page, select **Foundry** under **Azure services**.
-
-    ![](./media/mod9-p2t1p1.png) 
-
-1. In the left navigation pane for the AI Foundry, select **AI Hubs (2)** under **Use with AI Foundry (1)**. On the AI Hubs page, click on **+ Create (2)** and select **Hub (3)** from the drop-down.
-
-    ![](./media/mod9-p2t1p2.png) 
-
-1. On the **Create an AI hub resource** pane, enter the following details:
-
-    - Subscription : **Leave default subscription (1)** 
-    - Resource Group : Select **AI-900-Module-09 (2)** 
-    - Region : Select **<inject key="Location" enableCopy="false"/>**  **(3)**
-    - Name : Use the format **Myhub-<inject key="Deployment ID" enableCopy="false"></inject> (4)** 
-    - Friendly name : This will be automatically generated based on the name you enter for your **AI hub.** **(5)**
-    - Default project resource group : This will be pre-filled. Ensure it matches the resource group selected above **(6)**.
-    - Connect AI Services incl. OpenAI : Click on **Create New (7)**
-    - Create new Azure AI Services: Provide a name to the AI Service,Use the format **AI<inject key="Deployment ID" enableCopy="false"></inject> (8)**  
-    - Click on **Save (9)**.
-    - Click on **Review + Create (10)**
-
-       ![](./media/ch-12.png) 
-
-1. Click on the **Create** button to begin the deployment process.
-
-   ![](./media/mod9-p2t1p3.png) 
 
 1. Open the **Microsoft Foundry** portal by pasting `https://ai.azure.com?azure-portal=true` into a new browser tab.
 
@@ -68,33 +41,44 @@ In this task, we are creating and configuring a project in Microsoft Foundry to 
 
 1. Close any tips or quick start panes that are opened the first time you sign in.
 
-1. From the **Microsoft Foundry** home page, select **+ Create new**.
+1. In the browser, navigate to `https://ai.azure.com/managementCenter/allResources` and click on **Create new**.
 
-   ![](./media/mod9-p2t1p6.png)
+    ![](./media/AI-l6-1.png)
 
 1. From the **Create project** dialog, select the option to create a **AI hub resource (1)** then click **Next (2)**.
 
    ![](./media/mod9-p2t1p7.png)
 
-1. In the **Create a new project** wizard, enter project name **Myproject<inject key="DeploymentID" enableCopy="false" /> (1)**, and select newly created **Myhub<inject key="DeploymentID" enableCopy="false" /> (2)** and then click on **Create (3)**.
+1. In the **Create a new project** wizard, enter project name **Myproject<inject key="DeploymentID" enableCopy="false" /> (1)**. Next, click on **Rename hub (2)**, enter hub name **Myhub<inject key="DeploymentID" enableCopy="false" /> (2)**, click on **Next (4)** and then click on **Advanced options (5)**.
 
-    ![](./media/ch-16.png)
+    ![](./media/ch-16-1.png)
+
+1. In the **Expanded Advanced options**, specify the following settings for your project:
+
+    - Subscription : **Leave default subscription (1)** 
+    - Resource Group : Select **AI-900-Module-09 (2)** 
+    - Region : Select **<inject key="Location" enableCopy="false"/> (3)**
+    - Foundry or Azure OpenAI: Click on **Create new Foundry (4)**, provide name as **AI<inject key="DeploymentID" enableCopy="false" /> (5)** and click **OK (6)**
+    - Click on **Create** **(7)**
+
+    ![](./media/ch-16-2.png)
 
 1. Wait for your project to get created.
+
+   ![](./media/mod13-t1s8.png)
 
 1. When the project is created, you will be taken to an **Overview** page of the project details.
 
    ![](./media/mod9-p2t1p8.png)
 
-1. From the left-hand menu on the screen, select **Playgrounds (1)**. On the **Playgrounds** page, scroll down and in the **Speech playground** tile click on **Try the Speech playground (2)** to try out some Azure AI Speech capabilities.
+1. From the left-hand menu on the screen, select **Playgrounds (1)**. On the **Playgrounds** page, scroll down and in the **Speech playground** tile, click on **Try the Speech playground (2)** to try out some Azure AI Speech capabilities.
 
    ![](./media/mod9-p2t1p9.png)
    
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="a78cde3c-b21b-4ea4-9230-2d5a5d655239" />
 
@@ -108,9 +92,9 @@ Let's try out *real-time speech-to-text* in Microsoft Foundry's Speech Playgroun
 
    ![](./media/mod9-p2t2p1.png)
 
-1. On the **Speech Playground** page, scroll down and select **Real-time transcription**.
+1. On the **Speech Playground** page, scroll down and select **Real-time transcription (1)**. Make sure that **Foundry name (2)** is displayed in **Connected resource** placeholder.
 
-   ![](./media/mod9-p2t2p2.png)
+   ![](./media/mod9-p2t2p2-1.png)
 
 1. Copy the highlighted link by right-clicking the [**https://aka.ms/mslearn-speech-files**](https://aka.ms/mslearn-speech-files) and selecting "Copy link" from the context menu, and paste it into a new tab to download **Speech.zip**. 
 
@@ -130,27 +114,7 @@ Let's try out *real-time speech-to-text* in Microsoft Foundry's Speech Playgroun
 
    ![](./media/mod9-p2t2p3.png)
 
-1. Under Real-time transcription section, click on the **Connected resources** drop-down **(1)** and select **Manage AI Services resources (2)**.
-
-   ![](./media/mod9-p2t2p4.png)
-
-1. On the Manage AI Services Resources page, select **AI<inject key="Deployment ID" enableCopy="false"></inject> (1)** resource and then click on **Connect (2)**.
-
-   ![](./media/mod9-p2t2p5.png)
-
-1. On the **Connect an Azure AI services resource** window, from the drop-down select your project **Myproject<inject key="Deployment ID" enableCopy="false"></inject> (1)** and for **Authentication** select **API key (2)** and then click on **Connect (3)**.
-
-   ![](./media/mod9-p2t2p6.png)
-
-1. Now from the left navigation menu, select **AI Services (1)**, then scroll down to the **Infuse your solutions with AI capabilities** and select the **Speech (2)** tile.
-
-   ![](./media/mod9-p2t2p1.png)
-
-1. On the **Speech Playground** page, scroll down and select **Real-time transcription**.
-
-   ![](./media/mod9-p2t2p2.png)
-
-1. Now you can see the name of the resource **AI<inject key="Deployment ID" enableCopy="false"></inject>** in the **Connected resource** section. Click **browse files (1)** to upload the **WhatAICanDo.m4a** file, navigate to **`C:\Users\azureuser\Downloads\Speech` (2)**, select **WhatAICanDo.m4a (3)** file, and click **Open (4)** to begin transcription.
+1. Click **browse files (1)** to upload the **WhatAICanDo.m4a** file, navigate to **`C:\Users\azureuser\Downloads\Speech` (2)**, select **WhatAICanDo.m4a (3)** file, and click **Open (4)** to begin transcription.
 
    ![](./media/mod9-p2t2p7.png)
 
