@@ -1,15 +1,61 @@
-# Lab: Explore generative AI in the Microsoft Foundry portal
+# Lab: Explore generative AI in Microsoft Foundry
 
-Generative AI describes a category of capabilities within AI that create content. People typically interact with generative AI that has been built into chat applications. In this exercise, you try out generative AI in the Microsoft Foundry portal, Microsoft's platform for creating intelligent applications.
+Generative AI describes a category of capabilities within AI that create content. People often interact with generative AI that has been built into chat applications. In this exercise, you try out generative AI in Microsoft Foundry portal, Microsoft's platform for creating intelligent applications. 
 
-## Lab objectives
+
+## Lab Objectives
 
 In this lab, you will perform:
 - Task 1: Create a project in the Microsoft Foundry portal
-- Task 2: Create a GPT-4o deployment model
-- Task 3: Explore generative AI in Microsoft Foundry's chat playground
+- Task 2: Explore generative AI in Foundry's chat playground
 
-## Task 1: Create a project in the Microsoft Foundry portal
+## Task 1: Create a project in Microsoft Foundry
+
+1. Right click on the following link [Microsoft Foundry](https://ai.azure.com) then select **Copy link** and then paste it on the web browser to navigate to **Microsoft Foundry**.
+
+1. Click on **Sign in**.
+
+    ![](./media/af1.png)
+
+1. If prompted, sign in using your Azure credentials.
+
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+
+    - **Password:** <inject key="AzureAdUserPassword"></inject>
+
+1. In the **Explore models and capabilities** section, search for `gpt-4.1` **(1)**. Then, in the search results, select the **gpt-4.1 (2)** model to view its details.    
+
+    ![](./media/af16.png)
+
+1. Select **Use this model**.    
+
+    ![](./media/af17.png)
+
+1. On **Select your project**, select **+ Create a new project**.
+
+    ![](./media/af18.png)
+
+1. On **Select your project**, enter the project name as **Myproject<inject key="DeploymentID" enableCopy="false" /> (1)** then expand **Advanced options (2)**:
+
+    - Subscription: **Leave default subscription (3)** 
+    - Resource Group : Select **AI-900-Module-12-<inject key="Deployment ID" enableCopy="false"></inject> (4)** 
+    - Region : **<inject key="location" enableCopy="false"></inject>** **(5)**
+    - Select **Create and continue (6)**
+
+      ![](./media/af19.png)
+
+1. Wait for the set up process to complete. It may take a few minutes.
+
+1. On the **Deploy gpt 4.1**, select **Deploy**.
+
+    ![](./media/af20.png)
+
+
+
+
+
+
+### Task 1: Create a project in Microsoft Foundry
 
 In this task, we are creating an Microsoft Foundry project and setting up AI resources to explore Vision and Document capabilities.
 
