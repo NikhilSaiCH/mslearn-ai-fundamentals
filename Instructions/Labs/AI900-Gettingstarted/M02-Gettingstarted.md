@@ -2,7 +2,7 @@
 
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared a seamless environment for you to explore and learn Azure Services. Let's begin by making the most of this experience.
 
-# Lab 02: Explore the Content Safety Studio
+# Explore the Content Safety Studio
 
 ### Overall Estimated timing: 30 minutes
 
