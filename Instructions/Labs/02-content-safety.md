@@ -1,4 +1,4 @@
-# Lab 02: Explore Azure AI Services
+# Explore Azure AI Services
 
 ## Lab overview
 
