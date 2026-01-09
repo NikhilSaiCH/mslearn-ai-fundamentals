@@ -3,7 +3,7 @@
 
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared a seamless environment for you to explore and learn Azure Services. Let's begin by making the most of this experience.
 
-# Lab 10: Extract data with Content Understanding in Microsoft Foundry
+# Lab: Extract data with Content Understanding in Microsoft Foundry
 
 ### Overall Estimated timing: 30 Minutes
 
