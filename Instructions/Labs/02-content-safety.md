@@ -1,4 +1,4 @@
-# Explore Azure AI Services
+# Explore the Content Safety Studio
 
 ## Lab overview
 
