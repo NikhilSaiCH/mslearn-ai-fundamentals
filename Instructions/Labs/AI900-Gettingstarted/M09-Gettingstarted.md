@@ -22,14 +22,6 @@ By the end of this lab, you will be able to create a project in Microsoft Foundr
 
 Basic knowledge of Azure AI services and Azure Speech Service.
 
-## Architecture
-
-In this hands-on lab, the architecture flow includes several essential components.
-
-1. **Create a project in Microsoft Foundry portal**: Understanding how to set up a new project in Azure AI Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
-
-1. **Explore Speech to Text in Microsoft Foundry's Speech Playground**: Learning how to convert spoken language into text using Azure AI Foundry's Speech Playground. This includes uploading or recording audio, analyzing transcriptions, and extracting key insights such as speaker identification, timestamps, and sentiment analysis. Additionally, understanding how to integrate the transcribed data into business applications for automation and enhanced accessibility.
-
 # Getting Started with lab
  
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared a seamless environment for you to explore and learn about machine learning and AI concepts and related Microsoft Azure services. Let's begin by making the most of this experience:
