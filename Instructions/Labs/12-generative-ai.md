@@ -1,6 +1,8 @@
 # Lab: Explore generative AI in Microsoft Foundry
 
-Generative AI describes a category of capabilities within AI that create content. People often interact with generative AI that has been built into chat applications. In this exercise, you try out generative AI in Microsoft Foundry portal, Microsoft's platform for creating intelligent applications. 
+Generative AI describes a category of capabilities within AI that create content. People often interact with generative AI that has been built into chat applications.
+
+In this lab, you try out generative AI in Microsoft Foundry portal, Microsoft's platform for creating intelligent applications. 
 
 
 ## Lab Objectives
@@ -10,6 +12,8 @@ In this lab, you will perform:
 - Task 2: Explore generative AI in Foundry's chat playground
 
 ## Task 1: Create a project in Microsoft Foundry
+
+In this task, you will sign in to Microsoft Foundry, explore available models, and create a new project. You will then select the gpt-4.1 model, configure the project with the provided subscription, resource group, and region, and deploy the model for use within your project.
 
 1. Right click on the following link [Microsoft Foundry](https://ai.azure.com) then select **Copy link** and then paste it on the web browser to navigate to **Microsoft Foundry**.
 
@@ -61,7 +65,9 @@ In this lab, you will perform:
 
 
 
-## Task 2: ## Explore generative AI in Foundry's chat playground
+## Task 2: Explore generative AI in Foundry's chat playground
+
+In this task, you will explore Foundry’s Chat playground by interacting with a deployed gpt-4.1 model. You will experiment with prompts to understand how generative AI responds to user input, maintains conversational context, follows system instructions, and refines outputs based on additional guidance, constraints, and external information sources.
 
 1. After the project has been created, in the task pane on the left, select **Playgrounds**. 
 
@@ -143,12 +149,10 @@ In this lab, you will perform:
 
 ### Review
 
-In this Module, you have completed the following tasks:
+In this lab, you have completed the following tasks:
+
 - Created a project in the Microsoft Foundry portal
 - Explored generative AI in Microsoft Foundry's chat playground
 
-## Learn more
-
-This lab demonstrated only some of the capabilities of the Generative AI service. To learn more about what you can do with this service, see the [Generative AI](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/evaluate-generative-ai-app) page.
 
 ## You have successfully completed this lab.
