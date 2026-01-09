@@ -1,9 +1,8 @@
-# Lab: Explore generative AI in Microsoft Foundry
+# Explore generative AI in Microsoft Foundry
 
 Generative AI describes a category of capabilities within AI that create content. People often interact with generative AI that has been built into chat applications.
 
 In this lab, you try out generative AI in Microsoft Foundry portal, Microsoft's platform for creating intelligent applications. 
-
 
 ## Lab Objectives
 
@@ -11,7 +10,7 @@ In this lab, you will perform:
 - Task 1: Create a project in the Microsoft Foundry portal
 - Task 2: Explore generative AI in Foundry's chat playground
 
-## Task 1: Create a project in Microsoft Foundry
+## Task 1: Create a project in Microsoft Foundry portal
 
 In this task, you will sign in to Microsoft Foundry, explore available models, and create a new project. You will then select the gpt-4.1 model, configure the project with the provided subscription, resource group, and region, and deploy the model for use within your project.
 
@@ -56,13 +55,11 @@ In this task, you will sign in to Microsoft Foundry, explore available models, a
 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
    <validation step="41170453-b806-4a87-8243-fd736e4bfab5" />
-
 
 
 ## Task 2: Explore generative AI in Foundry's chat playground
