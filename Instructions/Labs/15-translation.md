@@ -7,6 +7,7 @@ To test the capabilities of the Azure AI Translator service, we'll take a look a
 ## Lab objectives
 
 In this lab, you will perform:
+
 - Task 1: Creating a Translator resource
 - Task 2: Exploring the Translator service 
 
@@ -45,7 +46,7 @@ In this task, you will learn how to create a **Translator** resource in Azure to
 
    ![](media/trnrg.png)
 
-## Task 2: Explore Translator service 
+## Task 2: Explore the Translator service 
 
 In this task, you will learn how to explore the **Translator** service in Azure to understand its features, such as text translation, language detection, and language support for building multilingual applications.
 

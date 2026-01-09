@@ -10,11 +10,11 @@ A common computer vision challenge is to detect and interpret text embedded with
 
 In this lab, you will perform:
 
-- Task 1: Creating an *Azure AI services* resource
+- Task 1: Creating an Azure AI services resource
 - Task 2: Connect your Azure AI service resource to Vision Studio
 - Task 3: Extract text from images in the Vision Studio
 
-### Task 1: Create an *Azure AI services* resource
+### Task 1: Create an Azure AI services resource
 
 In this task, you will learn how to create an **Azure AI Services** resource to leverage AI capabilities for vision, language, and decision-making.
 

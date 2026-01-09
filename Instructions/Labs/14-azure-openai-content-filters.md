@@ -1,20 +1,19 @@
-# Lab: Explore content filters in Microsoft Foundry
+# Explore content filters in Microsoft Foundry
 
 ## Lab overview
 
-In this exercise, you'll explore the effect of the default content filters in Microsoft Foundry.
-Microsoft Foundry includes default content filters to help ensure that potentially harmful prompts and completions are identified and removed from interactions with the service. Additionally, you can apply for permission to define custom content filters for your specific needs to ensure your model deployments enforce the appropriate responsible AI principles for your generative AI scenario. Content filtering is one element of an effective approach to responsible AI when working with generative AI models.
+In this lab, you'll explore the effect of the default content filters in Microsoft Foundry. It includes default content filters to help ensure that potentially harmful prompts and completions are identified and removed from interactions with the service. Additionally, you can apply for permission to define custom content filters for your specific needs to ensure your model deployments enforce the appropriate responsible AI principles for your generative AI scenario. Content filtering is one element of an effective approach to responsible AI when working with generative AI models.
 
 ## Lab Objectives
 
 In this lab, you will perform:
-- Task 1: Deploy a model in an Microsoft Foundry project
+
+- Task 1: Deploy a model in Microsoft Foundry project
 - Task 2: Chat using the content filter
 - Task 3: Create and apply a custom content filter
 - Task 4: Test your custom content filter 
 
-
-### Task 1: Deploy a model in an Microsoft Foundry project
+### Task 1: Deploy a model in Microsoft Foundry project
 
 1. Right-click on the [Microsoft Foundry](https://ai.azure.com/) **(1)** link, select **Copy link (2)** from the context menu, then paste it into a new tab to access the Microsoft Foundry portal.
 
@@ -212,10 +211,10 @@ Let’s have one final chat with the model to see the effect of the custom conte
 ### Review
 
 In this exercise, you have completed the following tasks:
-- Task 1: Deployed a model in an Microsoft Foundry project
-- Task 2: Chat using the content filter
-- Task 3: Created and apply a custom content filter
-- Task 4: Tested your custom content filter 
+- Deployed a model in Microsoft Foundry project
+- Chat using the content filter
+- Created and apply a custom content filter
+- Tested your custom content filter 
 
 
 ## You have successfully completed this lab.

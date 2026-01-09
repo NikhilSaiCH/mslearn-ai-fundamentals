@@ -8,7 +8,7 @@ In this lab, you will create an Azure AI multi-service resource, retrieve its ke
 
 In this lab, you will perform:
 
-- Task 1: Create an Azure AI services resource in the Azure portal
+- Task 1: Create an Azure AI services resource
 - Task 2: Check out the keys and endpoint
 - Task 3: See Azure AI services in action
 
@@ -68,7 +68,7 @@ In order to incorporate Azure AI services into applications, developers need a s
 
 ### Task 3: See Azure AI services in action
 
-Let's start by creating an Microsoft Foundry project.
+In this task, you will explore and interact with Azure AI services through demos in the Azure AI Foundry portal.
 
 1. In a web browser, open the [Microsoft Foundry portal](https://ai.azure.com) at `https://ai.azure.com`.
 
