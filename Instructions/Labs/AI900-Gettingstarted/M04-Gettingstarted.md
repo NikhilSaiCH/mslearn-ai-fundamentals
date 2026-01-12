@@ -12,11 +12,14 @@ In this hands-on lab, you'll gain practical experience in using Azure AI service
 
 ## Objectives
 
-By the end of this lab, you will be able to create a project in Microsoft Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
+By the end of this lab, you will be able to detect human faces in images using Azure AI Face through Vision Studio.
 
-1. **Create a project in Microsoft Foundry portal**: You will learn about configuring an Microsoft Foundry project, provisioning necessary AI resources, and exploring Vision and Document Intelligence capabilities for automated data extraction.
+1. **Create an Azure AI Services resource:**
+You will learn how to create an Azure AI Services multi-service resource in the Azure portal to enable access to Azure AI Face capabilities.
 
-2. **Explore speech to text in Microsoft Foundry's Speech Playground**: You will learn about using Azure AI Speech to Text to convert spoken language into written text, extract key insights from audio data, and interpret the results for further processing.
+2. **Connect Azure AI Services resource to Vision Studio:** You will learn how to associate an existing Azure AI Services resource with Vision Studio to enable face detection features.
+
+3. **Detect faces using Vision Studio:** You will learn how to use Vision Studio to detect human faces in images and view bounding box information.
 
 ## Pre-requisites
 
@@ -26,9 +29,9 @@ Basic knowledge of Azure AI services and Speech service.
 
 In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Create a project in Microsoft Foundry portal**: Understanding how to set up a new project in Microsoft Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
+1. **Provision an Azure AI multi-service resource:** Learn how to create a centralized Azure AI Services resource in the Azure portal that provides access to Azure AI Face capabilities. This includes configuring settings such as subscription, resource group, region, and pricing tier required to enable face detection features.
 
-1. **Explore Speech to Text in Microsoft Foundry's Speech Playground**: Learning how to convert spoken language into text using Microsoft Foundry's Speech Playground. This includes uploading or recording audio, analyzing transcriptions, and extracting key insights such as speaker identification, timestamps, and sentiment analysis. Additionally, understanding how to integrate the transcribed data into business applications for automation and enhanced accessibility.
+1. **Explore and test face detection using Vision Studio:** Use Vision Studio to connect to the Azure AI Services resource and interact with Azure AI Face features. This includes uploading images, detecting human faces, and viewing bounding box coordinates through a graphical interface without writing code.
 
 ## Architecture Diagram
 
@@ -36,9 +39,10 @@ In this hands-on lab, the architecture flow includes several essential component
 
 ## Explanation of Components
 
-1. **Microsoft Foundry**: A centralized platform for managing AI projects, models, and experiments. It provides tools for building, testing, and deploying AI solutions.  
+1. **Vision Studio:** A web-based platform used to explore Azure AI Vision capabilities through a graphical interface. It enables testing of face detection features by analyzing images without requiring code.
 
-2. **Azure AI Speech**: A cloud-based service that enables speech-to-text, text-to-speech, and speech translation capabilities. It provides tools for real-time transcription, voice synthesis, and speaker recognition, allowing developers to integrate natural voice interactions into applications.
+1. **Azure AI Services Resource (Face):**
+A multi-service Azure AI resource that provides access to Azure AI Face capabilities. It processes images submitted from Vision Studio and returns face detection results such as bounding box coordinates.
 
 # Getting Started with lab
  
@@ -46,7 +50,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
 ![Access Your VM and Lab Guide](../media/4-7.png)
 

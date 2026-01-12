@@ -8,50 +8,41 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
 
 ## Overview
 
-In this hands-on lab, you'll gain practical experience in leveraging Microsoft Foundry to build and manage AI solutions. You will learn how to navigate the Microsoft Foundry portal, create an Azure AI hub and project, and integrate connected resources to enhance your AI capabilities. Additionally, you'll explore various AI services available in Microsoft Foundry and deploy a generative AI model, testing its functionality in real-world scenarios. By the end of this lab, you'll be proficient in setting up AI projects, integrating resources, and deploying generative AI models, equipping you with essential skills to develop and manage AI-powered solutions in Azure.
+In this hands-on lab, you will explore the Microsoft Foundry portal and learn how to create and manage AI projects. You will create a project, deploy a generative AI model, and test the model using the Chat Playground. This lab helps you understand the core components and tools available in Microsoft Foundry for deploying and experimenting with generative AI models.
 
 ## Objectives
 
-By the end of this lab, you will be able to create a project in Microsoft Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently.
+By the end of this lab, you will be able to explore and use the core components of Microsoft Foundry.
 
-- **Open Microsoft Foundry portal**
-- **Create an Azure AI hub and project**
-- **Add a connected resource**
-- **Explore AI Services**
-- **Deploy and test a generative AI model**
+1. **Navigate Microsoft Foundry and create a project:** You will learn how to access the Microsoft Foundry portal and create a project to organize AI resources.
+
+1. **Deploy and test a generative AI model:** You will learn how to deploy a generative AI model and test it using the Chat Playground.
 
 ## Pre-requisites
 
-The solution you'll create for Fourth Coffee requires the following resources in your Azure subscription:
-
-- An **Azure AI Search** resource, which will manage indexing and querying.
-
-- An **Azure AI services** resource, which provides AI services for skills that your search solution can use to enrich the data in the data source with AI-generated insights.
-
-    > **Note**
-    > Your Azure AI Search and Azure AI services resources must be in the same location!
-
-- A **Storage account** with blob containers, which will store raw documents and other collections of tables, objects, or files.
+- Basic knowledge of Azure and familiarity with generative AI concepts.
 
 ## Architecture
 
 In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Create a project in Microsoft Foundry portal**: Understanding how to set up a new project in Microsoft Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
+1. **Create a project in Microsoft Foundry portal:** Learn how to create and configure a project in Microsoft Foundry to organize AI resources, manage model assets, and provide a workspace for deploying and testing generative AI models.
 
-1. **Analyze a receipt with Azure AI Document Intelligence in Microsoft Foundry**:  Learning how to upload and analyze a receipt using Azure AI Document Intelligence. This includes extracting key details such as the merchant name, transaction date, and total amount, and understanding how to interpret the extracted data for further processing or integration into business applications.
+1. **Deploy and test a generative AI model:** Use Microsoft Foundry to deploy a base generative AI model and interact with it through the Chat Playground. This enables you to send prompts, apply system instructions, and review generated responses in a controlled environment.
 
 ## Architecture Diagram
 
-![](../media/gg12.png)
+![](../media/lab13arch.png)
 
 ## Explanation of Components
 
-1. **Azure AI Search**: A cloud-based search service that enables intelligent search and data exploration capabilities. It provides tools for indexing, querying, and analyzing structured and unstructured data, incorporating AI-powered features like semantic search, natural language processing, and document understanding.  
+1. **Microsoft Foundry Portal:** A web-based platform used to create, manage, and deploy AI projects and models. It provides tools to organize resources and experiment with generative AI.
 
-1. **Azure AI Services**: A comprehensive suite of pre-built and customizable AI capabilities, including vision, speech, language, and decision-making models. It provides tools for building intelligent applications with features like image recognition, natural language understanding, real-time transcription, and anomaly detection. 
+1. **Microsoft Foundry Project:** A workspace within Microsoft Foundry that groups AI assets such as deployed models and playground configurations for experimentation and testing.
 
-1. **Azure Storage Account**: A cloud-based storage solution that provides scalable, secure, and highly available storage for various data types, including blobs, files, queues, tables, and disks. It offers redundancy options, encryption, and seamless integration with Azure services for data management and analytics.
+1. **Generative AI Model (gpt-4.1):** A large language model deployed in Microsoft Foundry to generate responses based on user prompts and system instructions.
+
+1. **Chat Playground:** An interactive interface in Microsoft Foundry used to test and evaluate generative AI models by sending prompts and reviewing generated outputs.
 
 # Getting Started with lab
  
