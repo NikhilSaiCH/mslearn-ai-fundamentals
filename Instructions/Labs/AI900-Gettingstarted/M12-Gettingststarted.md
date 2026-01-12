@@ -22,6 +22,32 @@ By the end of this lab, you will be able to create a project in Microsoft Foundr
 
 Basic Understanding of Generative AI
 
+## Architecture
+
+In this hands-on lab, the architecture flow includes several essential components.
+
+1. **Microsoft Foundry Portal:** A web-based platform for creating and managing AI projects and accessing generative AI capabilities.
+
+1. **Generative AI Model (gpt-4.1):** A large language model used to generate conversational responses based on user prompts.
+
+1. **Foundry Project:** A project created within Microsoft Foundry that organizes deployed models and playground configurations.
+
+1. **Chat Playground:** An interactive interface used to send prompts to the deployed generative AI model and view generated responses.
+
+## Architecture Diagram
+
+![](../media/lab12-arch.png)
+
+## Explanation of Components:
+
+1. **Microsoft Foundry Portal:** Microsoft Foundry Portal is the centralized platform used to create and manage AI projects and access generative AI capabilities. It provides the environment to browse available models, configure projects, deploy models, and access built-in playgrounds for experimentation.
+
+1. **Generative AI Model (gpt-4.1):** The gpt-4.1 model is a large language model designed to generate human-like text responses. It processes natural language prompts and produces coherent, context-aware responses based on the instructions, conversation history, and constraints provided.
+
+1. **Foundry Project:** A Foundry Project serves as a logical container for organizing deployed models and playground configurations. It links the selected subscription, resource group, region, and deployed generative AI model, enabling controlled access to the Chat Playground.
+
+1. **Chat Playground:** The Chat Playground is an interactive interface within Microsoft Foundry that enables conversational interaction with deployed generative AI models. It allows prompts to be submitted, system instructions to be configured, and responses to be reviewed while maintaining conversational context across multiple interactions.
+
 # Getting Started with lab
  
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared a seamless environment for you to explore and learn about machine learning and AI concepts and related Microsoft Azure services. Let's begin by making the most of this experience:

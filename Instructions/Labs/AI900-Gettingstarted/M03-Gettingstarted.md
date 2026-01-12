@@ -37,7 +37,7 @@ In this lab, the architecture flow involves the following components:
 
 ## Architecture Diagram
 
-![](../media/ex17.png)
+![](../media/lab3-arch.png)
 
 ## Explanation of Components
 
