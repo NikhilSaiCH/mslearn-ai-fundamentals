@@ -8,19 +8,19 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
 
 ## Overview
 
-In this lab, you’ll explore the content filters in Microsoft Foundry to ensure responsible AI behavior. You’ll deploy a model, set up content filters to manage harmful outputs, and generate natural language content using Azure's generative AI capabilities. This exercise is vital for understanding how to ensure ethical AI development and deployment.
+In this lab, you will explore how content filters work in Microsoft Foundry to support responsible AI practices. You will deploy a generative AI model, observe the behavior of default content filters, and create custom content filters to control harmful or inappropriate prompts and responses. By testing different prompts, you will understand how content filtering helps enforce safe and responsible use of generative AI models in Microsoft Foundry.
 
 ## Objectives
 
-By the end of this lab, you will be able to create a project in Microsoft Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
+By the end of this lab, you will be able to explore and apply content filtering capabilities in Microsoft Foundry.
 
-1. Create an AI hub and project in Microsoft Foundry.
+1. **Deploy a model in Microsoft Foundry:** You will learn how to deploy a generative AI model in a Microsoft Foundry project.
 
-2. Deploy the GPT-4o model for natural language generation.
+1. **Chat using the default content filter:** You will learn how default content filters behave when interacting with a deployed model.
 
-3. Explore and customize content filters to prevent harmful outputs.
+1. **Create and apply a custom content filter:** You will learn how to define a custom content filter with stricter blocking thresholds and apply it to a model deployment.
 
-4. Generate natural language output through the deployed model.
+1. **Test the custom content filter:** You will learn how to validate the behavior of a custom content filter by testing blocked and allowed prompts.
 
 ## Pre-requisites
 
@@ -30,29 +30,25 @@ Familiarity with Azure AI services and deploying models in a cloud environment a
 
 In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Microsoft Foundry Portal**: Centralized platform for managing AI projects, models, and services.
+1. **Deploy a generative AI model in Microsoft Foundry:** You will learn how to deploy a generative AI model within a Microsoft Foundry project to enable interaction through the Chat Playground.
 
-2. **AI Hub**: A container for organizing AI projects.
+1. **Apply default and custom content filters:** Use Microsoft Foundry to observe default content filtering behavior and create custom content filters to control harmful or inappropriate prompts and responses.
 
-3. **Content Filters**: Applied to prevent the generation of harmful or inappropriate content based on defined categories (Hate, Sexual, Violence, Self-harm).
-
-4. **Chat Playground**: Interface for interacting with the model and testing content filtering.
+1. **Test content filtering using the Chat Playground:** Interact with the deployed model through the Chat Playground to validate how content filters block or allow prompts based on defined thresholds.
 
 ## Architecture Diagram
 
-![](../media/gg13.png)
+![](../media/lab14-arch.png)
 
 ## Explanation of Components
 
-1. **Microsoft Foundry Portal**: The portal provides a user-friendly interface for managing AI models and resources. It allows users to deploy, configure, and monitor generative AI models.
+1. **Microsoft Foundry Portal:** A web-based platform used to create, manage, and deploy generative AI models. It provides tools to configure model deployments and apply responsible AI controls such as content filters.
 
-2. **AI Hub**: An organizational structure within Microsoft Foundry. It enables you to manage and track multiple projects and related resources, keeping your AI work organized.
+1. **Generative AI Model (Phi-4):** A language model deployed in Microsoft Foundry that generates text responses based on user prompts and is subject to content filtering rules.
 
-3. **GPT-4o Model**: A generative language model deployed in Microsoft Foundry to produce text. You can customize it and apply content filters to ensure outputs are ethical and adhere to guidelines.
+1. **Content Filters:** Rules applied to model inputs and outputs to block or allow content based on categories such as violence, hate, sexual content, and self-harm, helping enforce responsible AI usage.
 
-4. **Content Filters**: These filters help monitor and control the output of generative AI models. Filters can be set for different levels of severity (safe, low, medium, high) for categories like hate speech, sexual content, violence, and self-harm.
-
-5. **Chat Playground**: The interactive space for testing the AI model. You can provide prompts and see how the model responds, while also ensuring that the content adheres to the rules set by the content filters.
+1. **Chat Playground:** An interactive interface in Microsoft Foundry used to test model behavior and observe how default and custom content filters affect generated responses.
 
 # Getting Started with lab
  
@@ -60,7 +56,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
 ![Access Your VM and Lab Guide](../media/4-7.png)
 

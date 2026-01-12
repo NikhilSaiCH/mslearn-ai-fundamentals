@@ -12,11 +12,15 @@ In this hands-on lab, you'll gain practical experience in building and managing 
 
 ## Objectives
 
-By the end of this lab, you will be able to create a project in Microsoft Foundry and analyze a receipt using Azure AI Document Intelligence to extract key information efficiently
+By the end of this lab, you will be able to build and query an AI-powered search index using Azure AI Search.
 
-1. **Create a project in Microsoft Foundry portal**: You will learn about configuring an Microsoft Foundry project, provisioning necessary AI resources, and exploring Vision and Document Intelligence capabilities for automated data extraction.
+1. **Create an Azure AI Search resource:** You will learn how to create and configure an Azure AI Search resource to index and query documents.
 
-2. **Analyze a receipt with Azure AI Document Intelligence in Microsoft Foundry**: You will learn about using Azure AI Document Intelligence to analyze receipts, extract key information such as merchant details, transaction date, and total amount, and interpret the results for further processing.
+2. **Create supporting Azure resources:** You will learn how to create an Azure AI Services resource and a Storage account required for document enrichment and storage.
+
+3. **Index documents using Azure AI Search:** You will learn how to upload documents to Azure Storage and use the Import Data wizard to create an index, indexer, and skillset.
+
+4. **Query the search index and review the knowledge store:** You will learn how to query indexed data using Search Explorer and review enriched data stored in the knowledge store.
 
 ## Pre-requisites
 
@@ -35,9 +39,11 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Create a project in Microsoft Foundry portal**: Understanding how to set up a new project in Microsoft Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
+1. **Provision Azure AI Search and supporting resources:** Create an Azure AI Search resource along with Azure AI Services and Azure Storage to enable document indexing and AI-powered enrichment.
 
-1. **Analyze a receipt with Azure AI Document Intelligence in Microsoft Foundry**:  Learning how to upload and analyze a receipt using Azure AI Document Intelligence. This includes extracting key details such as the merchant name, transaction date, and total amount, and understanding how to interpret the extracted data for further processing or integration into business applications.
+1. **Index and enrich documents using the Import Data wizard:** Use Azure AI Search to extract content from documents stored in Azure Blob Storage, apply AI skills for enrichment, and store enriched data in a knowledge store.
+
+1. **Query indexed data and review enriched outputs:** Query the search index using Search Explorer and review structured and enriched data stored in the knowledge store.
 
 ## Architecture Diagram
 
