@@ -1,4 +1,4 @@
-# Explore the components and tools of Microsoft Foundry
+# Explore AI in Microsoft Foundry
 
 ## Lab overview
 
