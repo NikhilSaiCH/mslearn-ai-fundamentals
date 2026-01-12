@@ -24,6 +24,34 @@ By the end of this lab, you will be able to create a project in Microsoft Foundr
 
 Basic knowledge of Azure AI services and Azure Speech Service.
 
+## Architecture
+
+In this hands-on lab, the architecture flow includes several essential components.
+
+1. **Microsoft Foundry Portal:** A centralized platform for creating and managing AI projects and accessing built-in AI playgrounds.
+
+1. **Azure AI Speech Service:** A cloud-based AI service that provides speech recognition and speech synthesis capabilities.
+
+1. **Speech Playground:** An interactive environment within Microsoft Foundry used to explore speech-to-text and text-to-speech features without writing code.
+
+1. **Audio Input File:** An audio file used as input for speech-to-text transcription in the Speech Playground.
+
+1. **Text Input:** Text provided as input for text-to-speech synthesis using available voice models.
+
+## Architecture Diagram
+
+![](../media/lab9-arch.png)
+
+## Explanation of Components:
+
+1. **Microsoft Foundry Portal:** Microsoft Foundry is the web-based portal used to create and manage AI projects. In this lab, it provides access to the Speech Playground and connects the project to the Azure AI Speech service, enabling hands-on exploration of speech capabilities.
+
+1. **Azure AI Speech Service:**
+Azure AI Speech is a managed AI service that enables converting spoken language into text and synthesizing speech from text. In this lab, it processes uploaded audio files for real-time transcription and generates audio output from text using prebuilt voice models.
+
+1. **Speech Playground:**
+The Speech Playground is a built-in experience within Microsoft Foundry that allows users to test Azure AI Speech features interactively. It provides tools for real-time speech-to-text transcription and text-to-speech synthesis using preconfigured resources.
+
 # Getting Started with lab
  
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared a seamless environment for you to explore and learn about machine learning and AI concepts and related Microsoft Azure services. Let's begin by making the most of this experience:
