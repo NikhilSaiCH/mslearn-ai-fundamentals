@@ -1,4 +1,4 @@
-# Lab 01: Explore Automated Machine Learning in Azure Machine Learning
+# Explore Automated Machine Learning in Azure Machine Learning
 
 ## Lab overview
 
@@ -11,8 +11,6 @@ In this lab, you will perform:
 - Task 1: Creating an Azure Machine Learning workspace resource
 - Task 2: Use automated machine learning to train a model
 - Task 3: Deploy the model
-
-## Exercise 1: Explore Automated Machine Learning in Azure Machine Learning
 
 ### Task 1: Create an Azure Machine Learning workspace
 
@@ -73,9 +71,9 @@ In this task, you will create an Azure Machine Learning workspace. You will sear
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-  <validation step="19f87603-9f16-4107-b94f-d92593b422ce" />
+  <validation step="0e571ab6-2856-478e-afa3-41efc38df116" />
 
-#### Enable preview features
+### Enable preview features
 
 Some features of Azure Machine Learning are in preview and need to be explicitly enabled in your workspace.
 
@@ -95,7 +93,7 @@ Automated machine learning enables you to try multiple algorithms and parameters
 
 > **Citation**: *The data used in this exercise is derived from [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) and is used in accordance with the published data [license agreement](https://www.capitalbikeshare.com/data-license-agreement)*.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), naviage to the **Automated ML (1)** page (under **Authoring**), select  **+ New Automated ML job (2)**.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), navigate to the **Automated ML (1)** page (under **Authoring**), select  **+ New Automated ML job (2)**.
 
    ![](media/ai900-3.png)  
 
@@ -254,16 +252,6 @@ When the automated machine learning job has completed, you can review the best m
 
    >**Note**: Check the **Notifications** bar to verify the status of the operation.
 
-## Validation
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Hit the Validate button for the corresponding task. You will receive a success message. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-  <validation step="aa2662f4-59fd-4d38-9d2f-201214b4f21b" />
-
 ### Task 4: Test the deployed service
 
 Now you can test your deployed service.
@@ -317,6 +305,15 @@ Now you can test your deployed service.
     The test pane took the input data and used the model you trained to return the predicted number of rentals.
 
 Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological *features*.
+
+## Validation
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="d5b3d279-a696-4a1d-b7c5-370eca8ae53a" />
 
 ### Review
 In this lab, you have completed the following tasks:

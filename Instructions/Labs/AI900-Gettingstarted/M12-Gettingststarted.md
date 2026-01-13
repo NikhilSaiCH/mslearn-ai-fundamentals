@@ -9,15 +9,15 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
 
 ## Overview
 
-This lab provides an introduction to generative AI through the Microsoft Foundry portal, Microsoft's platform for creating and deploying intelligent applications. In this exercise, you'll interact with the Chat playground in Microsoft Foundry, where you will explore the deployment of the GPT-4o model, learn how to optimize responses, and understand effective prompting techniques to refine outputs from generative AI.
+This lab provides an introduction to generative AI through the Microsoft Foundry portal, Microsoft's platform for creating and deploying intelligent applications. In this lab, you'll interact with the Chat playground in Microsoft Foundry, where you will explore the deployment of the GPT-4.1 model, learn how to optimize responses, and understand effective prompting techniques to refine outputs from generative AI.
 
 ## Objective
 
-By the end of this lab, you will be able to create a project in Microsoft Foundry and analyze a receipt using Microsoft Document Intelligence to extract key information efficiently
+By the end of this lab, you will be able to create a project in Microsoft Foundry and explore generative AI capabilities by interacting with a deployed GPT model in the Chat playground.
 
-1. Create a Project in the Microsoft Foundry portal to organize and set up AI resources.
+1. **Create a project in Microsoft Foundry:** You will learn how to create and configure a project in the Microsoft Foundry portal, explore available foundation models, and deploy the gpt-4.1 model for use within the project.
 
-2. Explore Generative AI in the Microsoft Foundry’s Chat playground, interact with a deployed GPT model, and experiment with response optimization techniques.
+2. **Explore generative AI using the Chat playground:** You will learn how to interact with a deployed GPT model in Foundry’s Chat playground, experiment with prompts, understand conversational context, system prompts, and refine responses using prompt design techniques.
 
 ## Pre-requisites
 
@@ -27,31 +27,28 @@ Basic Understanding of Generative AI
 
 In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Microsoft Foundry Portal**: The platform for creating, managing, and deploying AI models and resources.
+1. **Microsoft Foundry Portal:** A web-based platform for creating and managing AI projects and accessing generative AI capabilities.
 
-2. **Microsoft Project**: A container for organizing your work within the portal.
+1. **Generative AI Model (gpt-4.1):** A large language model used to generate conversational responses based on user prompts.
 
-3. **Chat Playground**: An interactive environment where you can test the deployed model by sending prompts and receiving responses.
+1. **Foundry Project:** A project created within Microsoft Foundry that organizes deployed models and playground configurations.
 
-4. **Deployment**: The process of deploying the GPT-4o model to make it available for interaction within the playground.
+1. **Chat Playground:** An interactive interface used to send prompts to the deployed generative AI model and view generated responses.
 
 ## Architecture Diagram
 
-![](../media/gg11.png)
+![](../media/lab12-arch.png)
 
-## Explanation of Components
+## Explanation of Components:
 
-1. **Microsoft Foundry Portal**: This is the central hub where users can create and manage projects, deploy AI models, and interact with various AI capabilities. It offers a user-friendly interface to experiment with different AI models and services without requiring deep technical knowledge.
+1. **Microsoft Foundry Portal:** Microsoft Foundry Portal is the centralized platform used to create and manage AI projects and access generative AI capabilities. It provides the environment to browse available models, configure projects, deploy models, and access built-in playgrounds for experimentation.
 
-2. **Microsoft Project**: A project in the Microsoft Foundry serves as an organizational unit for grouping and managing resources. Each project is linked to a hub, which provides a workspace for various tasks related to AI models, data processing, and exploration.
+1. **Generative AI Model (gpt-4.1):** The gpt-4.1 model is a large language model designed to generate human-like text responses. It processes natural language prompts and produces coherent, context-aware responses based on the instructions, conversation history, and constraints provided.
 
-3. **GPT-4o Model**: The GPT-4o model is a large language model developed by OpenAI that can understand and generate human-like text. When deployed in the Chat playground, GPT-4o is used to generate responses to user inputs (prompts), which can vary from answering factual questions to providing creative suggestions.
+1. **Foundry Project:** A Foundry Project serves as a logical container for organizing deployed models and playground configurations. It links the selected subscription, resource group, region, and deployed generative AI model, enabling controlled access to the Chat Playground.
 
-4. **Deployment**: To begin using GPT-4o in the Microsoft Foundry, the model must be deployed first. The deployment process makes the model accessible in the chat playground and allows it to interact with users' inputs.
+1. **Chat Playground:** The Chat Playground is an interactive interface within Microsoft Foundry that enables conversational interaction with deployed generative AI models. It allows prompts to be submitted, system instructions to be configured, and responses to be reviewed while maintaining conversational context across multiple interactions.
 
-5. **Chat Playground**: The Chat playground is an interactive interface where you can test the generative AI model by sending different prompts and receiving responses. It allows you to iterate on your prompts, providing insights into how well the model performs and how you can improve its outputs.
-
-6. **Prompting Techniques**: Effective prompting is crucial for optimizing the model's responses. In this lab, you’ll experiment with various techniques to guide the model’s output, such as providing clear instructions, setting expectations, and providing context. You’ll also learn how to iterate on prompts to refine the responses.
 
 # Getting Started with lab
  
@@ -59,7 +56,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
 ![Access Your VM and Lab Guide](../media/4-7.png)
 
@@ -87,7 +84,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## Managing Your Virtual Machine
  
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](../media/aig4.png)
 
@@ -123,61 +120,11 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
      ![Enter Your Password](../media/pwd.png)
  
-4. If prompted to stay signed in, you can click **No**.
-
-5. If **Action required** pop-up window appears, click on **Ask later**.
-   
-    ![](../media/asklater.png)
- 
 6. If prompted to stay signed in, you can click "No."
 
     ![](../media/staysigned2.png)
  
 7. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel**.
-
-## Steps to Proceed with MFA Setup if the "Ask Later" Option is Not Visible
-
-1. If you see the pop-up **Stay Signed in?**, click **No**.
-
-1. If **Action required** pop-up window appears, click on **Next**.
-
-   
-   ![](../media/mfa1.png)
-
-1. On **Start by getting the app** page, click on **Next**.
-1. Click on **Next** twice.
-1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
-
-   ![Install](../media/mfa2.png)
-
-   > Note: For Ios, Open the app store and repeat the steps.
-
-   > Note: Skip if already installed.
-
-1. Open the app and tap on **Scan a QR code**.
-
-1. Scan the QR code visible on the screen and click on **Next**.
-
-   ![QR code](../media/mfa3.png)
-
-1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
-
-1. Once the notification is approved, click on **Next**.
-
-   ![Approved](../media/mfa4.png)
-
-1. Click on **Done**.
-
-1. If prompted to stay signed in, you can click **"No"**.
-
-1. Tap on **Finish** in the Mobile Device.
-
-   > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
-
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
-
 
 ## Support Contact
  
