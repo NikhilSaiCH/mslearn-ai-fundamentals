@@ -2,18 +2,19 @@
 
 ## Lab overview
 
-In this exercise, you will explore the Microsoft Foundry portal and learn how to create, manage, and deploy generative AI models within the Azure ecosystem. You will gain hands-on experience working with Azure AI hubs, projects, and deploying AI models like GPT-4.1.
+In this exercise, you will explore Microsoft Foundry and understand how generative AI models power modern AI applications. You will learn how to create a project in Microsoft Foundry, browse available foundation models, deploy a generative AI model, and interact with it using the built-in playground.
 
 ## Lab objectives
 
 In this exercise, you will perform:
 
-- Task 1: Navigate to Microsoft Foundry and create a project
-- Task 2: Deploy and test a generative AI model
+- Task 1: Create a project in Microsoft Foundry
+- Task 2: Browse models and deploy for testing
+- Task 3: Test the model in a Playground
 
-### Task 1: Navigate to Microsoft Foundry and create a project
+### Task 1: Create a project in Microsoft Foundry
 
-In this task, you will gain hands-on experience in setting up a collaborative workspace for AI projects and configuring essential resources.
+In this task, you will learn how to access the Microsoft Foundry portal and create a new project. This project acts as a centralized workspace where AI models, deployments, and tools are managed, forming the foundation for building and testing AI-powered applications.
 
 1. Copy the **Microsoft Foundry** link and paste it into a new browser tab to access the portal: `https://ai.azure.com?azure-portal=true`
 
@@ -35,13 +36,11 @@ In this task, you will gain hands-on experience in setting up a collaborative wo
 
    ![](./media/mod6-p2t1p3.png)
 
-1. In the browser, navigate to `https://ai.azure.com/managementCenter/allResources` and click on **Create new**.
+1. At the top of the **Microsoft Foundry** portal, enable the **New Foundry toggle (1)** to switch to the latest Foundry user interface.
 
-    ![](./media/AI-l6-1.png)
+1. From the **Select a project to continue** dialog, click the drop-down under **Select or search for a project**, and then select **Create a new project (2)**.
 
-1. Choose the option to create a **Microsoft Foundry resource (1)** and then select **Next (2)**.
-
-   ![](./media/mod6-p2t1p4.png)
+    ![](./media/lab13-l1.png)
 
 1. In the **Create a project** wizard, enter project name **Myproject<inject key="DeploymentID" enableCopy="false" /> (1)**, and **Expand Advanced options (2)** to specify the following settings for your project: 
 
@@ -51,59 +50,75 @@ In this task, you will gain hands-on experience in setting up a collaborative wo
     - Region : Select **<inject key="location" enableCopy="false"/> (6)**
     - Click on **Create** **(7)**
 
-      ![](./media/mod13-t1s7.png)
+      ![](./media/lab13-l2.png)
 
 1. Wait for your project created.
 
-   ![](./media/mod13-t1s8.png)
+   ![](./media/lab13-l3.png)
 
-1. When the project is created, you will be taken to an **Overview** page of the project details.
+1. Once the setup is complete, you are automatically redirected to the **Microsoft Foundry home page** for the newly created project.
 
-   ![](./media/mod13-t1s9.png)
+   ![](./media/lab13-l4.png)
 
-1. In the Azure Microsoft Foundry project, go to the **My assets** section, then select **Models + endpoints (1)**. Click **+ Deploy model (2)** and choose **Deploy base model (3)** from the drop-down to continue.
+### Task 2: Browse models and deploy for testing
 
-   ![](media/dbm.png)
+In this task, you will explore the model catalog in Microsoft Foundry to understand the variety of foundation models available. You will search for a generative AI model and deploy it using default settings, preparing it for interactive testing and experimentation.
 
-1. Search **gpt-4.1 (1)** for and select the **gpt-4.1 model (2)** and click on **Confirm (3)**.
+1. On the **Microsoft Foundry** home page, click **Start building (1)**, and then select **Browse models (2)** from the drop-down menu.
 
-   ![](media/mod13-t1s11.png)
+    ![](./media/lab13-l5.png)
 
-1. Click on **Customize**.
+1. With the Models page, you can discover thousands of models that are Microsoft and third-party-owned. These models form the foundation of the AI applications by powering their reasoning capabilities. 
 
-   ![](media/xxai71.png)
+    ![](./media/lab13-l5.1.png)
 
-1. In the window that appears, reduce the token to **50 K (1)** and click on **Deploy (2)**.
-   
-   ![](media/mod13-t1s13.png)
+1. On the **Models** page, search for **gpt-4.1 (1)** in the search bar, and then select the **gpt-4.1 (2)** model from the search results.
 
-1. After deployment, click **Model + Endpoints (1)** under **My assets** to view the deployed **gpt-4.1 (2)** model.
+    ![](./media/lab13-l6.png)
 
-   ![](./media/mod13-t1s14.png)
+1. On the **gpt-4.1** model details page, click **Deploy (1)**, and then select **Default settings (2)** to deploy the model using the standard configuration.
 
-## Task 2: Deploy and test a generative AI model
+    ![](./media/lab13-l7.png)
 
-1. In the navigation pane on the left for your project, select **Playgrounds (1)** and click on  **Try the Chat Playground (2)**.
+## Task 3: Test the model in a Playground
 
-   ![](media/tcp.png)
+In this task, you will interact with the deployed generative AI model using the Playground interface. By submitting prompts and reviewing responses, you will observe how AI models support different workloads and how users interact with AI applications through chat-based experiences.
 
-1. In the window that appears, ensure that your **gpt-4.1 (1)** model deployment is selected.
+1. You can test and customize the deployed model's capabilities in a **Playground** setting. Notice the model you are working with is selected at the top of the screen.
 
-1. In the Setup pane, in the Give the model instructions and context box, enter the instruction as: **You are a history teacher who can answer questions about past events all around the world. (2)** and click on **Apply Changes (3)**.
+   ![](./media/lab13-l10.png)
 
-   ![](media/mod13-t2s2.png)
+1. Let's try chatting with the model, in the **Chat** pane, enter the following prompt **(1)** and then click **Send (2)** to submit the request to the model.
 
-1. For the **Update system message?** prompt, click on **Continue**
+   ```prompt
+    I'm getting started with AI. Can you summarize the relationship between a model and AI application?
+    ```
 
-   ![](media/usm.png)
+    ![](./media/lab13-l11.png)
 
-1. In the chat window, enter a query such as **What are the key events in the history of Scotland? (1)**  and press **send button (2)** to view the response.
+1. Review the results. Does this reflect your understanding of how these models can be used for AI applications? 
 
-   ![](media/hist.png)
+    ![](./media/lab13-l12.png)
 
-   ![](media/resp1.png)
+1. In the chat screen, enter the following prompt: 
 
-   >**Note**: The output may vary for the query.
+    ```prompt
+    Give one example for each AI workload: generative AI, AI agents and automation, text analysis, computer vision, and information extraction.
+    ```
+1. Review the results. Feel free to ask for more examples. 
+
+   ![](./media/lab13-l13.png)
+
+1. When you interact with the model in the playground setting, you are using a chat user interface. The chatbot interface is a common way humans interact with *AI assistants* today.  In the chat screen, enter the following prompt: 
+
+    ```prompt
+    List five different ways humans interact with AI other than with a chat interface.
+    ```
+
+1. Review the results. The key point is that while *workloads* define the types of tasks an AI application can complete, the *user interface* defines how humans interact with that AI application. Ultimately, each AI application's reasoning is powered by models, which is the core building block we looked at in this exercise. What is very powerful about the models available to us now is that they are capable of solving for multiple workloads, often with one user interface. Thus, with one project in Foundry, you can access models, solve for multiple workloads, and build AI applications at scale. 
+
+   ![](./media/lab13-l14.png)
+
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. you will receive a success message.
@@ -112,14 +127,11 @@ In this task, you will gain hands-on experience in setting up a collaborative wo
 
   <validation step="6b5cc888-bc2a-47c8-b31c-e65157a50f66" />
 
-### Summary
-
-In this exercise, you’ve explored Microsoft Foundry and seen how to create projects and explore Azure AI Services and Azure OpenAI models in the Microsoft Foundry portal.
-
 ### Review
 
 In this exercise, you have completed the following tasks:
-- Naviagted to Microsoft Foundry and created a project  
-- Deployed and tested a generative AI model
+- Created a project in Microsoft Foundry
+- Browsed and deployed model for testing
+- Tested the model in a Playground
 
 ## You have successfully completed this lab.
