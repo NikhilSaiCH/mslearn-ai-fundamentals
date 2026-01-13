@@ -5,7 +5,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
 
 # Module 03: Analyze images in the Microsoft Foundry portal
 
-### Overall Estimated timing: 30 minutes
+### Overall Estimated timing: 30 Minutes
 
 ## Overview
 
@@ -37,7 +37,7 @@ In this lab, the architecture flow involves the following components:
 
 ## Architecture Diagram
 
-![](../media/gg9.png)
+![](../media/lab3-arch.png)
 
 ## Explanation of Components
 
@@ -51,7 +51,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
 ![Access Your VM and Lab Guide](../media/4-7.png)
 
@@ -79,7 +79,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## Managing Your Virtual Machine
  
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](../media/aig4.png)
 
@@ -115,61 +115,11 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
      ![Enter Your Password](../media/pwd.png)
  
-4. If prompted to stay signed in, you can click **No**.
-
-5. If **Action required** pop-up window appears, click on **Ask later**.
-   
-    ![](../media/asklater.png)
- 
-6. If prompted to stay signed in, you can click "No."
+4. If prompted to stay signed in, you can click "No."
 
     ![](../media/staysigned2.png)
  
-7. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel**.
-
-## Steps to Proceed with MFA Setup if the "Ask Later" Option is Not Visible
-
-1. If you see the pop-up **Stay Signed in?**, click **No**.
-
-1. If **Action required** pop-up window appears, click on **Next**.
-
-   
-   ![](../media/mfa1.png)
-
-1. On **Start by getting the app** page, click on **Next**.
-1. Click on **Next** twice.
-1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
-
-   ![Install](../media/mfa2.png)
-
-   > Note: For Ios, Open the app store and repeat the steps.
-
-   > Note: Skip if already installed.
-
-1. Open the app and tap on **Scan a QR code**.
-
-1. Scan the QR code visible on the screen and click on **Next**.
-
-   ![QR code](../media/mfa3.png)
-
-1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
-
-1. Once the notification is approved, click on **Next**.
-
-   ![Approved](../media/mfa4.png)
-
-1. Click on **Done**.
-
-1. If prompted to stay signed in, you can click **"No"**.
-
-1. Tap on **Finish** in the Mobile Device.
-
-   > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
-
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
-
+5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel**.
 
 ## Support Contact
  

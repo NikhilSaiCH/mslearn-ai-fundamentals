@@ -17,7 +17,10 @@ By the end of this lab, you will be able to create a project in Microsoft Foundr
 
 1. **Create a project in Microsoft Foundry portal**: You will learn about configuring an Microsoft Foundry project, provisioning necessary AI resources, and exploring Vision and Document Intelligence capabilities for automated data extraction.
 
-2. **Explore speech to text in Microsoft Foundry's Speech Playground**: You will learn about using Azure AI Speech to Text to convert spoken language into written text, extract key insights from audio data, and interpret the results for further processing.
+1. **Explore speech to text in Microsoft Foundry's Speech Playground**: You will learn about using Azure AI Speech to convert spoken language into written text, extract key insights from audio data, and interpret the results for further processing.
+
+1. **Explore text to speech in Microsoft Foundry's Speech Playground**: You will learn about using Azure AI Speech text into spoken language, extract key insights from audio data, and interpret the results for further processing.
+
 
 ## Pre-requisites
 
@@ -27,19 +30,29 @@ Basic knowledge of Azure AI services and Azure Speech Service.
 
 In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Create a project in Microsoft Foundry portal**: Understanding how to set up a new project in Microsoft Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
+1. **Microsoft Foundry Portal:** A centralized platform for creating and managing AI projects and accessing built-in AI playgrounds.
 
-1. **Explore Speech to Text in Microsoft Foundry's Speech Playground**: Learning how to convert spoken language into text using Microsoft Foundry's Speech Playground. This includes uploading or recording audio, analyzing transcriptions, and extracting key insights such as speaker identification, timestamps, and sentiment analysis. Additionally, understanding how to integrate the transcribed data into business applications for automation and enhanced accessibility.
+1. **Azure AI Speech Service:** A cloud-based AI service that provides speech recognition and speech synthesis capabilities.
+
+1. **Speech Playground:** An interactive environment within Microsoft Foundry used to explore speech-to-text and text-to-speech features without writing code.
+
+1. **Audio Input File:** An audio file used as input for speech-to-text transcription in the Speech Playground.
+
+1. **Text Input:** Text provided as input for text-to-speech synthesis using available voice models.
 
 ## Architecture Diagram
 
-![](../media/g7.png)
+![](../media/lab9-arch.png)
 
-## Explanation of Components
+## Explanation of Components:
 
-1. **Microsoft Foundry**: A centralized platform for managing AI projects, models, and experiments. It provides tools for building, testing, and deploying AI solutions.  
+1. **Microsoft Foundry Portal:** Microsoft Foundry is the web-based portal used to create and manage AI projects. In this lab, it provides access to the Speech Playground and connects the project to the Azure AI Speech service, enabling hands-on exploration of speech capabilities.
 
-2. **Azure Speech Service**: A cloud-based service that provides advanced speech capabilities, including speech-to-text, text-to-speech, speech translation, and speaker recognition. It enables developers to integrate real-time transcription, natural-sounding voice synthesis, and multilingual speech processing into applications.
+1. **Azure AI Speech Service:**
+Azure AI Speech is a managed AI service that enables converting spoken language into text and synthesizing speech from text. In this lab, it processes uploaded audio files for real-time transcription and generates audio output from text using prebuilt voice models.
+
+1. **Speech Playground:**
+The Speech Playground is a built-in experience within Microsoft Foundry that allows users to test Azure AI Speech features interactively. It provides tools for real-time speech-to-text transcription and text-to-speech synthesis using preconfigured resources.
 
 # Getting Started with lab
  
@@ -47,7 +60,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
 ![Access Your VM and Lab Guide](../media/4-7.png)
 
@@ -75,7 +88,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## Managing Your Virtual Machine
  
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](../media/aig4.png)
 
@@ -111,60 +124,11 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
      ![Enter Your Password](../media/pwd.png)
  
-4. If prompted to stay signed in, you can click **No**.
-
-5. If **Action required** pop-up window appears, click on **Ask later**.
-   
-    ![](../media/asklater.png)
- 
-6. If prompted to stay signed in, you can click "No."
+4. If prompted to stay signed in, you can click "No."
 
     ![](../media/staysigned2.png)
  
-7. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel**.
-
-## Steps to Proceed with MFA Setup if the "Ask Later" Option is Not Visible
-
-1. If you see the pop-up **Stay Signed in?**, click **No**.
-
-1. If **Action required** pop-up window appears, click on **Next**.
-   
-   ![](../media/mfa1.png)
-
-1. On **Start by getting the app** page, click on **Next**.
-1. Click on **Next** twice.
-1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
-
-   ![Install](../media/mfa2.png)
-
-   > Note: For Ios, Open the app store and repeat the steps.
-
-   > Note: Skip if already installed.
-
-1. Open the app and tap on **Scan a QR code**.
-
-1. Scan the QR code visible on the screen and click on **Next**.
-
-   ![QR code](../media/mfa3.png)
-
-1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
-
-1. Once the notification is approved, click on **Next**.
-
-   ![Approved](../media/mfa4.png)
-
-1. Click on **Done**.
-
-1. If prompted to stay signed in, you can click **"No"**.
-
-1. Tap on **Finish** in the Mobile Device.
-
-   > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
-
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
-
+5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel**.
 
 ## Support Contact
  
