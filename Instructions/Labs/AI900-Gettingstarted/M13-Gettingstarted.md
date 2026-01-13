@@ -4,7 +4,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
 
 # Explore the components and tools of Microsoft Foundry
 
-### Overall Estimated timing: 45 minutes
+### Overall Estimated timing: 45 Minutes
 
 ## Overview
 
@@ -14,9 +14,9 @@ In this hands-on lab, you will explore the Microsoft Foundry portal and learn ho
 
 By the end of this lab, you will be able to explore and use the core components of Microsoft Foundry.
 
-1. **Navigate Microsoft Foundry and create a project:** You will learn how to access the Microsoft Foundry portal and create a project to organize AI resources.
+1. **Create a project in Microsoft Foundry:** You will learn how to access the Microsoft Foundry portal and create a project to organize and manage AI models and resources.
 
-1. **Deploy and test a generative AI model:** You will learn how to deploy a generative AI model and test it using the Chat Playground.
+1. **Deploy and test a generative AI model:** You will learn how to browse available foundation models, deploy a generative AI model, and interact with it using the Playground to understand how models power AI applications.
 
 ## Pre-requisites
 
@@ -28,11 +28,11 @@ In this hands-on lab, the architecture flow includes several essential component
 
 1. **Create a project in Microsoft Foundry portal:** Learn how to create and configure a project in Microsoft Foundry to organize AI resources, manage model assets, and provide a workspace for deploying and testing generative AI models.
 
-1. **Deploy and test a generative AI model:** Use Microsoft Foundry to deploy a base generative AI model and interact with it through the Chat Playground. This enables you to send prompts, apply system instructions, and review generated responses in a controlled environment.
+1. **Deploy and test a generative AI model:** Use Microsoft Foundry to deploy a base generative AI model and interact with it through the Playground. This enables you to send prompts, apply system instructions, and review generated responses in a controlled environment.
 
 ## Architecture Diagram
 
-![](../media/lab13arch.png)
+![](../media/lab13--arch.png)
 
 ## Explanation of Components
 
@@ -42,7 +42,7 @@ In this hands-on lab, the architecture flow includes several essential component
 
 1. **Generative AI Model (gpt-4.1):** A large language model deployed in Microsoft Foundry to generate responses based on user prompts and system instructions.
 
-1. **Chat Playground:** An interactive interface in Microsoft Foundry used to test and evaluate generative AI models by sending prompts and reviewing generated outputs.
+1. **Playground:** An interactive interface in Microsoft Foundry used to test and evaluate generative AI models by sending prompts and reviewing generated outputs.
 
 # Getting Started with lab
  
@@ -50,7 +50,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
 ![Access Your VM and Lab Guide](../media/4-7.png)
 
@@ -78,7 +78,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## Managing Your Virtual Machine
  
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](../media/aig4.png)
 
