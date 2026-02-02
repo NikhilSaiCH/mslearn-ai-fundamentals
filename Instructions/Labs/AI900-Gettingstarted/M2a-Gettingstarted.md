@@ -2,9 +2,9 @@
 
 Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We're excited to guide you through hands-on learning with Azure AI services. Let’s continue by diving deeper into content moderation.
 
-# Module 2a: Explore Content Safety in Azure AI Foundry
+# Module 2a: Get started with generative AI and agents in Microsoft Foundry
 
-### Overall Estimated Timing: 30 minutes
+### Overall Estimated Timing: 45 Minutes
 
 ## Overview
 
