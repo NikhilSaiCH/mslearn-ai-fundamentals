@@ -18,6 +18,7 @@ In this exercise, you will perform:
 - Task 6: Save the model configuration as an agent
 - Task 7: Add a knowledge tool to the agent
 - Task 8: Explore options to use the agent
+
 ### Task 1: Create a Microsoft Foundry project
 
 Microsoft Foundry uses *projects* to organize models, resources, data, and other assets used to develop an AI solution.
