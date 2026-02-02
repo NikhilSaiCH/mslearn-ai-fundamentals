@@ -8,42 +8,52 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We're excited 
 
 ## Overview
 
-In this lab, you will explore Azure AI Content Safety’s text moderation capabilities. You'll test various text inputs to understand how the service detects and categorizes potentially harmful or inappropriate content. This lab will help you learn how to use Content Safety Studio to analyze text, interpret severity scores, and review content categories, preparing you to integrate text moderation into your applications effectively.
+In this lab, you will explore Microsoft Foundry to deploy and interact with a generative AI model. You will then extend the model into an agent that can use knowledge tools to answer user questions accurately. The lab demonstrates how to manage AI resources, experiment with model prompts and parameters, and build an agentic AI solution that can be integrated into applications.
 
 ## Objectives
 
 By the end of this lab, you will be able to:
 
-1. **Test text moderation using Azure AI Content Safety**: Input sample texts and see how the service categorizes content based on safety policies.
-
-2. **Understand severity levels and categories**: Learn to interpret the results and severity scores assigned by the service for various types of content such as hate speech, self-harm, or sexual content.
-
-3. **Access and use Content Safety Studio tools**: Familiarize yourself with the Content Safety Studio interface for testing and analyzing text content.
+1. **Create a Microsoft Foundry project:** set up a workspace to organize and manage AI resources.  
+2. **Deploy and interact with a generative AI model:** explore chat functionality and conversation context.  
+3. **Experiment with system prompts and parameters:** control response style, length, and creativity.  
+4. **Save a model as an agent and configure instructions:** turn a model into an agentic AI assistant.  
+5. **Add knowledge tools and preview the agent:** enable informed responses and explore integration options.
 
 ## Pre-requisites
 
 * Basic knowledge of Azure Portal.
-* Familiarity with AI concepts related to content moderation.
+* Familiarity with generative AI concepts and chat-based AI interactions.  
 
 ## Architecture
 
-The lab architecture demonstrates how Azure AI Content Safety text moderation integrates into applications:
+This lab demonstrates how Microsoft Foundry supports generative AI model deployment and agent creation. The architecture shows how models, agents, and knowledge tools interact to provide an AI-powered assistant experience.
 
-1. **Azure AI Content Safety Resource**: Provisioned in the Azure portal, this resource processes and analyzes input text, assigning severity scores based on predefined content categories.
+1. **Microsoft Foundry Project:** A workspace to manage AI resources, models, and agents.  
 
-2. **Content Safety Studio Interface**: A web-based portal to test text inputs, visualize analysis results, and understand moderation feedback before integrating it into your own solutions.
+2. **Generative AI Model:** Deployed from the Foundry model catalog (e.g., GPT-4.1-mini) for interactive chat and testing.  
+
+3. **Agent Configuration:** Encapsulates the model, instructions, and tools to create an agentic AI assistant.  
+
+4. **Knowledge Tools:** Uploaded documents (like company policies) that the agent can use to provide informed responses.  
+
+5. **Client Integration:** Sample code and APIs to consume the agent programmatically or integrate it into enterprise applications.  
 
 ## Architecture Diagram
 
-![](../media/Module2a_Architecture.png)
+![](../media/lab2a-arch.png)
 
 ## Explanation of Components
 
-1. **Azure AI Content Safety Text Moderation**: An AI-powered service that scans text inputs for harmful or inappropriate content, enabling developers to protect users and comply with content policies.
+**Microsoft Foundry Project:** The project is the central workspace to manage AI resources, including models, agents, and knowledge tools. It provides a hub to organize deployments, access model catalogs, and test models in the playground.
 
-2. **Severity Scoring**: The system rates each category (e.g., hate, violence, sexual content) on a severity scale to help prioritize moderation efforts.
+**Generative AI Model:** This is the deployed model (e.g., GPT-4.1-mini) that powers chat interactions and generates responses. It can be configured with system prompts and parameters to control style, length, and behavior.
 
-3. **Content Safety Studio**: Provides a hands-on environment for testing text moderation capabilities and understanding how the service works before 
+**Agent Configuration:** An agent wraps the model with instructions and parameters to create a task-specific AI assistant. For example, an `expenses-agent` can help employees with expense claims and maintain consistent behavior.
+
+**Knowledge Tools:** Knowledge tools are files or data sources that the agent can query to provide accurate, context-aware responses. For instance, uploading `expenses_policy.docx` allows the agent to answer questions based on company policies.
+
+**Client Integration:** Applications interact with the agent using APIs or SDKs, such as Python or OpenAI Responses API. This allows embedding the agent in Microsoft 365, Teams, or custom apps for real-time AI assistance.
 
 # Getting Started with lab
  
@@ -51,7 +61,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
 ![Access Your VM and Lab Guide](../media/4-7.png)
 
@@ -117,59 +127,11 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
 4. If prompted to stay signed in, you can click **No**.
 
-5. If **Action required** pop-up window appears, click on **Ask later**.
-   
-    ![](../media/asklater.png)
- 
 6. If prompted to stay signed in, you can click "No."
 
     ![](../media/staysigned2.png)
  
 7. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel**.
-
-## Steps to Proceed with MFA Setup if the "Ask Later" Option is Not Visible
-
-1. If you see the pop-up **Stay Signed in?**, click **No**.
-
-1. If **Action required** pop-up window appears, click on **Next**.
-
-   
-   ![](../media/mfa1.png)
-
-1. On **Start by getting the app** page, click on **Next**.
-1. Click on **Next** twice.
-1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
-
-   ![Install](../media/mfa2.png)
-
-   > Note: For Ios, Open the app store and repeat the steps.
-
-   > Note: Skip if already installed.
-
-1. Open the app and tap on **Scan a QR code**.
-
-1. Scan the QR code visible on the screen and click on **Next**.
-
-   ![QR code](../media/mfa3.png)
-
-1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
-
-1. Once the notification is approved, click on **Next**.
-
-   ![Approved](../media/mfa4.png)
-
-1. Click on **Done**.
-
-1. If prompted to stay signed in, you can click **"No"**.
-
-1. Tap on **Finish** in the Mobile Device.
-
-   > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
-
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
-
 
 ## Support Contact
  
