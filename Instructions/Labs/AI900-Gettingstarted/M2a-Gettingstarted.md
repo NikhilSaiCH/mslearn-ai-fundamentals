@@ -14,11 +14,11 @@ In this lab, you will explore Microsoft Foundry to deploy and interact with a ge
 
 By the end of this lab, you will be able to:
 
-1. **Create a Microsoft Foundry project:** set up a workspace to organize and manage AI resources.  
-2. **Deploy and interact with a generative AI model:** explore chat functionality and conversation context.  
-3. **Experiment with system prompts and parameters:** control response style, length, and creativity.  
-4. **Save a model as an agent and configure instructions:** turn a model into an agentic AI assistant.  
-5. **Add knowledge tools and preview the agent:** enable informed responses and explore integration options.
+1. **Create a Microsoft Foundry project:** Set up a workspace in Microsoft Foundry to organize AI resources, models, and agents for generative AI development.    
+2. **Deploy and interact with a generative AI model:** Use the model playground to test prompts, explore conversation context, and understand interactive AI behavior. 
+3. **Experiment with system prompts and parameters:** Adjust system prompts and model parameters to control response style, length, and creativity. 
+4. **Save a model as an agent and configure instructions:** Convert a deployed model into an agentic AI assistant and define its role for specific tasks. 
+5. **Add knowledge tools and preview the agent:** Upload documents or data sources to enhance agent responses and test integration options for applications.
 
 ## Pre-requisites
 
@@ -45,15 +45,15 @@ This lab demonstrates how Microsoft Foundry supports generative AI model deploym
 
 ## Explanation of Components
 
-**Microsoft Foundry Project:** The project is the central workspace to manage AI resources, including models, agents, and knowledge tools. It provides a hub to organize deployments, access model catalogs, and test models in the playground.
+1. **Microsoft Foundry Project:** The project is the central workspace to manage AI resources, including models, agents, and knowledge tools. It provides a hub to organize deployments, access model catalogs, and test models in the playground.
 
-**Generative AI Model:** This is the deployed model (e.g., GPT-4.1-mini) that powers chat interactions and generates responses. It can be configured with system prompts and parameters to control style, length, and behavior.
+1. **Generative AI Model:** This is the deployed model (e.g., GPT-4.1-mini) that powers chat interactions and generates responses. It can be configured with system prompts and parameters to control style, length, and behavior.
 
-**Agent Configuration:** An agent wraps the model with instructions and parameters to create a task-specific AI assistant. For example, an `expenses-agent` can help employees with expense claims and maintain consistent behavior.
+1. **Agent Configuration:** An agent wraps the model with instructions and parameters to create a task-specific AI assistant. For example, an `expenses-agent` can help employees with expense claims and maintain consistent behavior.
 
-**Knowledge Tools:** Knowledge tools are files or data sources that the agent can query to provide accurate, context-aware responses. For instance, uploading `expenses_policy.docx` allows the agent to answer questions based on company policies.
+1. **Knowledge Tools:** Knowledge tools are files or data sources that the agent can query to provide accurate, context-aware responses. For instance, uploading `expenses_policy.docx` allows the agent to answer questions based on company policies.
 
-**Client Integration:** Applications interact with the agent using APIs or SDKs, such as Python or OpenAI Responses API. This allows embedding the agent in Microsoft 365, Teams, or custom apps for real-time AI assistance.
+1. **Client Integration:** Applications interact with the agent using APIs or SDKs, such as Python or OpenAI Responses API. This allows embedding the agent in Microsoft 365, Teams, or custom apps for real-time AI assistance.
 
 # Getting Started with lab
  
@@ -63,7 +63,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
-![Access Your VM and Lab Guide](../media/4-7.png)
+![Access Your VM and Lab Guide](../media/lab2a-g5.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -89,7 +89,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## Managing Your Virtual Machine
  
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
  
 ![Manage Your Virtual Machine](../media/aig4.png)
 
@@ -117,21 +117,21 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-       ![Enter Your Username](../media/sc900-image-1.png)
+       ![Enter Your Username](../media/lab2a-g1.png)
  
 3. Next, provide your password:
  
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
  
-     ![Enter Your Password](../media/pwd.png)
+     ![Enter Your Password](../media/lab2a-g2.png)
  
 4. If prompted to stay signed in, you can click **No**.
 
-6. If prompted to stay signed in, you can click "No."
-
-    ![](../media/staysigned2.png)
+    ![](../media/lab2a-g3.png)
  
-7. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel**.
+7. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Maybe later**.
+
+    ![](../media/lab2a-g4.png)
 
 ## Support Contact
  

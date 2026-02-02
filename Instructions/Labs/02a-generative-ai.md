@@ -4,15 +4,13 @@
 
 In this exercise, you'll use Microsoft Foundry to deploy and explore a generative AI model. You'll then use the model in an agent that includes knowledge tools to answer user questions.
 
-This exercise should take approximately **45** minutes to complete.
-
 ## Lab objectives
 
 In this exercise, you will perform:
 
 - Task 1: Create a Microsoft Foundry project
-- Task 2: Task 2: Deploy a model
-- Task 3: Task 3: Chat with the model
+- Task 2: Deploy a model
+- Task 3: Chat with the model
 - Task 4: Experiment with system prompts
 - Task 5: View client code to chat with a model
 - Task 6: Save the model configuration as an agent
@@ -232,7 +230,7 @@ In this task, you will encapsulate the model, its instructions, and tool configu
 
 1. Change the **Instructions** to `You are a helpful AI assistant who supports employees with expense claims.` **(1)**
 
-1. At the top of the agent playground, select **Save *(2)**.
+1. At the top of the agent playground, select **Save (2)**.
 
      ![](./media/lab2a-l26.png)
 
