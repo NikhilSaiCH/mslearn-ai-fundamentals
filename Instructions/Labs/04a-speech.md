@@ -62,7 +62,7 @@ In this task, you'll create and configure a Microsoft Foundry project to organiz
       
       >**Note:** Model deployments are restricted by regional quotas. If you select a region in which you have insufficient available quota, you may need to select an alternative region for a new resource later.
 
-1. Wait for your project created. It may take a few minutes, once the setup is complete, you are automatically redirected to the **Microsoft Foundry home page** for the newly created project.
+1. Wait for your project to be created. It may take a few minutes. Once the setup is complete, you are automatically redirected to the **Microsoft Foundry home page** for the newly created project.
 
     ![](./media/lab4a-e1t1p2.png)
 
@@ -74,14 +74,14 @@ In this task, you'll navigate to Azure Speech - Voice Live within Microsoft Foun
 
     ![](./media/lab4a-e1t2p1.png)
 
-1. On the **Build** page, from the left-hand menu and select **Models (1)**, then choose **AI-services (2)** from the Models page.
+1. On the **Build** page, from the left-hand menu and select **Models (1)**, then choose **AI Services (2)** from the Models page.
 
     ![](./media/lab4a-e1t2p2.png)
 
 1. Keep in mind that this list shows only a small portion of the AI capabilities offered by Foundry Tools. You’ll find several Speech-related services here that you can test, including: 
  
     - **Azure Speech - Speech to Text**: capabilities used to generate text transcriptions from speech audio. For example, to transcribe calls or meetings, or to create captions for hearing-impaired users.
-    - **Azure Speech - Text to Speech**: capabilities used to generate audio from text. For example, to create audio to help people with visual-impairments, or enable bots with natural-sounding speech.
+    - **Azure Speech - Text to Speech**: capabilities used to generate audio from text. For example, to create audio to help people with visual impairments or enable bots with natural-sounding speech.
 
 1. From the list, select **Azure Speech - Voice Live** to try out *Voice Live* capabilities in the Speech Playground. 
 
@@ -89,7 +89,7 @@ In this task, you'll navigate to Azure Speech - Voice Live within Microsoft Foun
 
 ## Task 3: Open the Speech Playground App
 
-In this exercise, you'll use a browser-based application to chat with the **GPT-4.1 Mini** model; a small language model that is useful for general chat solutions.
+In this exercise, you'll use a browser-based application to chat with the **GPT-4.1 Mini** model, a small language model that is useful for general chat solutions.
 
 1. In your web browser, make sure the **Azure Speech-Voice Live Playground** is open. In the settings pane, browse through the samples and choose **Start with Blank** to create a new assistant.
 
@@ -131,7 +131,7 @@ In this task, you'll interact with the model using spoken input and listen to sp
 
     >**Note**: The processing speed may be so fast that you do not actually see the status before it changes back to *Speaking*.
 
-1. When the status changes to **Speaking…**, the app uses text-to-speech to vocalize the response from the model. To see the original prompt and the response as text, select the **cc** button on the bottom of the chat screen.
+1. When the status changes to **Speaking…**, the app uses text-to-speech to vocalize the response from the model. To see the original prompt and the response as text, select the **cc** button at the bottom of the chat screen.
 
     >**Note**: The follow-on prompt is submitted just by speaking. You can even interrupt the agent to keep the interaction focused on what you need done. 
     >**Note**: You can also use the Stop generation button in the chat pane to stop long-running responses. The button will end the conversation. You will need to start a new conversation to continue using the agent. 
@@ -158,13 +158,13 @@ Model parameters control how the model works, and can be useful for restricting 
 
 #### Generative AI model parameters
 
-1. Review the generative AI model's *Advanced settings*. One way you can affect the model's responses is by configuring the **temperature** of the response. The *temperature* is a parameter that controls the randomness or creativity of the model's responses. When the model is set to a lower temperature, its responses are more predictable and factual. As the temperature increases, more variability and creativity are added. The higher temperature setting is useful for brainstorming, its conversational tone, and generating varied examples. If the temperature is too high however, it can result in responses that do not make much sense and aren't reliable.
+1. Review the generative AI model's *Advanced settings*. One way you can affect the model's responses is by configuring the **temperature** of the response. The *temperature* is a parameter that controls the randomness or creativity of the model's responses. When the model is set to a lower temperature, its responses are more predictable and factual. As the temperature increases, more variability and creativity are added. The higher temperature setting is useful for brainstorming, its conversational tone, and generating varied examples. If the temperature is too high, however, it can result in responses that do not make much sense and aren't reliable.
 
-1. Expand **Advanced settings (1)**, change the **Response temperature (2)**, then click **Apply changes (3)**. Repeat the same prompt as before `How does speech synthesis work?` to observe the difference.
+1. Expand **Advanced settings (1)**, change the **Response temperature (2)**, then click **Apply changes (3)**. Repeat the same prompt as before, `How does speech synthesis work?` to observe the difference.
 
     ![](./media/lab4a-e1t7p1.png)
 
-1. Another setting for the model is **proactive engagement**. Activating the toggle **on** means the agent initiates the conversation. Try turning the proactive engagement **On (1)**, then click on **Apply changes (2)** and starting a new conversation with the agent.  
+1. Another setting for the model is **proactive engagement**. Activating the toggle **on** means the agent initiates the conversation. Try turning the proactive engagement **On (1)**, then click on **Apply changes (2)** and start a new conversation with the agent.  
 
     ![](./media/lab4a-e1t7p2.png)
 
@@ -179,7 +179,7 @@ Model parameters control how the model works, and can be useful for restricting 
 #### Speech output parameters
 
 1. Review the speech output's advanced settings. 
-    - **Voice temperature**: Controls the style and expressiveness of the spoken audio including intonation, prosody, emphasis, pacing, and emotional variance. 
+    - **Voice temperature**: Controls the style and expressiveness of the spoken audio, including intonation, prosody, emphasis, pacing, and emotional variance. 
     - **Playback speed**: The speed at which the voice is speaking.
     - **Custom lexicon**: Define the pronunciation of specific words, such as company names, medical terms, or emojis. Create a custom lexicon file using the Audio Content Creation tool, and copy its link here to use
 
@@ -197,7 +197,7 @@ In this task, you'll review the client code that powers the voice-enabled assist
 
     ![](./media/lab4a-e1t8p1.png)
 
-1. In lines `17-32` you can see the specific Azure Speech packages imported. Imported packages provide additional functionality and tools - in this case, additional functions and models that compliment the language model used to respond to the conversation text itself. By importing these packages, you can leverage prebuilt, optimized solutions instead of writing everything from scratch, making code more efficient, readable, and maintainable.  
+1. In lines `17-32` you can see the specific Azure Speech packages imported. Imported packages provide additional functionality and tools - in this case, additional functions and models that complement the language model used to respond to the conversation text itself. By importing these packages, you can leverage prebuilt, optimized solutions instead of writing everything from scratch, making code more efficient, readable, and maintainable.  
 
     ![](./media/lab4a-e1t8p2.png)
 
@@ -213,7 +213,7 @@ In this task, you'll review the client code that powers the voice-enabled assist
 
     ![](./media/lab4a-e1t8p5.png)
 
-1. Click on **{X}.env variables** at the top of the code screen to your VoiceLive credentials.
+1. Click on **{X} .env variables** at the top of the code screen to your VoiceLive credentials.
 
     ![](./media/lab4a-e1t8p6.png)
 
@@ -222,7 +222,7 @@ In this task, you'll review the client code that powers the voice-enabled assist
     - Your client is created
     - The voice assistant is created (*notice how the assistant is created on line `497` by calling the `BasicVoiceAssistant`*)
     - The voice assistant is given code for proper shutdown
-    - The voice assistant is started 
+    - The voice assistant has started 
 
         ![](./media/lab4a-e1t8p7.png)
 
@@ -231,5 +231,6 @@ In this task, you'll review the client code that powers the voice-enabled assist
 In this exercise, you explored how to use Microsoft Foundry and Azure Speech - Voice Live to build and test a speech-enabled generative AI assistant. You configured a generative AI model, selected a voice, interacted with the model using speech, adjusted system prompts and parameters, and reviewed the client code that enables real-time voice interactions.
 
 This lab demonstrates how quickly you can get started with building voice-based AI experiences. From this foundation, you can extend your solution to create more advanced conversational agents that support natural, real-time interactions.
+
 
 ### Congratulations, you’ve successfully completed the hands-on lab!
