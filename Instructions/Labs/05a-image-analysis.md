@@ -1,48 +1,127 @@
----
-lab:
-    title: 'Get started with computer vision in Microsoft Foundry'
-    description: 'Use generative AI models to interpret and generate visual data.'
----
-
 # Get started with computer vision in Microsoft Foundry
 
-In this exercise, you'll use generative AI models in Microsoft Foundry to work with visual data.
+## Lab overview
 
-This exercise should take approximately **30** minutes to complete.
+In this exercise, you'll use Microsoft Foundry to deploy and explore generative AI models that work with visual data. You will analyze images, generate new images from text prompts, and create videos using vision-enabled models.
 
-## Create a Microsoft Foundry project
+## Lab objectives
 
-Microsoft Foundry uses *projects* to organize models, resources, data, and other assets used to develop an AI solution.
+In this exercise, you will perform:
 
-1. In a web browser, open [Microsoft Foundry](https://ai.azure.com){:target="_blank"} at `https://ai.azure.com` and sign in using your Azure credentials. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the **Foundry** logo at the top left to navigate to the home page.
-1. If it is not already enabled, in the tool bar the top of the page, enable the **New Foundry** option. Then, if prompted, create a new project with a unique name of your choice, using the default options. After creating or selecting a project in the new Foundry portal, it should open in a page similar to the following image:
+- Task 1: Create a Microsoft Foundry project
+- Task 2: Use a generative AI model to analyze images
+- Task 3: Use a generative AI model to create new images
+- Task 4: Use a generative AI model to create video
 
-    ![Screenshot of the AI Foundry project home page.](./media/0-foundry-project.png)
+## Task 1: Create a Microsoft Foundry project
 
-## Use a generative AI model to analyze images
+In this task, you'll create a Microsoft Foundry project and configure the basic settings required to organize models, resources, and services used throughout the lab.
 
-Computer vision models enable AI systems to interpret image-based data, such as photographs, videos, and other visual elements. In this exercise, you'll explore how the developer of an AI agent to help aspiring chefs could use a vision-enabled model to interpret images of ingredients and suggest relevant recipes.
+1. Copy the **Microsoft Foundry** link and paste it into a new browser tab to access the portal: `https://ai.azure.com?azure-portal=true`
 
-1. In a new browser tab, download **[images.zip](https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/images.zip){:target="_blank"}** `https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/images.zip` to your local computer.
-1. Extract the downloaded archive in a local folder to see the files it contains. These files are the images you will use AI to analyze.
-1. Return to the browser tab containing your Microsoft Foundry project. Then, in the **Start building** menu, select **Browse models** to view the Microsoft Foundry model catalog.
-1. Search for and deploy the `gpt-4.1-mini` model using the default settings. Deployment may take a minute or so.
+
+1. On the **Microsoft Foundry** home page, click on **Sign in** in the top right corner.
+
+   ![](./media/mod6-p2t1p1.png)
+
+1. If prompted to sign in, enter your credentials:
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)** and click on **Next (2)**.
+ 
+      ![Enter Your Username](./media/mod6-p2t1p2.png)
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
+ 
+     ![Enter Your Password](./media/mod6-p2t1p2(1).png)
+
+1. If prompted to **Stay signed in?**, you can click **No**.
+
+   ![](./media/mod6-p2t1p3.png)
+
+   > **Note:** Close any tips or quick start panes that are opened the first time you sign in, and if necessary, use the **Foundry** logo at the top left to navigate to the home page.
+
+1. At the top of the **Microsoft Foundry** portal, enable the **New Foundry toggle (1)** to switch to the latest Foundry user interface.
+
+1. From the **Select a project to continue** dialog, click the drop-down under **Select or search for a project**, and then select **Create a new project (2)**.
+
+    ![](./media/lab2a-l1.png)
+
+1. In the **Create a project** wizard, enter project name **Myproject<inject key="DeploymentID" enableCopy="false" /> (1)**, and expand **Advanced options (2)** to specify the following settings for your project: 
+
+    - Subscription : **Leave default subscription (3)** 
+    - Resource Group : Select **AI-900-Module-05a (4)** 
+    - Microsoft Foundry resource: **MyFoundry<inject key="DeploymentID" enableCopy="false" /> (5)**
+    - Region : Select **<inject key="location" enableCopy="false"/> (6)**
+    - Click on **Create** **(7)**
+
+      ![](./media/lab5a-e1t1p1.png)
+      
+      >**Note:** Model deployments are restricted by regional quotas. If you select a region in which you have insufficient available quota, you may need to select an alternative region for a new resource later.
+
+1. Wait for your project created. It may take a few minutes, once the setup is complete, you are automatically redirected to the **Microsoft Foundry home page** for the newly created project.
+
+    ![](./media/lab4a-e1t1p2.png)
+
+## Task 2: Use a generative AI model to analyze images
+
+In this task, you'll deploy a vision-enabled generative AI model and use it to analyze images, allowing you to understand visual content and generate meaningful text-based responses.
+
+1. Open a new browser tab and download the file from the following link to your local computer:
+
+    ```
+    https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/images.zip
+    ```
+1. From the download prompt, click the **Show in folder** icon to open the file location.
+
+    ![](./media/lab5a-e1t2p1.png)
+
+1. Select the **images.zip (1)** file, right-click it, and choose **Extract All (2)**.
+
+    ![](./media/lab5a-e1t2p2.png)
+
+1. In the **Extract Compressed (Zipped) Folders** window, keep the default settings and click **Extract**.
+
+    ![](./media/lab5a-e1t2p3.png)
+
+1. The folder contains three image files, and these images will be used for AI analysis.
+
+    ![](./media/lab5a-e1t2p4.png)
+
+1. Return to the browser tab containing your Microsoft Foundry project. Then, click on the **Start building (1)** menu and select **Browse models (2)** to view the Microsoft Foundry model catalog.
+
+    ![](./media/lab5a-e1t2p5.png)
+
+1. Search for the `gpt-4.1-mini` **(1)** model and select the same **(2)** from the result section. 
+
+    ![](./media/lab5a-e1t2p6.png)
+
+1. On the **gpt-4.1-mini** page, click on **Deploy (1)** and select **Default settings (2)**.
+
+    ![](./media/lab5a-e1t2p7.png)
+
 1. When the model has been deployed, view the model playground page that is opened, in which you can chat with the model.
 
-    ![Screenshot of the model playground.](./media/0-model-playground.png)
+    ![Screenshot of the model playground.](./media/lab5a-e1t2p8.png)
 
 1. Use the button at the bottom of the left navigation pane to hide it and give yourself more room to work with.
-1. In the pane on the left, set the **Instructions** to `You are an AI cooking assistant who helps chefs with recipes.`
-1. In the chat pane, use the **Upload image** button to select one of the images you extracted on your computer. The image is added to the prompt area.
 
-    You can select the image you have added to view it.
+    ![](./media/lab5a-e1t2p9.png)
 
-   ![Screenshot of a chat with an image in a prompt.](./media/0-image-input.png)
+1. In the left pane, update the **Instructions** field to: `You are an AI cooking assistant who helps chefs with recipes.`
 
-1. Enter prompt text like `What recipes can I use this in?` and submit the prompt, which contains both the uploaded image and the text.
+    ![](./media/lab5a-e1t2p10.png)
+
+1. In the chat pane, click on the **Attach files (1)** icon and then in the Open window, select **image1 (2)** and then click on **Open (3)**. The image will be added to the prompt area.
+
+    ![](./media/lab5a-e1t2p11.png)
+
+1. Enter a prompt such as `What recipes can I use this in?`, then press **Enter** to submit it.
+
+    ![](./media/lab5a-e1t2p12.png)
+
 1. Review the response, which should include relevant recipe suggestions for the image you uploaded.
 
-   ![Screenshot of the chat app with the response to an image-based prompt.](./media/0-image-analysis.png)
+   ![](./media/lab5a-e1t2p13.png)
 
 1. Submit prompts that include the other images, such as `How should I cook this?` or `What desserts could I make with this?`
 
@@ -51,6 +130,9 @@ Computer vision models enable AI systems to interpret image-based data, such as 
 To develop a client app or agent that can use the model to interpret images, you can use the OpenAI **Responses** API.
 
 1. In the **Chat** pane, select the **Code** tab to view sample code.
+
+    ![](./media/lab5a-e1t2p14.png)
+
 1. Select the following code options:
     - **API**: Responses API
     - **Language**: Python
@@ -87,32 +169,52 @@ To develop a client app or agent that can use the model to interpret images, you
 
     > **Tip**: If you are using a work or school account to sign into Azure, and you have sufficient permissions in the Azure subscription, you can open the sample code in VS Code for Web to experiment with image-based input content. You can obtain the **key** for your service in the **Code** tab of the model playground (above the sample code) and you can use the image **[orange.jpg](https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/orange.jpg){:target="_blank"}** at `https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/orange.jpg`. To learn more about using rhe OpenAI API to analyze images, see the [OpenAI documentation](https://platform.openai.com/docs/guides/images-vision#analyze-images).
 
-## Use a generative AI model to create new images
+## Task 3: Use a generative AI model to create new images
 
-So far you've explored the ability of a generative AI model to process visual input. Now let's suppose we want some appropriate images on a web site to support the AI chef agent. Let's see how a model can generate visual output.
+In this task, you'll deploy an image-generation model and use text prompts to create new images that match your described scenarios.
 
-1. Use the "back" arrow next to the **gpt-4.1-mini** header (or select the **Models** page in the navigation pane) to view the model deployments in your project.
+1. Use the **back** arrow next to the **gpt-4.1-mini** header to view the model deployments in your project.
+
+    ![](./media/lab5a-e1t3p1.png)
+
 1. Select **Deploy a base model** to open the model catalog.
-1. In the **Collections** drop-down list, select **Direct from Azure**, and in the **Inference tasks** drop-down list, select **Text to image**. Then view the available models for image generation.
 
-   ![Screenshot of image-generation models in the model catalog.](./media/0-image-generation-models.png)
+    ![](./media/lab5a-e1t3p2.png)
+
+1. In the **Collections** drop-down list, select **Direct from Azure (1)**, and in the **Inference tasks** drop-down list, select **Text to image (2)**. Then view the available models for image generation.
+
+   ![Screenshot of image-generation models in the model catalog.](./media/lab5a-e1t3p3.png)
+
+    ![](./media/lab5a-e1t3p3(1).png)
 
     > **Note**: The available models in your subscription may vary. Additionally, the ability to deploy models depends on regional availabilty and quota.
 
-1. Select the **FLUX-1-Kontext-pro** model and deploy it.
+1. Select the **FLUX-1-Kontext-pro** model.
 
-    *If you are unable to deploy the model in your subscription, try one of the other image-generation models.*
+    ![](./media/lab5a-e1t3p4.png)
+
+    >**Note:** If you are unable to deploy the model in your subscription, try one of the other image-generation models.
+
+1. On the **FLUX-1-Kontext-pro** page, click on **Deploy (1)** and then select **Default settings (2)**.
+
+    ![](./media/lab5a-e1t3p5.png)
 
 1. When the model has been deployed, it opens in the image playground.
-1. Enter a prompt describing a desired image; for example `A chef preparing a meal.` Then review the generated image.
 
-   ![Screenshot of the image playground with a generated image.](./media/0-generated-image.png)
+    ![](./media/lab5a-e1t3p6.png)
+
+1. Enter a prompt that describes the image you want, such as `A chef preparing a meal.`, then press **Enter** and review the generated image.
+
+   ![](./media/lab5a-e1t3p7.png)
 
 ### View code
 
 If you want to develop a client app or agent that generates images using your model, you can use the OpenAI API.
 
-1. In the **Chat** pane, select the **Code** tab to view sample code.
+1. In the **Chat** pane, select the **View code** tab to view sample code.
+
+    ![](./media/lab5a-e1t3p8.png)
+
 1. Select the following code options:
     - **Language**: Python
     - **SDK**: OpenAI SDK
@@ -145,26 +247,45 @@ If you want to develop a client app or agent that generates images using your mo
         f.write(image_bytes)
     ```
 
-## Use a generative AI model to create video
+    ![](./media/lab5a-e1t3p9.png)
 
-In addition to static images, you may want to include video content on the AI Chef agent web site.
+## Task 4: Use a generative AI model to create video
 
-1. Use the "back" arrow next to the image-generation model header (or select the **Models** page in the navigation pane) to view the model deployments in your project.
-1. Select **Deploy a base model** to open the model catalog.
-1. In the **Collections** drop-down list, select **Direct from Azure**, and in the **Inference tasks** drop-down list, select **Video generation**. Then view the available models for video generation.
+In this task, you'll deploy a video-generation model and use text prompts to generate short videos based on your descriptions.
 
-   ![Screenshot of video-generation models in the model catalog.](./media/0-video-generation-models.png)
+1. Use the **back** arrow next to the image-generation model header to view the model deployments in your project.
+
+    ![](./media/lab5a-e1t4p1.png)
+
+1. From the Models page, select **Deploy a base model** to open the model catalog.
+
+    ![](./media/lab5a-e1t4p2.png)
+
+1. From the **Collections** drop-down, choose **Direct from Azure (1)**, and from the **Inference tasks** drop-down, select **Video generation (2)**. Then review the list of available video generation models.
+
+    ![](./media/lab5a-e1t4p3.png)
+
+    ![](./media/lab5a-e1t4p3(1).png)
 
     > **Note**: The available models in your subscription may vary. Additionally, the ability to deploy models depends on regional availabilty and quota.
 
-1. Select the **Sora** model and deploy it.
+1. Select the **sora** model from the list.
 
-    *If you are unable to deploy the model in your subscription, try one of the other video-generation models.*
+    ![](./media/lab5a-e1t4p4.png)
+
+    >**Note:**If you are unable to deploy the model in your subscription, try one of the other video-generation models.
+
+1. On the **sora** page, click on **Deploy (1)** and then select **Default settings (2)**.
+
+    ![](./media/lab5a-e1t4p5.png)
 
 1. When the model has been deployed, it opens in the video playground.
-1. Enter a prompt describing a desired video; for example `A chef in a busy kitchen.` Then review the generated image.
 
-   ![Screenshot of the video playground with a generated video.](./media/0-generated-video.png)
+    ![](./media/lab5a-e1t4p6.png)
+
+1. Enter a prompt that describes the video you want, such as `A chef in a busy kitchen.`, then press **Enter** and review the generated result.
+
+   ![](./media/lab5a-e1t4p7.png)
 
 ### View code
 
@@ -188,6 +309,12 @@ If you want to develop a client app or agent that generates videos using your mo
         }'
     ```
 
+    ![](./media/lab5a-e1t4p8.png)
+
 ## Summary
 
-in this exercise, you explored the use of vision-enabled models in Microsoft Foundry, including models that can accept vision data as input, models that can generate static images based on text descriptions, and models that can generate video.
+In this exercise, you explored how to deploy and use vision-enabled generative AI models in Microsoft Foundry. You analyzed images, generated new images from text prompts, and created videos using generative AI models.
+
+The scenarios in this exercise demonstrate how easily you can get started building applications that understand and generate visual content. From this foundation, you could build richer AI solutions that combine image analysis, image generation, and video generation to support advanced real-world use cases.
+
+### Congratulations, you’ve successfully completed the hands-on lab!

@@ -1,105 +1,158 @@
----
-lab:
-    title: 'Get started with speech in Microsoft Foundry'
-    description: 'Use Microsoft Foundry to try out Azure Speech - Voice Live.'
----
-
 # Get started with speech in Microsoft Foundry
 
-The two fundamental speech capabilities that power voice-enabled applications are speech recognition (converting spoken words to text) and speech synthesis (converting text to natural-sounding speech). 
+## Lab overview
 
-In this exercise, use Microsoft Foundry, Microsoft's platform for creating AI applications, to interact with a generative AI model using speech. You'll explore speech-to-text (STT) and text-to-speech (TTS) with Azure Speech Voice Live, a service used to build real-time voice-based agents. Voice live in the Speech Playground supports both speech recognition and speech synthesis, enabling you to have a voice-based conversation with the model.
+In this exercise, you'll use Microsoft Foundry to explore speech-enabled generative AI capabilities. You'll interact with a generative AI model using speech, configure voices and system prompts, adjust model and speech parameters, and review the client code that enables real-time voice-based conversations.
 
-This exercise takes approximately **30** minutes.
+## Lab objectives
 
-## Create a Microsoft Foundry project
+In this exercise, you will perform:
 
-Microsoft Foundry uses projects to organize models, resources, data, and other assets used to develop an AI solution.
+- Task 1: Create a Microsoft Foundry project
+- Task 2: Navigate to Azure Speech - Voice Live 
+- Task 3: Open the Speech Playground App
+- Task 4: Select a voice 
+- Task 5: Use speech to interact with the model (Read Only)
+- Task 6: Experiment with system prompts (Read Only)
+- Task 7: Experiment with model parameters (Read Only)
+- Task 8: View the client code 
 
-1. In a web browser, open Microsoft Foundry at https://ai.azure.com and sign in using your Azure credentials. Close any tips or quick start panes that are opened the first time you sign in, and if necessary use the Foundry logo at the top left to navigate to the home page.
+## Task 1: Create a Microsoft Foundry project
 
-1. If it is not already enabled, in the tool bar the top of the page, enable the New Foundry option. Then, if prompted, create a new project with a unique name. Expand **Advanced options** to specify the following settings for your project:
-    - **Foundry resource**: *Enter a valid name for your AI Foundry resource.*
-    - **Subscription**: *Your Azure subscription*
-    - **Resource group**: *Create or select a resource group*
-    - **Region**: Select either the *East US 2*, *West US 2*, *Sweden Central*, *West Europe*, *Australia East*, *Southeast Asia*, *Japan East*, or *Central India* region\*
-    
-    \**Model deployments are restricted by regional quotas. If you select a region in which you have insufficient available quota, you may need to select an alternative region for a new resource later.*
+In this task, you'll create and configure a Microsoft Foundry project to organize the resources and services required for building a speech-enabled AI application.
 
-1. Select **Create**. Wait for your project to be created. After creating or selecting a project in the new Foundry portal, it should open in a page similar to the following image:
+1. Copy the **Microsoft Foundry** link and paste it into a new browser tab to access the portal: `https://ai.azure.com?azure-portal=true`
 
-    ![Screenshot of the New Foundry Home Page](./media/0126-new-foundry-project.png)
 
-## Navigate to Azure Speech - Voice Live 
+1. On the **Microsoft Foundry** home page, click on **Sign in** in the top right corner.
 
-1. On the new Foundry home page, navigate to the top right menu (you may need to expand the screen to see the menu options). Select **Build**. 
+   ![](./media/mod6-p2t1p1.png)
 
-    ![Screenshot of how to navigate to the Build menu option.](./media/0126-new-foundry-home-build-selected.png)
-  
-1. On the *Build* page, navigate to the left-hand menu (you may need to expand it to see its options). From the menu, select **Models**. On the Models page, select **AI-services**. Note that the list of AI services is a small subset of all the AI capabilities available with Foundry Tools. Several Speech-related services are available for testing, including: 
-    - *Azure Speech - Speech to Text*: capabilities used to generate text transcriptions from speech audio. For example, to transcribe calls or meetings, or to create captions for hearing-impaired users.
-    - *Azure Speech - Text to Speech*: capabilities used to generate audio from text. For example, to create audio to help people with visual-impairments, or enable bots with natural-sounding speech.
+1. If prompted to sign in, enter your credentials:
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)** and click on **Next (2)**.
+ 
+      ![Enter Your Username](./media/mod6-p2t1p2.png)
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject> **(1)** and click on **Sign in (2)**.
+ 
+     ![Enter Your Password](./media/mod6-p2t1p2(1).png)
+
+1. If prompted to **Stay signed in?**, you can click **No**.
+
+   ![](./media/mod6-p2t1p3.png)
+
+   > **Note:** Close any tips or quick start panes that are opened the first time you sign in, and if necessary, use the **Foundry** logo at the top left to navigate to the home page.
+
+1. At the top of the **Microsoft Foundry** portal, enable the **New Foundry toggle (1)** to switch to the latest Foundry user interface.
+
+1. From the **Select a project to continue** dialog, click the drop-down under **Select or search for a project**, and then select **Create a new project (2)**.
+
+    ![](./media/lab2a-l1.png)
+
+1. In the **Create a project** wizard, enter project name **Myproject<inject key="DeploymentID" enableCopy="false" /> (1)**, and expand **Advanced options (2)** to specify the following settings for your project: 
+
+    - Subscription : **Leave default subscription (3)** 
+    - Resource Group : Select **AI-900-Module-04a (4)** 
+    - Microsoft Foundry resource: **MyFoundry<inject key="DeploymentID" enableCopy="false" /> (5)**
+    - Region : Select **<inject key="location" enableCopy="false"/> (6)**
+    - Click on **Create** **(7)**
+
+      ![](./media/lab4a-e1t1p1.png)
+      
+      >**Note:** Model deployments are restricted by regional quotas. If you select a region in which you have insufficient available quota, you may need to select an alternative region for a new resource later.
+
+1. Wait for your project created. It may take a few minutes, once the setup is complete, you are automatically redirected to the **Microsoft Foundry home page** for the newly created project.
+
+    ![](./media/lab4a-e1t1p2.png)
+
+## Task 2: Navigate to Azure Speech - Voice Live 
+
+In this task, you'll navigate to Azure Speech - Voice Live within Microsoft Foundry to access speech-related AI services and the Speech Playground.
+
+1. Go to the top-right corner of the Foundry home page, expand the menu if needed, and select **Build**.
+
+    ![](./media/lab4a-e1t2p1.png)
+
+1. On the **Build** page, from the left-hand menu and select **Models (1)**, then choose **AI-services (2)** from the Models page.
+
+    ![](./media/lab4a-e1t2p2.png)
+
+1. Keep in mind that this list shows only a small portion of the AI capabilities offered by Foundry Tools. You’ll find several Speech-related services here that you can test, including: 
+ 
+    - **Azure Speech - Speech to Text**: capabilities used to generate text transcriptions from speech audio. For example, to transcribe calls or meetings, or to create captions for hearing-impaired users.
+    - **Azure Speech - Text to Speech**: capabilities used to generate audio from text. For example, to create audio to help people with visual-impairments, or enable bots with natural-sounding speech.
 
 1. From the list, select **Azure Speech - Voice Live** to try out *Voice Live* capabilities in the Speech Playground. 
 
-    ![Screenshot of how to navigate to Speech Playground to test Azure Speech - Voice Live.](./media/0126-new-foundry-ai-services-voice-live.png)
+    ![](./media/lab4a-e1t2p3.png)
 
-## Open the Speech Playground App
+## Task 3: Open the Speech Playground App
 
-Let's start by chatting with a generative AI model. In this exercise, we'll use a browser-based application to chat with the **GPT-4.1 Mini** model; a small language model that is useful for general chat solutions.
+In this exercise, you'll use a browser-based application to chat with the **GPT-4.1 Mini** model; a small language model that is useful for general chat solutions.
 
-1. In a web browser, the Azure Speech - Voice Live Speech Playground should be open. In the playground settings pane,  click through the samples and select **Start with Blank** to create your own assistant. 
+1. In your web browser, make sure the **Azure Speech-Voice Live Playground** is open. In the settings pane, browse through the samples and choose **Start with Blank** to create a new assistant.
+
+    ![](./media/lab4a-e1t3p1.png)
  
-1. In the playground settings pane, modify the **Generative AI model** the assistant uses. Select **GPT-4.1 Mini**. Select **Apply changes** to save the updates. 
+1. In the playground settings pane, change the **Generative AI model** to **GPT-4.1 Mini (1)**, then click **Apply changes (2)** to save your selection.
 
-1. View the Speech Playground app, which should look like this:
+    ![](./media/lab4a-e1t3p2.png)
 
-    ![Screenshot of Voice Live with GPT-4.1 Mini and blanck chat selected.](./media/0126-new-foundry-blank-start.png) 
+## Task 4: Select a voice 
 
-## Select a voice 
+In this task, you'll select and configure a text-to-speech voice to control how the assistant sounds.
 
-Text-to-speech solutions use voices to control the cadence, pronunciation, timbre, and other aspects of generated speech. The available voices depend on your browser and operating system.
-
-1. In the configuration pane on the left, view the voices in the **Speech output** drop-down list.
+1. In the configuration pane on the left, view the voices in the **Speech output (1)** drop-down list.
  
-1. Select any of the available voices, and use the Preview selected voice (▷) button to hear a sample of the voice.
+1. Select any of the available voices, and use the Preview selected voice (▷) **(2)** button to hear a sample of the voice.
+
+    ![](./media/lab4a-e1t4p1.png)
  
 1. When you have selected the voice you want to use, use the **Apply changes** button to activate it.
 
-## Use speech to interact with the model
+    ![](./media/lab4a-e1t4p2.png)
 
-The app supports both speech recognition and speech synthesis, enabling you to have a voice-based conversation with the model.
+## Task 5: Use speech to interact with the model (Read Only)
 
-1. In the Chat pane, use the **Start** button to start a conversation with the model. If prompted, allow access to the system microphone. The agent will introduce itself. 
+In this task, you'll interact with the model using spoken input and listen to spoken responses, demonstrating speech-to-text and text-to-speech capabilities.
 
-    >**Tip**: If you are not prompted for microphone access, and your microphone is not detected, try the following steps to allow microphone access. In the browser window, navigate to the page url. Click on the *lock icon* next to the url. Select *Permissions*, *Microphone*, and *Allow*. Then refresh the page and try again.
+1. In the **Chat** pane, click **Start session** to begin a conversation with the model. If asked, allow microphone access. The agent will then introduce itself.
+
+    ![](./media/lab4a-e1t5p1.png)
+
+    >**Note**: If you are not prompted for microphone access, and your microphone is not detected, try the following steps to allow microphone access. In the browser window, navigate to the page url. Click on the *lock icon* next to the url. Select *Permissions*, *Microphone*, and *Allow*. Then refresh the page and try again.
 
 1. When the app status is **Listening…**, say something like `"How does speech recognition work?"` and wait for a response.
 
+    ![](./media/lab4a-e1t5p2.png)
+
 1. Verify that the app status changes to **Processing…**. The app will process the spoken input, using speech-to-text to convert your speech to text and submit it to the model as a prompt. 
 
-    >**Tip**: The processing speed may be so fast that you do not actually see the status before it changes back to *Speaking*.
+    >**Note**: The processing speed may be so fast that you do not actually see the status before it changes back to *Speaking*.
 
 1. When the status changes to **Speaking…**, the app uses text-to-speech to vocalize the response from the model. To see the original prompt and the response as text, select the **cc** button on the bottom of the chat screen.
 
-    >**Tip**: The follow-on prompt is submitted just by speaking. You can even interrupt the agent to keep the interaction focused on what you need done. 
-    >**Tip**: You can also use the Stop generation button in the chat pane to stop long-running responses. The button will end the conversation. You will need to start a new conversation to continue using the agent. 
+    >**Note**: The follow-on prompt is submitted just by speaking. You can even interrupt the agent to keep the interaction focused on what you need done. 
+    >**Note**: You can also use the Stop generation button in the chat pane to stop long-running responses. The button will end the conversation. You will need to start a new conversation to continue using the agent. 
 
-    ![Screenshot of the selected cc button to see the closed captions.](./media/0126-new-foundry-voice-show-text.png)
+    ![Screenshot of the selected cc button to see the closed captions.](./media/lab4a-e1t5p3.png)
 
 1. To continue the conversation, submit a second spoken prompt, such as `"How does speech synthesis work?"`, and review the response.
 
-## Experiment with system prompts
+## Task 6: Experiment with system prompts (Read Only)
 
-A system prompt is used to provide the model with instructions that guide its responses. You can use the system prompt to provide guidelines about format, style, and constraints about what the model should and should not include in its responses.
+In this task, you'll modify system prompts to control the style, format, and length of the model’s responses.
 
-1. In the pane on the left, in the **Instructions** text area, change the system prompt to: `You are an AI assistant that provides short and concise answers using simple language. Limit responses to a single sentence.`
+1. In the pane on the left, in the **Response Instructions** text area, change the system prompt to: `You are an AI assistant that provides short and concise answers using simple language. Limit responses to a single sentence.` **(1)** and then click on **Apply changes (2)**.
 
-    >**Tip**: Remember to select **Apply changes** before testing any changes. 
+    ![](./media/lab4a-e1t6p1.png)
 
-1. Now try the same prompt as before (`How does speech synthesis work?`) and review the output.
+1. Now try the same prompt as before,`How does speech synthesis work?` and review the output.
 
-## Experiment with model parameters
+## Task 7: Experiment with model parameters (Read Only)
+
+In this task, you'll experiment with model and speech parameters to understand how they affect response creativity, behavior, and audio output.
 
 Model parameters control how the model works, and can be useful for restricting the size of its responses (measured in tokens) and controlling how "creative" its responses can be.
 
@@ -107,52 +160,62 @@ Model parameters control how the model works, and can be useful for restricting 
 
 1. Review the generative AI model's *Advanced settings*. One way you can affect the model's responses is by configuring the **temperature** of the response. The *temperature* is a parameter that controls the randomness or creativity of the model's responses. When the model is set to a lower temperature, its responses are more predictable and factual. As the temperature increases, more variability and creativity are added. The higher temperature setting is useful for brainstorming, its conversational tone, and generating varied examples. If the temperature is too high however, it can result in responses that do not make much sense and aren't reliable.
 
-1. Experiment by changing the temperature and repeating the same prompt as before (`How does speech synthesis work?`). 
+1. Expand **Advanced settings (1)**, change the **Response temperature (2)**, then click **Apply changes (3)**. Repeat the same prompt as before `How does speech synthesis work?` to observe the difference.
 
-1. Another setting for the model is **proactive engagement**. Activating the toggle **on** means the agent initiates the conversation. Try turning the proactive engagement *on* and starting a new conversation with the agent.  
+    ![](./media/lab4a-e1t7p1.png)
+
+1. Another setting for the model is **proactive engagement**. Activating the toggle **on** means the agent initiates the conversation. Try turning the proactive engagement **On (1)**, then click on **Apply changes (2)** and starting a new conversation with the agent.  
+
+    ![](./media/lab4a-e1t7p2.png)
 
 #### Speech input parameters 
 
 1. Review the speech input's *Advanced settings*. 
-- **End of utterance (EOU)**: Detects the end of speaking and stops speech recognition processing, returning results promptly. Currently does not support GPT-4o Realtime or GPT-4o Mini Realtime models.
-- **Audio enhancement**: Improves sound quality by reducing noise and boosting clarity, ensuring more accurate and clear speech recognition.
+    - **End of utterance (EOU)**: Detects the end of speaking and stops speech recognition processing, returning results promptly. Currently does not support GPT-4o Realtime or GPT-4o Mini Realtime models.
+    - **Audio enhancement**: Improves sound quality by reducing noise and boosting clarity, ensuring more accurate and clear speech recognition.
+
+        ![](./media/lab4a-e1t7p3.png)
 
 #### Speech output parameters
 
 1. Review the speech output's advanced settings. 
-- **Voice temperature**: Controls the style and expressiveness of the spoken audio including intonation, prosody, emphasis, pacing, and emotional variance. 
-- **Playback speed**: The speed at which the voice is speaking.
-- **Custom lexicon**: Define the pronunciation of specific words, such as company names, medical terms, or emojis. Create a custom lexicon file using the Audio Content Creation tool, and copy its link here to use
+    - **Voice temperature**: Controls the style and expressiveness of the spoken audio including intonation, prosody, emphasis, pacing, and emotional variance. 
+    - **Playback speed**: The speed at which the voice is speaking.
+    - **Custom lexicon**: Define the pronunciation of specific words, such as company names, medical terms, or emojis. Create a custom lexicon file using the Audio Content Creation tool, and copy its link here to use
+
+        ![](./media/lab4a-e1t7p4.png)
 
 1. If you have time, you can also try out an Azure avatar. Activating the avatar toggle will allow you to select a prebuilt avatar or create a custom avatar that visualizes the agent's audio output as an avatar speaking.
 
-## View the client code 
+    >**Note:** The avatar feature is currently supported only in the **East US 2, Southeast Asia, and Sweden Central regions**. It is not available in other resource regions.
 
-Now let's review the code that makes this web experience possible!
+## Task 8: View the client code 
+
+In this task, you'll review the client code that powers the voice-enabled assistant to understand how speech and AI services are implemented.
 
 1. Select **Code** at the top of the chat screen. You should see Python code like this:  
 
-    ![Screenshot of the start of the python code for the voice live app.](./media/0126-voice-live-code-start.png)
+    ![](./media/lab4a-e1t8p1.png)
 
 1. In lines `17-32` you can see the specific Azure Speech packages imported. Imported packages provide additional functionality and tools - in this case, additional functions and models that compliment the language model used to respond to the conversation text itself. By importing these packages, you can leverage prebuilt, optimized solutions instead of writing everything from scratch, making code more efficient, readable, and maintainable.  
 
-    ![Screenshot of the imported packages.](./media/0126-voice-live-azure-imports.png)
- 
+    ![](./media/lab4a-e1t8p2.png)
+
 1. The web live voice assistant is composed of two major functionalities: the Audio Processor and the Voice Assistant.  In lines `63-238`, you can review the code for the `AudioProcessor` class to see how it handles real-time audio capture and playback. 
 
-    ![Screenshot of the Audio Processor class.](./media/0126-voice-live-audio-processor.png)
+    ![](./media/lab4a-e1t8p3.png)
 
 1. The `BasicVoiceAssistant` class begins on line `240`. The code in this class uses the VoiceLive Python SDK to handle the events from the VoiceLive connection. Notice how the `BasicVoiceAssistant` has a dependency on the `AudioProcessor` class (such as in line `258`).   
 
-    ![Screenshot of the Voice Assistant class.](./media/0126-voice-live-basic-voice-assistant.png)
+    ![](./media/lab4a-e1t8p4.png)
 
 1. The configurations from the playground settings and your credentials (such as AI voice, model, and instructions) are handled by the global `parse_arguments` function that starts on line `417`.
 
-    ![Screenshot of parse arguments function.](./media/0126-voice-live-parse-arguments.png)
+    ![](./media/lab4a-e1t8p5.png)
 
 1. Click on **{X}.env variables** at the top of the code screen to your VoiceLive credentials.
 
-    ![Screenshot of the env variables.](./media/0126-voice-live-env.png)
+    ![](./media/lab4a-e1t8p6.png)
 
 1. Stitched all together, we can understand what is executed with the `main` function that starts on line `472`: 
     - Your Azure credentials are validated (*notice how parse_arguments() is saved to the variable `args`*)
@@ -161,13 +224,12 @@ Now let's review the code that makes this web experience possible!
     - The voice assistant is given code for proper shutdown
     - The voice assistant is started 
 
-    ![Screenshot of the main function](./media/0126-voice-live-main-function.png)
+        ![](./media/lab4a-e1t8p7.png)
 
->**Try it out**: Those with a work or school account can click on **Open in VS Code for the Web** at the top of the code window and follow along with the instructions.  
-    
-## Clean up
+## Summary
 
-If you have finished exploring Microsoft Foundry, delete any resources that you no longer need. This avoids accruing any unnecessary costs.
+In this exercise, you explored how to use Microsoft Foundry and Azure Speech - Voice Live to build and test a speech-enabled generative AI assistant. You configured a generative AI model, selected a voice, interacted with the model using speech, adjusted system prompts and parameters, and reviewed the client code that enables real-time voice interactions.
 
-1. Open the **Azure portal** at [https://portal.azure.com](https://portal.azure.com) and select the resource group that contains the resources you created.
-1. Select **Delete resource group** and then **enter the resource group name** to confirm. The resource group is then deleted.
+This lab demonstrates how quickly you can get started with building voice-based AI experiences. From this foundation, you can extend your solution to create more advanced conversational agents that support natural, real-time interactions.
+
+### Congratulations, you’ve successfully completed the hands-on lab!
