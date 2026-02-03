@@ -58,7 +58,7 @@ In this task, you'll create a Microsoft Foundry project and configure the basic 
       
       >**Note:** Model deployments are restricted by regional quotas. If you select a region in which you have insufficient available quota, you may need to select an alternative region for a new resource later.
 
-1. Wait for your project created. It may take a few minutes, once the setup is complete, you are automatically redirected to the **Microsoft Foundry home page** for the newly created project.
+1. Wait for your project to be created. It may take a few minutes. Once the setup is complete, you are automatically redirected to the **Microsoft Foundry home page** for the newly created project.
 
     ![](./media/lab4a-e1t1p2.png)
 
@@ -75,7 +75,7 @@ In this task, you'll deploy a vision-enabled generative AI model and use it to a
 
     ![](./media/lab5a-e1t2p1.png)
 
-1. Select the **images.zip (1)** file, right-click it, and choose **Extract All (2)**.
+1. Select the **images.zip (1)** file, right-click it, and choose **Extract All... (2)**.
 
     ![](./media/lab5a-e1t2p2.png)
 
@@ -167,7 +167,7 @@ To develop a client app or agent that can use the model to interpret images, you
     print(f"answer: {response.output[0]}")
     ```
 
-    > **Tip**: If you are using a work or school account to sign into Azure, and you have sufficient permissions in the Azure subscription, you can open the sample code in VS Code for Web to experiment with image-based input content. You can obtain the **key** for your service in the **Code** tab of the model playground (above the sample code) and you can use the image **[orange.jpg](https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/orange.jpg){:target="_blank"}** at `https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/orange.jpg`. To learn more about using rhe OpenAI API to analyze images, see the [OpenAI documentation](https://platform.openai.com/docs/guides/images-vision#analyze-images).
+    > **Tip**: If you are using a work or school account to sign into Azure, and you have sufficient permissions in the Azure subscription, you can open the sample code in VS Code for Web to experiment with image-based input content. You can obtain the **key** for your service in the **Code** tab of the model playground (above the sample code), and you can use the image **[orange.jpg](https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/orange.jpg){:target="_blank"}** at `https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/orange.jpg`. To learn more about using the OpenAI API to analyze images, see the [OpenAI documentation](https://platform.openai.com/docs/guides/images-vision#analyze-images).
 
 ## Task 3: Use a generative AI model to create new images
 
@@ -187,7 +187,7 @@ In this task, you'll deploy an image-generation model and use text prompts to cr
 
     ![](./media/lab5a-e1t3p3(1).png)
 
-    > **Note**: The available models in your subscription may vary. Additionally, the ability to deploy models depends on regional availabilty and quota.
+    > **Note**: The available models in your subscription may vary. Additionally, the ability to deploy models depends on regional availability and quota.
 
 1. Select the **FLUX.1-Kontext-pro** model.
 
@@ -211,7 +211,7 @@ In this task, you'll deploy an image-generation model and use text prompts to cr
 
 If you want to develop a client app or agent that generates images using your model, you can use the OpenAI API.
 
-1. In the **Chat** pane, select the **View code** tab to view sample code.
+1. In the **Chat** pane, select the **</> View code** tab to view sample code.
 
     ![](./media/lab5a-e1t3p8.png)
 
@@ -267,13 +267,13 @@ In this task, you'll deploy a video-generation model and use text prompts to gen
 
     ![](./media/lab5a-e1t4p3(1).png)
 
-    > **Note**: The available models in your subscription may vary. Additionally, the ability to deploy models depends on regional availabilty and quota.
+    > **Note**: The available models in your subscription may vary. Additionally, the ability to deploy models depends on regional availability and quota.
 
 1. Select the **sora** model from the list.
 
     ![](./media/lab5a-e1t4p4.png)
 
-    >**Note:**If you are unable to deploy the model in your subscription, try one of the other video-generation models.
+    >**Note:** If you are unable to deploy the model in your subscription, try one of the other video-generation models.
 
 1. On the **sora** page, click on **Deploy (1)** and then select **Default settings (2)**.
 
@@ -291,7 +291,7 @@ In this task, you'll deploy a video-generation model and use text prompts to gen
 
 If you want to develop a client app or agent that generates videos using your model, you can use the REST API.
 
-1. In the **Chat** pane, select the **Code** tab to view sample code.
+1. In the **Chat** pane, select the **</> View Code** tab to view sample code.
 
     The default sample code uses the *curl* command to call the REST endpoint, and should look similar to this:
 
@@ -316,5 +316,6 @@ If you want to develop a client app or agent that generates videos using your mo
 In this exercise, you explored how to deploy and use vision-enabled generative AI models in Microsoft Foundry. You analyzed images, generated new images from text prompts, and created videos using generative AI models.
 
 The scenarios in this exercise demonstrate how easily you can get started building applications that understand and generate visual content. From this foundation, you could build richer AI solutions that combine image analysis, image generation, and video generation to support advanced real-world use cases.
+
 
 ### Congratulations, you’ve successfully completed the hands-on lab!
