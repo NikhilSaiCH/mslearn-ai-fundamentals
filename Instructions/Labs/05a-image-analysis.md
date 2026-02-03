@@ -189,13 +189,13 @@ In this task, you'll deploy an image-generation model and use text prompts to cr
 
     > **Note**: The available models in your subscription may vary. Additionally, the ability to deploy models depends on regional availabilty and quota.
 
-1. Select the **FLUX-1-Kontext-pro** model.
+1. Select the **FLUX.1-Kontext-pro** model.
 
     ![](./media/lab5a-e1t3p4.png)
 
     >**Note:** If you are unable to deploy the model in your subscription, try one of the other image-generation models.
 
-1. On the **FLUX-1-Kontext-pro** page, click on **Deploy (1)** and then select **Default settings (2)**.
+1. On the **FLUX.1-Kontext-pro** page, click on **Deploy (1)** and then select **Default settings (2)**.
 
     ![](./media/lab5a-e1t3p5.png)
 
