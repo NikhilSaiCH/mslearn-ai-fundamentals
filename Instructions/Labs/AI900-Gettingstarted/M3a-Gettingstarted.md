@@ -8,52 +8,51 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We're excited 
 
 ## Overview
 
-In this lab, you will explore Microsoft Foundry to deploy and interact with a generative AI model. You will then extend the model into an agent that can use knowledge tools to answer user questions accurately. The lab demonstrates how to manage AI resources, experiment with model prompts and parameters, and build an agentic AI solution that can be integrated into applications.
+In this lab, you will use Microsoft Foundry to explore Azure AI Language - Text Analytics capabilities. You will create a project in the Foundry portal and use the Language Playground to analyze text without writing code. The lab demonstrates how to perform sentiment analysis, key phrase extraction, named entity recognition, and text summarization, which are common text analysis techniques used in real-world AI solutions.
 
 ## Objectives
 
 By the end of this lab, you will be able to:
 
-1. **Create a Microsoft Foundry project:** Set up a workspace in Microsoft Foundry to organize AI resources, models, and agents for generative AI development.    
-2. **Deploy and interact with a generative AI model:** Use the model playground to test prompts, explore conversation context, and understand interactive AI behavior. 
-3. **Experiment with system prompts and parameters:** Adjust system prompts and model parameters to control response style, length, and creativity. 
-4. **Save a model as an agent and configure instructions:** Convert a deployed model into an agentic AI assistant and define its role for specific tasks. 
-5. **Add knowledge tools and preview the agent:** Upload documents or data sources to enhance agent responses and test integration options for applications.
+1. **Create a Microsoft Foundry project:** You will learn how to create and configure a Microsoft Foundry project to access Azure AI Language services through the Language Playground.   
+2. **Analyze sentiment with Azure AI Language in Microsoft Foundry portal:** You will learn how to use sentiment analysis to evaluate text and determine whether it expresses positive, neutral, or negative sentiment.
+3. **Extract key phrases with Azure AI Language in Microsoft Foundry portal:** You will learn how to use key phrase extraction to identify important terms and concepts from unstructured text data.
+4. **Extract named entities with Azure AI Language in Microsoft Foundry portal:** You will learn how to use named entity recognition to automatically extract information such as people, locations, and organizations from text.
+5. **Summarize text with Azure AI Language in Microsoft Foundry portal:** You will learn how to generate extractive summaries to identify the most important sentences in a document.
 
 ## Pre-requisites
 
-* Basic knowledge of Azure Portal.
-* Familiarity with generative AI concepts and chat-based AI interactions.  
+* Basic knowledge of Azure AI services, Microsoft Foundry and Azure AI Language.
 
 ## Architecture
 
-This lab demonstrates how Microsoft Foundry supports generative AI model deployment and agent creation. The architecture shows how models, agents, and knowledge tools interact to provide an AI-powered assistant experience.
+In this hands-on lab, the architecture flow includes several essential components.
 
-1. **Microsoft Foundry Project:** A workspace to manage AI resources, models, and agents.  
+1. **Create a project in Microsoft Foundry portal:** Understanding how to set up a new project in Microsoft Foundry to access Azure AI Language services and use the Language Playground for text analysis.  
 
-2. **Generative AI Model:** Deployed from the Foundry model catalog (e.g., GPT-4.1-mini) for interactive chat and testing.  
+2. **Analyze sentiment with Azure AI Language in Microsoft Foundry portal:** Sentiment analysis is used to evaluate text and determine whether it expresses positive, neutral, or negative sentiment, helping categorize opinions in reviews and feedback.  
 
-3. **Agent Configuration:** Encapsulates the model, instructions, and tools to create an agentic AI assistant.  
+3. **Extract named entities with Azure AI Language in Microsoft Foundry portal:** Named entity extraction identifies key information such as people, locations, and organizations from unstructured text using Azure AI Language capabilities.  
 
-4. **Knowledge Tools:** Uploaded documents (like company policies) that the agent can use to provide informed responses.  
+4. **Extract key phrases with Azure AI Language in Microsoft Foundry portal:** Key phrase extraction automatically identifies important terms and concepts from text, enabling quicker understanding of the main topics.
 
-5. **Client Integration:** Sample code and APIs to consume the agent programmatically or integrate it into enterprise applications.  
+5. **Summarize text with Azure AI Language in Microsoft Foundry portal:** Text summarization condenses large documents into concise summaries, highlighting the most important sentences for easier analysis.
 
 ## Architecture Diagram
 
-![](../media/lab2a-arch.png)
+![](../media/lab3a-arch.png)
 
 ## Explanation of Components
 
-1. **Microsoft Foundry Project:** The project is the central workspace to manage AI resources, including models, agents, and knowledge tools. It provides a hub to organize deployments, access model catalogs, and test models in the playground.
+1. **Microsoft Foundry:** A centralized platform used to create and manage AI projects. In this lab, it provides access to Azure AI Language services through the Language Playground.
 
-1. **Generative AI Model:** This is the deployed model (e.g., GPT-4.1-mini) that powers chat interactions and generates responses. It can be configured with system prompts and parameters to control style, length, and behavior.
+1. **Azure AI Language:** A cloud-based service that provides natural language processing capabilities such as sentiment analysis, key phrase extraction, named entity recognition, and text summarization.
 
-1. **Agent Configuration:** An agent wraps the model with instructions and parameters to create a task-specific AI assistant. For example, an `expenses-agent` can help employees with expense claims and maintain consistent behavior.
+1. **Language Playground:** An interactive interface in Microsoft Foundry that allows users to upload text and run text analysis features without writing code.
 
-1. **Knowledge Tools:** Knowledge tools are files or data sources that the agent can query to provide accurate, context-aware responses. For instance, uploading `expenses_policy.docx` allows the agent to answer questions based on company policies.
+1. **Input Text Documents:** Sample text files used as input for performing various text analysis operations in the Language Playground.
 
-1. **Client Integration:** Applications interact with the agent using APIs or SDKs, such as Python or OpenAI Responses API. This allows embedding the agent in Microsoft 365, Teams, or custom apps for real-time AI assistance.
+1. **Analysis Results:** The output generated by Azure AI Language, including sentiment scores, extracted entities, key phrases, and summarized text.
 
 # Getting Started with lab
  
@@ -63,7 +62,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
-![Access Your VM and Lab Guide](../media/lab2a-g5.png)
+![Access Your VM and Lab Guide](../media/4-7.png)
 
 ### Virtual Machine & Lab Guide
  

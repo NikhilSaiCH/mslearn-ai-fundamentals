@@ -1,6 +1,6 @@
 # Get started with text analysis in Microsoft Foundry
 
-Azure Language includes Text Analytics, with capabilities such as entity recognition, key phrase extraction, summarization, and sentiment analysis. In this exercise, use Microsoft Foundry, Microsoft's platform for creating AI applications, to use AI to analyze text. You'll use Azure Language's natural language processing functionalities to analyze text. The goal of this exercise is to explore common applications of text analysis techniques.
+In this lab, you will use Microsoft Foundry to explore Azure Language – Text Analytics capabilities. You’ll create a project in the Foundry portal and use the Language Playground to analyze text. Through hands-on tasks, you’ll perform sentiment analysis, key phrase extraction, named entity recognition, and text summarization on sample documents, gaining practical experience with common natural language processing (NLP) techniques used in real-world AI applications.
 
 ## Lab objectives
 
@@ -12,9 +12,12 @@ In this lab, you will perform:
 - Task 5: Extract named entities
 - Task 6: Summarize text
 
-### Task 1: Create a project in Microsoft Foundry portal
+>**Note:** This exercise uses the **classic** Foundry interface. If you are using the new Foundry interface, you need to toggle back to the classic Foundry interface. 
 
->**Note:** This exercise uses the **classic** Foundry interface. If you are using the new Foundry interface, you need to toggle back to the classic Foundry interface.  
+### Task 1: Create a project in Microsoft Foundry portal 
+
+In this task, you sign in to the Microsoft Foundry portal and create a new project.
+This project sets up the required environment to use Azure Language services in the Language Playground.
 
 1. Copy the **Microsoft Foundry** link and paste it into a new browser tab to access the portal: `https://ai.azure.com?azure-portal=true`
 
@@ -68,6 +71,8 @@ In this lab, you will perform:
      ![](./media/lab3a-6.png)
 
 ### Task 2: Prepare for text analysis
+
+In this task, you will download and extract sample text documents required for the lab. These files are used as input for performing text analysis in the Language Playground.
 
 1. Open a new **InPrivate/Incognito** browser window, navigate to `https://aka.ms/ai-text`, and download the archive. This archive contains multiple text documents that you'll use in this exercise.
 
@@ -241,6 +246,17 @@ In this lab, you will perform:
     ```
 
     > **Tip:** You can copy the code and run it in your preferred Python development environment - for example Visual Studio Code. You will need to create environment variables for your Azure Language endpoint and key; which you can find in the code sample window.
+
+### Review
+
+In this exercise, you have completed the following tasks:
+
+- Created a project in the Microsoft Foundry portal
+- Prepared sample documents for text analysis
+- Analyzed sentiment using Azure AI Language
+- Extracted key phrases using Azure AI Language
+- Extracted named entities using Azure AI Language
+- Summarized text using Azure AI Language
 
 ## Learn more
 
