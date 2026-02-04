@@ -4,7 +4,7 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We're excited 
 
 # Module 6a: Get started with information extraction in Microsoft Foundry
 
-### Overall Estimated Timing: 40 Minutes
+### Overall Estimated Timing: 60 Minutes
 
 ## Overview
 
