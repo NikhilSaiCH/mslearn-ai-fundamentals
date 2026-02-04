@@ -129,7 +129,7 @@ In this task, you'll deploy a vision-enabled generative AI model and use it to a
 
 1. Review the response, which should include relevant recipe suggestions for the image you uploaded.
 
-   ![](./media/lab5a-e1t2p13.png)
+    ![](./media/lab5a-e1t2p13.png)
 
 1. Submit prompts that include the other images, such as `How should I cook this?` or `What desserts could I make with this?`
 
@@ -175,15 +175,15 @@ To develop a client app or agent that can use the model to interpret images, you
     print(f"answer: {response.output[0]}")
     ```
 
-    > **Tip**: If you are using a work or school account to sign into Azure, and you have sufficient permissions in the Azure subscription, you can open the sample code in VS Code for Web to experiment with image-based input content. You can obtain the **key** for your service in the **Code** tab of the model playground (above the sample code), and you can use the image **[orange.jpg](https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/orange.jpg){:target="_blank"}** at `https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/orange.jpg`. To learn more about using the OpenAI API to analyze images, see the [OpenAI documentation](https://platform.openai.com/docs/guides/images-vision#analyze-images).
+    > **Note:** If you are using a work or school account to sign into Azure, and you have sufficient permissions in the Azure subscription, you can open the sample code in VS Code for Web to experiment with image-based input content. You can obtain the **key** for your service in the **Code** tab of the model playground (above the sample code), and you can use the image **[orange.jpg](https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/orange.jpg){:target="_blank"}** at `https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/orange.jpg`. To learn more about using the OpenAI API to analyze images, see the [OpenAI documentation](https://platform.openai.com/docs/guides/images-vision#analyze-images).
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
+
 - Hit the Validate button for the corresponding task. You will receive a success message. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-  <validation step="c6119e13-52f2-488b-b355-20bc23360a82" />
+<validation step="c6119e13-52f2-488b-b355-20bc23360a82" />
 
 ## Task 3: Use a generative AI model to create new images
 
@@ -199,11 +199,11 @@ In this task, you'll deploy an image-generation model and use text prompts to cr
 
 1. In the **Collections** drop-down list, select **Direct from Azure (1)**, and in the **Inference tasks** drop-down list, select **Text to image (2)**. Then view the available models for image generation.
 
-   ![Screenshot of image-generation models in the model catalog.](./media/lab5a-e1t3p3.png)
+    ![](./media/lab5a-e1t3p3.png)
 
     ![](./media/lab5a-e1t3p3(1).png)
 
-    > **Note**: The available models in your subscription may vary. Additionally, the ability to deploy models depends on regional availability and quota.
+    >**Note**: The available models in your subscription may vary. Additionally, the ability to deploy models depends on regional availability and quota.
 
 1. Select the **FLUX.1-Kontext-pro** model.
 
@@ -221,7 +221,7 @@ In this task, you'll deploy an image-generation model and use text prompts to cr
 
 1. Enter a prompt that describes the image you want, such as `A chef preparing a meal.`, then press **Enter** and review the generated image.
 
-   ![](./media/lab5a-e1t3p7.png)
+    ![](./media/lab5a-e1t3p7.png)
 
 ### View code
 
@@ -309,7 +309,7 @@ In this task, you'll deploy a video-generation model and use text prompts to gen
 
 1. Enter a prompt that describes the video you want, such as `A chef in a busy kitchen.`, then press **Enter** and review the generated result.
 
-   ![](./media/lab5a-e1t4p7.png)
+    ![](./media/lab5a-e1t4p7.png)
 
 ### View code
 
