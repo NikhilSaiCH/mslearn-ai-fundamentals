@@ -66,6 +66,14 @@ In this task, you'll create and configure a Microsoft Foundry project to organiz
 
     ![](./media/lab4a-e1t1p2.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. You will receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="37d9e28f-12f2-487e-8bcc-bb7f8ca4db98" />
+
 ## Task 2: Navigate to Azure Speech - Voice Live 
 
 In this task, you'll navigate to Azure Speech - Voice Live within Microsoft Foundry to access speech-related AI services and the Speech Playground.

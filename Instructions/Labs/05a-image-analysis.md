@@ -62,6 +62,14 @@ In this task, you'll create a Microsoft Foundry project and configure the basic 
 
     ![](./media/lab4a-e1t1p2.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. You will receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="4ab20ea3-18c3-4c44-8425-121300a14289" />
+
 ## Task 2: Use a generative AI model to analyze images
 
 In this task, you'll deploy a vision-enabled generative AI model and use it to analyze images, allowing you to understand visual content and generate meaningful text-based responses.
@@ -169,6 +177,14 @@ To develop a client app or agent that can use the model to interpret images, you
 
     > **Tip**: If you are using a work or school account to sign into Azure, and you have sufficient permissions in the Azure subscription, you can open the sample code in VS Code for Web to experiment with image-based input content. You can obtain the **key** for your service in the **Code** tab of the model playground (above the sample code), and you can use the image **[orange.jpg](https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/orange.jpg){:target="_blank"}** at `https://microsoftlearning.github.io/mslearn-ai-fundamentals/data/orange.jpg`. To learn more about using the OpenAI API to analyze images, see the [OpenAI documentation](https://platform.openai.com/docs/guides/images-vision#analyze-images).
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. You will receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="c6119e13-52f2-488b-b355-20bc23360a82" />
+
 ## Task 3: Use a generative AI model to create new images
 
 In this task, you'll deploy an image-generation model and use text prompts to create new images that match your described scenarios.
@@ -249,6 +265,14 @@ If you want to develop a client app or agent that generates images using your mo
 
     ![](./media/lab5a-e1t3p9.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. You will receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="0a471e0d-9ad1-466f-ba17-cf2382d12a15" />
+
 ## Task 4: Use a generative AI model to create video
 
 In this task, you'll deploy a video-generation model and use text prompts to generate short videos based on your descriptions.
@@ -310,6 +334,14 @@ If you want to develop a client app or agent that generates videos using your mo
     ```
 
     ![](./media/lab5a-e1t4p8.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. You will receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="8def21a5-74c7-40a3-af35-366491f2fd7c" />
 
 ## Summary
 
