@@ -70,6 +70,14 @@ This project sets up the required environment to use Azure Language services in 
 
      ![](./media/lab3a-6.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. You will receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="b5fc2cf7-316a-44fc-988b-06c8e323a185" />
+
 ### Task 2: Prepare for text analysis
 
 In this task, you will download and extract sample text documents required for the lab. These files are used as input for performing text analysis in the Language Playground.
@@ -261,3 +269,4 @@ In this exercise, you have completed the following tasks:
 ## Learn more
 
 To learn more about what you can do with this service, see the [Language service page](https://learn.microsoft.com/azure/ai-services/language-service/overview).
+

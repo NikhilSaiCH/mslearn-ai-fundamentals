@@ -67,6 +67,14 @@ This project acts as a workspace to organize and manage resources required for b
 
    ![](./media/lab2a-l3.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. You will receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="41ca39eb-3ddc-4498-89e5-e45e1c9c9239" />
+
 ### Task 2: Deploy a model
 
 In this task, you will explore the model catalog in Microsoft Foundry and deploy a generative AI model. The deployed model will be used for interactive testing and experimentation in the playground.
@@ -90,6 +98,14 @@ In this task, you will explore the model catalog in Microsoft Foundry and deploy
 1. When the model has been deployed, view the model playground page that is opened, in which you can chat with the model.
 
     ![](./media/lab2a-l8.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. You will receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="53a76f5b-037d-4dff-a723-3e67a901b5f5" />
 
 ### Task 3: Chat with the model
 
@@ -163,7 +179,7 @@ Model parameters control how the model works, and can be useful for restricting 
 
      ![](./media/lab2a-l20.png)
 
-     >**Tip:** You can use the **Stop generation** button in the chat pane to stop long-running responses.*
+     >**Tip:** You can use the **Stop generation** button in the chat pane to stop long-running responses.
 
 1. When you've finished experimenting, reset the parameters to their original values.
 
@@ -266,6 +282,14 @@ In this task, you will encapsulate the model, its instructions, and tool configu
 
      ![](./media/lab2a-l29.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. You will receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="26a02172-cb11-4e43-9aae-fb763d33b068" />
+
 ### Task 7: Add a knowledge tool to the agent
 
 In this task, you will add a file-based knowledge tool to the agent so it can use company expense policy documents to provide more accurate and helpful responses.
@@ -345,7 +369,7 @@ In this task, you will preview the agent, test its responses, and review sample 
 
 1. In the agent playground, note that the **Publish** button can be used to publish your agent as an enterprise application in Azure so it can be consumed within Microsoft 365 and Teams.
 
-    In many cases, publishing an expense claim support agent for use in the enterprise application ecosystem would be an ideal way to implement an agentic solution. However, in other cases you may want to consume the agent from a custom application. 
+    - In many cases, publishing an expense claim support agent for use in the enterprise application ecosystem would be an ideal way to implement an agentic solution. However, in other cases you may want to consume the agent from a custom application. 
 
 1. Switch from the **Chat** tab to the **Code** tab, and view the sample code for consuming the agent. The code uses the OpenAI Responses API; but has some agent-specific differences from the code you previously examined to chat with the model.
 
@@ -389,3 +413,5 @@ In this task, you will preview the agent, test its responses, and review sample 
 In this exercise, you explored how to deploy an chat with a generative AI model in Microsoft Foundry portal. You then saved the model as an agent, and configured the agent with instructions and tools before exploring options for deploying and using the agent.
 
 The agent explored in this exercise is a simple example that demonstrates how quickly and easily you can get started with generative AI app and agent development using Microsoft Foundry. From this foundation, you could build a comprehensive agentic solution in which agents use tools to find information and automate tasks, and collaborate with one another to perform complex workflows.
+
+### Congratulations, you’ve successfully completed the hands-on lab!
