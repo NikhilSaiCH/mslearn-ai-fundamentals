@@ -270,3 +270,5 @@ In this exercise, you have completed the following tasks:
 
 To learn more about what you can do with this service, see the [Language service page](https://learn.microsoft.com/azure/ai-services/language-service/overview).
 
+
+### Congratulations, you’ve successfully completed the hands-on lab!
