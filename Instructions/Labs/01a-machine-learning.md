@@ -23,8 +23,8 @@ In this task, you will create and open a Machine Learning Lab workspace that wil
 
 2. On the **Machine Learning Lab** home page, select **Create workspace (1)**. In the **Create a new workspace** pane, enter the required details, and then click **Create (4)**.
 
-    - Name : **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" />** **(3)**
-    - Resource group : **AI-900-Module-01** **(2)**
+    - Name : **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" />** **(2)**
+    - Resource group : **AI-900-Module-01** **(3)**
  
         ![Picture1](media/lab01n-e1t1p1.png)
 
@@ -89,13 +89,13 @@ In this task, you will create an Automated ML regression job, upload a dataset, 
     **Task settings**:
 
     - **Target column**: IceCreamsSold **(1)**
-    - Select **View additional configuration settings (2)** under Target Column:
+    - Select **Additional configuration settings (2)** under Target Column:
         - Primary metric: **R2** **(3)**
-        - Leave everything else as default and then click on **Save (6)**.
+        - Leave everything else as default and then click on **Save (4)**.
 
             ![](media/lab01n-e1t1p7.png)
 
-    - **Limits**: **Expand this section**
+    - **Limits**: Expand this section
         - Use the limits to end the training job early based on specific criteria. In this exercise, set the following limits:
           - Metric score threshold: **0.9** **(1)**
           - Experiment Timeout (minutes): **15** **(2)**
@@ -111,7 +111,7 @@ In this task, you will create an Automated ML regression job, upload a dataset, 
 
         ![](media/lab01n-e1t1p9.png)
 
-1. Select **Submit**. It starts automatically.
+1. Select **Submit**.
 
    ![](media/lab01n-e1t1p10.png)
 
@@ -153,9 +153,7 @@ In this task, you will deploy the trained model using default deployment setting
 
       ![](media/lab01n-e1t1p17.png)
 
-1. Wait until the **Deploy status** shows *Succeeded*. This process may take a few minutes.
-
-1. On the **Model has been successfully deployed!** pop-up window, click on **Okay**.
+1. On the **Model has been successfully deployed!** pop-up window, click **Okay**.
 
     ![](media/lab01n-e1t1p18.png)
 
@@ -163,7 +161,7 @@ In this task, you will deploy the trained model using default deployment setting
 
 In this task, you will test the deployed endpoint by submitting sample JSON input and reviewing the predicted output.
 
-1. In Machine Learning Labs page, on the left hand menu, select **Endpoints (1)** under Assets section and click on the **Endpoint (2)**.
+1. On the **Machine Learning Lab** page, from the left navigation pane under the **Assets** section, select **Endpoints (1)**, and then click the listed **endpoint name (2)** to open it.
 
     ![](media/lab01n-e1t1p19.png)
 
