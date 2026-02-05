@@ -60,17 +60,9 @@ In this task, you'll create and configure a Microsoft Foundry project to organiz
 
       ![](./media/lab6a-e1t1p4.png)
       
-      >**Note:** Model deployments are restricted by regional quotas. If you select a region in which you have insufficient available quota, you may need to select an alternative region for a new resource later.
-    - **Region**: Select one of the following locations\*:
-        * West US
-        * Sweden Central
-        * Australia East
+      >**Note:** Model deployments are restricted by regional quotas. If you select a region in which you have insufficient available quota, you may need to select an alternative region for a new resource later. At the time of writing, Content Understanding is supported in these regions: `West US`,`Sweden Central`, and `Australia East`.
 
-    \**At the time of writing, Content Understanding is supported in these regions.*
-
-    ![Screenshot of project settings.](./media/content-project-settings.png)
-
-1. Select **Create**. Wait for the set up process to complete. It may take a few minutes.
+1. Wait for the set up process to complete. It may take a few minutes.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
