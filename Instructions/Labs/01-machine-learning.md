@@ -11,6 +11,7 @@ In this lab, you will perform:
 - Task 1: Creating an Azure Machine Learning workspace resource
 - Task 2: Use automated machine learning to train a model
 - Task 3: Deploy the model
+- Task 4: Test the deployed service
 
 ### Task 1: Create an Azure Machine Learning workspace
 
@@ -238,7 +239,7 @@ When the automated machine learning job has completed, you can review the best m
 
     ![](media/lab1-e1t3p2(3).png)
 
-### Task 3: Deploy and test the model
+### Task 3: Deploy the model
 
 1. On the **Model** tab for the best model trained by your automated machine learning job, select **Deploy (1)** and use the **Real-time endpoint (2)** option to deploy the model with the following settings:
 
