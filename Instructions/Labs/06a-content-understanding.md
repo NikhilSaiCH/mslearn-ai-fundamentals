@@ -72,6 +72,14 @@ In this task, you'll create and configure a Microsoft Foundry project to organiz
 
 1. Select **Create**. Wait for the set up process to complete. It may take a few minutes.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. You will receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="ef1ed7b3-d177-4af2-b182-064e6945644b" />
+
 ## Task 2: Extract information from an invoice in Foundry portal (classic)
 
 In this task, you'll use the Foundry portal to analyze an invoice with the prebuilt Content Understanding analyzer and review the extracted fields and JSON results.
@@ -278,6 +286,14 @@ In this task, you'll call Azure Content Understanding through the REST API to an
 1. Review the JSON returned. See how it provides the same information you saw from the *Results* tab in the Foundry portal after analyzing the same document.
 
     ![](./media/lab6a-e1t3p28.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. You will receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="50ef940e-c0bb-40bc-9b5d-f13240344ba3" />
 
 ## Summary
 
