@@ -207,6 +207,10 @@ Automated machine learning enables you to try multiple algorithms and parameters
 
 1. Wait for the job to finish. It might take around `10-15 minutes`, while now might be a good time for a coffee break!
 
+>**Note:** If the deployment does not complete within **30 minutes**, you may proceed to the next page and complete the exercise using the **browser-based Machine Learning Lab** instead.
+>
+> If your deployment completes within the expected timeframe (approximately **10–15 minutes**), continue with the remaining steps of this lab. After completion of this exercise, if time permits, you may optionally explore the browser-based Machine Learning Lab for additional practice.
+
 **Review the best model**
 
 When the automated machine learning job has completed, you can review the best model it trained.
@@ -314,6 +318,8 @@ Let’s review what you have done. You used a dataset of historical ice cream sa
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
   <validation step="d5b3d279-a696-4a1d-b7c5-370eca8ae53a" />
+
+>**Note:** After completion of this exercise, if time permits, you may optionally explore the browser-based Machine Learning Lab for additional practice.
 
 ### Review
 In this lab, you have completed the following tasks:

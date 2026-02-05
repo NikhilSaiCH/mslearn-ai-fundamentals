@@ -4,7 +4,7 @@
 
 In this lab, you will use browser-based Machine Learning Lab to create a workspace, train a regression model using Automated Machine Learning, deploy the best-performing model, and test it using sample input data. This lab demonstrates how automated machine learning simplifies model development and deployment without requiring extensive coding.
 
-## Lab Objectives
+## Lab objectives
 
 In this lab, you will perform:
 
@@ -33,15 +33,6 @@ In this task, you will create and open a Machine Learning Lab workspace that wil
    ![Picture1](media/lab01n-e1t1p2.png)
 
 4. Open a new browser tab and download the dataset from **[https://aka.ms/mslearn-ml-data](https://aka.ms/mslearn-ml-data)**. Extract the downloaded **ml-data.zip** file to view its contents. One of the extracted files, **ice-cream.csv**, contains the ice cream sales data needed for this exercise.
-  
-## Validation
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-  <validation step="0e571ab6-2856-478e-afa3-41efc38df116" />
 
 ### Task 2: Use automated machine learning to train a model
 
