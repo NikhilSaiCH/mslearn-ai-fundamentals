@@ -33,7 +33,7 @@ In this lab, you will perform:
 
 1. Click on **+ Create a new Project**
 
-   ![](./media/mod11n6.png)
+   ![](./media1/mod11n6.png)
 
 1. On the Create a project page, provide the following details:
 
@@ -44,7 +44,7 @@ In this lab, you will perform:
    - **Location**: Select **<inject key="location" enableCopy="false"/> (5)**
    - Click on **Create and continue (6)**
 
-     ![](./media/mod11n7.png)
+     ![](./media1/mod11n7.png)
 
 1. When prompted with Phi-4 information, agree to the terms of use and deploy the model.
 
