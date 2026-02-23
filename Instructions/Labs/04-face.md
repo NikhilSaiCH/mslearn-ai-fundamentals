@@ -111,7 +111,7 @@ In this task, you will learn how to detect faces in Vision Studio to analyze fac
 
    ![](./media/mod4-p2t3p6.png)
 
-1. Go back to the Vision Studio  and upload the **WhatAICanDo.m4a** image by clicking **Browse for a file (1)**. Then, navigate to the **`C:\Users\azureuser\Downloads\detect-faces` (2)** folder, then select **store-camera-1 (3)**, and click **Open (4)**.
+1. Go back to the Vision Studio  and upload the **store-camera-1** image by clicking **Browse for a file (1)**. Then, navigate to the **`C:\Users\azureuser\Downloads\detect-faces` (2)** folder, then select **store-camera-1 (3)**, and click **Open (4)**.
 
    ![](./media/mod4-p2t3p7.png)
 
