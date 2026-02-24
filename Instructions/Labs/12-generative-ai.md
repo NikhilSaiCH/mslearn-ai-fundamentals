@@ -53,6 +53,7 @@ In this task, you will sign in to Microsoft Foundry, explore available models, a
 
     ![](./media/af20.png)
 
+    >**Note**: If you encounter any quota issues while deploying the GPT models, kindly change the deployment type to Standard and attempt the deployment again.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
