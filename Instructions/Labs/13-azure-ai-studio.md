@@ -80,6 +80,8 @@ In this task, you will explore the model catalog in Microsoft Foundry to underst
 
     ![](./media/lab13-l7.png)
 
+   >**Note**: If you encounter any quota issues while deploying the GPT models, kindly change the deployment type to **Standard** by selecting the **custom settings** and attempt the deployment again.
+   
 ## Task 3: Test the model in a Playground
 
 In this task, you will interact with the deployed generative AI model using the Playground interface. By submitting prompts and reviewing responses, you will observe how AI models support different workloads and how users interact with AI applications through chat-based experiences.
