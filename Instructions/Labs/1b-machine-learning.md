@@ -95,144 +95,127 @@ Some features of Azure Machine Learning are in preview and need to be explicitly
 
 In this task, you will learn how to use automated machine learning to train a model efficiently without writing extensive code.
 
-Automated machine learning enables you to try multiple algorithms and parameters to train multiple models, and identify the best one for your data. In this exercise, you'll use a dataset of historical bicycle rental details to train a model that predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features.
+Automated machine learning enables you to try multiple algorithms and parameters to train multiple models, and identify the best one for your data. In this exercise, you'll use a dataset of ice cream sales to train a model that predicts the demand for ice creams that should be expected on a given day, based on seasonal and meteorological features.
 
->**Citation**: *The data used in this exercise is derived from [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) and is used in accordance with the published data [license agreement](https://www.capitalbikeshare.com/data-license-agreement)*.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), navigate to the **Automated ML (1)** page (under **Authoring**), select  **+ New Automated ML job (2)**.
 
-1. In Azure Machine Learning studio, naviage to the **Automated ML (1)** page (under **Authoring**), select  **+ New Automated ML job (2)**.
-
-   ![](media/aj.png)  
+   ![](media/lab1-e1t2p1.png)  
 
 1. Create a new Automated ML job with the following settings, using **Next (5)** as required to progress through the user interface:
 
-    **Basic settings:**
+    **Basic settings**:
 
-    - **Job name**: mslearn-bike-automl **(1)**
-    - **New experiment name**: mslearn-bike-rental **(2)**
-    - **Description**: Automated machine learning for bike rental prediction **(3)**
-    - **Tags**: *Leave default* **(4)**
+    - **Job name**: mslearn-icecream-automl **(1)**
+    - **New experiment name**: mslearn-icecream-automl **(2)**
+    - **Description**: Automated machine learning for ice cream demand prediction **(3)**
+    - **Tags**: Leave default **(4)**
 
-       ![](media/basic.png)
+       ![](media/lab1-e1t2p2.png)
 
-   **Task type & data:**
+   **Task type & data**:
 
-    - **Select task type**: **Regression** **(1)**
+    - **Select task type**: Regression **(1)**
     - **Select data**: Select **+ Create (2)** 
 
-        ![](media/regcr.png)
+        ![](media/lab1-25.png)
 
     - To create new data with the following settings:
 
-         - **Data type:**
-            
-            - **Name**: **`bike-rentals` (1)**
-            - **Description**: **`Historic bike rental data` (2)**
-            - **Type**: **Table (mltable)** **(3)**
+         - **Data type**:
+            - **Name**: `ice-cream` **(1)**
+            - **Description**: `Historic ice cream sales data` **(2)**
+            - **Type**: Tabular **(3)**
             - Click **Next (4)**
 
-              ![](media/br.png)
-                
-        - **Data source:**
+              ![](media/lab1-e1t2p3.png)
+        - **Data source**:
             - Select **From local files (1)**
             - Click **Next (2)**
-              
-              ![](media/loc.png)
-        
-        - **Destination storage type:**
+
+              ![](media/AI-900-lab1-2.png)
+        - **Destination storage type**:
             - **Datastore type**: Azure Blob Storage **(1)**
             - **Name**: workspaceblobstore **(2)**
             - Click **Next (3)**
 
-              ![](media/blb.png)
-        
-        - **MLtable selection:**
-            
-            - Open a new browser tab and download the file from `https://aka.ms/bike-rentals`.
-            - Click the **Downloads (1)** icon in the browser and then click the **Folder (2)** icon to open the downloaded file location. 
+              ![](media/AI-900-lab1-3.png)
+        - **Files or Folder selection**:
+            - **Upload files or folder**: Download and extract the contents of the folder from [`https://aka.ms/mslearn-ml-data`](https://aka.ms/mslearn-ml-data), extract the downloaded **ml-data.zip** archive to see the files it contains. Note that one of these files is **ice-cream.csv**, which contains the ice cream sales data required for this exercise. Once uploaded, click on **Next**.
 
-                ![](media/fol2.png)
+            - On the **Create data asset – File or folder selection** page, click **Upload files or folder (1)** and choose **Upload files (2)** to upload files from your local drive.
 
-            - In the **Downloads** folder, right-click the **bike-data (1)** file and select **Extract All... (2)**. 
+              ![](media/AI-900-lab1-4.png)
 
-                ![](media/bdext2.png)
+            - In the **Open** dialog, select **ice-cream (1)**, then click **Open (2)** to upload the file.
 
-            - On the **Extract Compressed (Zipped) Folders** window, click **Extract** to unzip the files.
+              ![](media/lab1-e1t2p4.png)
 
-                ![](media/upext.png)
+              ![](media/lab1-e1t2p4(1).png)
 
-            - Navigate back to the tab in which you are proceeding with **MLtable selection** and click on **Upload folder**.
+        - On the **Create data asset - Settings** page, leave everything default click **Next**:
 
-                ![](media/uf.png)
+          ![](media/lab1-e1t2p5.png)
+        - On the **Create data asset - Schema** page, 
+          - Include **only** the following columns **(1)** (*Date* is unique for each row, and adds little predictive capability on its own):
+            - **DayOfWeek**
+            - **Month**
+            - **Temperature**
+            - **Rainfall**
+            - **IceCreamsSold**
+        - review detected columns and types, then click **Next (2)**
 
-            - Select the **bike-data (1)** folder from the Downloads and click on **Upload (2)**.
+          ![](media/lab1-e1t2p6.png)
 
-                ![](media/upbdfol.png)
-
-                >**Note:** If any upload related warning pop-up appears, click **Upload**. 
-
-                ![](media/bropop.png)
-
-            - The data will get populated under **Upload list (1)** and then click on **Next (2)**. 
-
-              ![](media/dataadded2.png)
-        
-        - Select **Create** 
+        - Select **Create**. 
   
-           ![](media/crrev.png)
+          ![](media/lab1-e1t2p7.png)
       
-        - After the dataset is created, select the **bike-rentals (1)** dataset to continue to submit the Automated ML job. Select **Next (2)**
+        - After the dataset is created, select the **ice-cream (1)** dataset to continue to submit the Automated ML job. Select **Next (2)**
 
-           ![](media/brnext.png)
+          ![](media/lab1-e1t2p8.png)
         
-    **Task settings:**
+    **Task settings**:
 
     - **Task type**: Regression
-    - **Data**: bike-rentals
-    - **Target column**: rentals (integer) **(1)**
+    - **Data**: ice-cream
+    - **Target column**: IceCreamsSold **(1)**
+
+       ![](media/lab1-e1t2p9.png)
+
     - Select **View additional configuration settings (2)** under Target Column:
-        - Primary metric: **Normalized root mean squared error** **(3)**
-        - Make sure to **Uncheck (4)** the following boxes:
-            - Explain best model: **Unselected** 
-            - Enable ensemble stacking: **Unselected** 
-            - Use all supported models: **Unselected**  *You'll restrict the job to try only a few specific algorithms.*
-        - **Allowed models**: *Select only **RandomForest** and **LightGBM** **(5)** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.*
-        - Click on **Save (6)**.
+        - Primary metric: **R2 score** **(3)**
+        - Explain best model: **Unselected** **(4)**
+        - **Use all supported models**: <u>Un</u>selected.  You'll restrict the job to try only a few specific algorithms.
+        - **Allowed models**: Select only **RandomForest** and **LightGBM** **(5)** - normally you'd want to try as many as possible, but each model added increases the time it takes to run the job. Then click on **Save (6)**.
 
-       ![](media/adcon.png)
+    - **Limits**: **Expand this section**
+        - Use the limits to end the training job early based on specific criteria. In this exercise, set the following limits:
+          - Metric score threshold: **0.9** **(1)**
+          - Experiment Timeout (minutes): **15** **(2)**
+          - Click **Next (3)**
 
-    - **Limits**: *Expand this section*
+            ![](media/lab1-e1t2p10.png)
 
-        - Max trials: **3** **(1)**
-        - Max concurrent trials: **3** **(2)**
-        - Max nodes: **3** **(3)**
-        - Metric score threshold: **0.085** **(4)** (*so that if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.*)
-        - Experiment Timeout: **15** **(5)**
-        - Iteration timeout: **15** **(6)**
-        - Enable early termination: *Selected* **(7)**
+            >**Note:** It's important to set these limits when using Azure Machine Learning, as running training jobs for every possible algorithm and featurization combination could potentially take hours.
 
-    - **Validation and test:**    
-        
-        - **Validation type**: Train-validation split **(8)**
-        - **Percentage validation of data**: **10** **(9)**
-        - **Test dataset**: None **(10)** and then select **Next (11)**
-
-          ![](media/limits.png)
-
-    **Compute:**
-    
+    **Compute**:
     - **Select compute type**: Serverless **(1)**
     - **Virtual machine type**: CPU **(2)**
     - **Virtual machine tier**: Dedicated **(3)**
     - **Virtual machine size**: Standard_DS3_V2 **(4)**
     - **Number of instances**: 1 **(5)** and then select **Next (6)**
 
-      ![](media/vmcon.png)
+      ![](media/lab1-e1t2p11.png)
 
 1. Select **Submit training job**. It starts automatically.
 
-   ![](media/stj.png)
+   ![](media/lab1-e1t2p12.png)
 
-1. Wait for the job to finish. It might take around **10-15 minutes**, while — now might be a good time for a coffee break!
+1. Wait for the job to finish. It might take around `10-15 minutes`, while now might be a good time for a coffee break!
+
+>**Note:** If the deployment does not complete within **30 minutes**, you may proceed to the next page and complete the exercise using the **browser-based Machine Learning Lab** instead.
+>
+> If your deployment completes within the expected timeframe (approximately **10–15 minutes**), continue with the remaining steps of this lab. After completion of this exercise, if time permits, you may optionally explore the browser-based Machine Learning Lab for additional practice.
 
 **Review the best model**
 
@@ -240,37 +223,49 @@ When the automated machine learning job has completed, you can review the best m
 
 1. On the **Overview** tab of the automated machine learning job, note the best model summary.
 
-    ![](media/bms.png)
+    ![](media/lab1-e1t3p1.png)
 
     > **Note**: You may see a message under the status "Warning: User specified exit score reached...". This is an expected message. Please continue to the next step.
   
 1. Select the text under **Algorithm name** for the best model to view its details.
 
-    ![](media/algname.png)
+    ![](media/lab1-e1t3p2.png)
 
-1. Select the **Metrics (1)** tab and select the **predicted_true (2)** and **residuals (3)**  charts if they are not already selected. 
+  - **Overview:** General details for the child job.
 
-    ![](media/pred.png)
+    ![](media/lab1-e1t3p2(1).png)
+
+  - **Model:** Information about the model that was trained.
+
+    ![](media/lab1-e1t3p2(2).png)
+
+  - **Metric:** Select the **Metrics** tab and select the **residuals** and **predicted_true** charts if they are not already selected. 
+
+    ![](media/lab1-e1t3p3.png)
 
     >**Note:** Review the charts which show the performance of the model. The **residuals** chart shows the *residuals* (the differences between predicted and actual values) as a histogram. The **predicted_true** chart compares the predicted values against the true values.
 
-### Task 3: Deploy and test the model
+  - **Outputs and logs:** Information logged during the training process.
+
+    ![](media/lab1-e1t3p2(3).png)
+
+### Task 3: Deploy the model
 
 1. On the **Model** tab for the best model trained by your automated machine learning job, select **Deploy (1)** and use the **Real-time endpoint (2)** option to deploy the model with the following settings:
 
-    ![](media/drte.png)
-
-1. Ensure that the following settings are configured for the model and click on **Deploy (8)**.
-
-   - **Instance count**: **3 (1)** 
-    - **Virtual machine**: **Standard_DS3_v2 (2)**
-    - **Endpoint**: **New (3)**
+   - **Instance count**: 3 **(1)** 
+    - **Virtual machine**: Standard_DS3_v2 **(2)**
+    - **Endpoint**: New **(3)**
     - **Endpoint name**: *Leave the default name* **(4)**
     - **Deployment name**: *Leave default* **(5)**
     - **Inferencing data collection**: *Disabled* **(6)**
     - **Package Model**: *Disabled* **(7)**
+    - Click on  **Deploy (8)**
 
-    ![](media/depmod.png)
+      ![](media/lab1-e1t3p4.png)
+
+      ![](media/lab1-e1t3p5.png)
+
 
 1. Wait for the **Deploy status** to change to *Succeeded*. This may take 5-10 minutes.
 
@@ -280,55 +275,46 @@ When the automated machine learning job has completed, you can review the best m
 
 Now you can test your deployed service.
 
-1. From the left navigation pane under Assets click on **Endpoints (1)** and select the **Real-time endpoints (2)** tab and click on the **end-point (3)** created.
+1. In Azure Machine Learning studio, on the left hand menu, select **Endpoints (1)** and open the **Real-time endpoints (2)** in the page.
 
-    ![](media/epcr.png)
+    ![](media/lab1-e1t3p6.png)
 
-1. On the **real-time endpoint** page view the **Test** tab.
+1. On the *real-time endpoint* page view the **Test** tab.
 
-    ![](media/testtab.png)
+    ![](media/lab1-e1t3p7.png)
 
-1. In the **Input (1)** section, replace the template JSON with the following input data and click the **Test (2)** button.
+1. In the **Input data to test endpoint** pane, replace the template JSON with the following input data **(1)**:
 
     ```json
-      {
-     "input_data": {
-       "columns": [
-         "day",
-         "mnth",
-         "year",
-         "season",
-         "holiday",
-         "weekday",
-         "workingday",
-         "weathersit",
-         "temp",
-         "atemp",
-         "hum",
-         "windspeed"
-       ],
-       "index": [0],
-       "data": [[1,1,2022,2,0,1,1,2,0.3,0.3,0.3,0.3]]
+    {
+    "input_data": {
+        "columns": [
+            "DayOfWeek",
+            "Month",
+            "Temperature",
+            "Rainfall"
+        ],
+        "index": [0],
+        "data": [["Wednesday","June",70.5,0.05]]
      }
     }
-
     ```
 
-    ![](media/inptest.png)
+1. Click the **Test (2)** button.
 
-1. Review the test results, which include a predicted number of rentals based on the input features - similar to this:
+    ![](media/lab1-e1t3p8.png)
+
+1. Review the test results, which include a predicted number of ice creams sold based on the input features - similar to this:
 
     ```JSON
     [
-      357.3995464578618
+      121.98976731059767
     ]
     ```
 
-    ![](media/jop.png)
+    The test pane took the input data and used the model you trained to return the predicted number of ice creams sold.
 
-    The test pane took the input data and used the model you trained to return the predicted number of rentals.
-
-Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological *features*.
+Let’s review what you have done. You used a dataset of historical ice cream sales data to train a model. The model predicts the number of ice creams expected to be sold on a given day, based on seasonal and meteorological features.
 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
