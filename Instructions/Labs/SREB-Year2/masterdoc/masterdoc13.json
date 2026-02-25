@@ -10,7 +10,11 @@
         {
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/refs/heads/Nancy/Instructions/Labs/SREB-Year2/Lesson13/L13_U01.md",
           "Order": 2
-        }
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/refs/heads/Nancy/Instructions/Labs/SREB-Year2/Lesson13/L13_U02.md",
+          "Order": 3
+        }      
       ]
     }
 ]
