@@ -81,6 +81,14 @@ In this task, you will explore the model catalog in Microsoft Foundry to underst
     ![](./media/lab13-l7.png)
 
    >**Note**: If you encounter any quota issues while deploying the GPT models, kindly change the deployment type to **Standard** by selecting the **custom settings** and attempt the deployment again.
+
+   1. On the **gpt-4.1** model page, select **Deploy (1)**, and then choose **Custom settings (2)**.
+
+      ![](./media/lab1-02-2.png)
+
+   1. In the **Deploy gpt-4.1** pane, verify **Standard (1)** is selected under **Deployment type**, and then click **Deploy (2)**.
+
+      ![](./media/lab1-02-3.png)
    
 ## Task 3: Test the model in a Playground
 
