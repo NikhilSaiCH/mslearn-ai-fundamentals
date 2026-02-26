@@ -55,7 +55,7 @@ In this task, you will sign in to Microsoft Foundry, explore available models, a
 
     >**Note**: If you encounter any quota issues while deploying the GPT models, kindly change the deployment type to Standard and attempt the deployment again.
 
-    1. In the **Deploy gpt-4.1** pane, review the settings, and then select **Deploy**.
+    1. In the **Deploy gpt-4.1** pane, select **Customize**
 
         ![](./media/lab1-02-old.png)
 
