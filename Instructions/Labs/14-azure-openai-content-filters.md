@@ -53,9 +53,7 @@ In this lab, you will perform:
 1. Click on **Deploy**.
 
    ![](./media/aii28.png)
-
-    >**Note**: If you encounter any quota issues while deploying the GPT models, kindly change the deployment type to **Standard** and attempt the deployment again.
-    
+ 
 1. When your model is deployed, select **Open in playground**.
 
    ![](./media/aii291.png)
