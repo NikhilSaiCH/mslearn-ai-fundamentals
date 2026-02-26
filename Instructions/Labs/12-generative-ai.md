@@ -55,6 +55,14 @@ In this task, you will sign in to Microsoft Foundry, explore available models, a
 
     >**Note**: If you encounter any quota issues while deploying the GPT models, kindly change the deployment type to Standard and attempt the deployment again.
 
+    1. In the **Deploy gpt-4.1** pane, review the settings, and then select **Deploy**.
+
+        ![](./media/lab1-02-old.png)
+
+    1. In the **Deploy gpt-4.1** pane, verify **Standard (1)** is selected under *Deployment type*, and then click **Deploy (2)**.
+
+        ![](./media/lab1-02-old2.png)
+
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
