@@ -8,19 +8,25 @@ Welcome to your AI-900: Microsoft Azure AI Fundamentals workshop! We've prepared
 
 ## Overview:
 
-In this hands-on lab, you'll gain practical experience in analyzing text using the Microsoft Foundry portal, a platform for building intelligent applications with Azure AI Language services. You will learn how to create and configure a project in the Microsoft Foundry portal and explore key Natural Language Processing (NLP) capabilities. Specifically, you will extract named entities from text, identify key phrases, and generate text summaries using Azure AI Language. By the end of this lab, you’ll be proficient in leveraging Microsoft Foundry for text analysis, equipping you with the skills to extract meaningful insights from unstructured text data in various real-world scenarios.
+In this hands-on lab, you will gain practical experience analyzing text using the Microsoft Foundry portal, a platform for building intelligent applications with Azure AI Language and Translator services. You will learn how to create and configure a project in the Microsoft Foundry portal and explore key Natural Language Processing (NLP) capabilities. Throughout the lab, you will extract named entities, identify key phrases, generate text summaries, analyze sentiment, detect the language of text, and translate content between languages. By the end of this lab, you will understand how to use Microsoft Foundry to perform advanced text analysis and extract meaningful insights from unstructured text data in real-world scenarios.
 
 ## Objectives
 
-By the end of this lab, you will be able to create a project in Microsoft Foundry and analyze text using Azure AI language.
+By the end of this lab, you will be able to:
 
-1. **Create a project in Microsoft Foundry portal**: You will learn how to sign in to the Microsoft Foundry portal, create a new project, and access the Language playground to explore Azure AI Language features.
+* **Create and configure a project in the Microsoft Foundry portal:** Learn how to set up a project in Microsoft Foundry to use Azure AI Language capabilities for text analysis.
 
-1. **Extract named entities with Azure AI Language in Microsoft Foundry portal:** You will learn how to use the Language playground to perform Named Entity Recognition (NER) on sample text and identify entities such as locations, dates, and organizations along with confidence scores.
+* **Extract named entities from text:** Use Azure AI Language to identify and categorize entities such as people, locations, and organizations within a hotel review.
 
-1. **Extract key phrases with Azure AI Language in Microsoft Foundry portal:** You will learn how to use the Language playground to extract key phrases from text, helping identify the most important terms and topics within unstructured data.
+* **Extract key phrases from text:** Identify the most important phrases in a piece of text to quickly understand the main topics being discussed.
 
-1. **Summarize text with Azure AI Language in Microsoft Foundry portal:** You will learn how to generate an extractive summary using Azure AI Language in the Language playground by identifying the most relevant sentences from a given text.
+* **Generate text summaries:** Use Azure AI Language to create concise summaries by extracting the most relevant sentences from a larger body of text.
+
+* **Analyze sentiment in text:** Determine whether the sentiment expressed in text is positive, negative, or neutral, along with sentence-level sentiment insights.
+
+* **Detect the language of text:** Use Azure AI Language to automatically identify the language in which a piece of text is written.
+
+* **Translate text between languages:** Use Azure AI Translator to translate text from one language to another while preserving the meaning and context.
 
 ## Pre-requisites
 
@@ -28,20 +34,32 @@ Basic knowledge of Azure AI services, Microsoft Foundry and Azure AI Language.
 
 ## Architecture
 
-In this hands-on lab, the architecture flow includes several essential components.
+In this hands-on lab, the architecture demonstrates how **Azure AI Language and Azure AI Translator** services are used within the **Microsoft Foundry portal** to analyze and process text using Natural Language Processing (NLP) capabilities.
 
-1. **Create a project in Microsoft Foundry portal**: Understanding how to set up a new project in Microsoft Foundry, including configuring AI resources to support Vision and Document Intelligence capabilities. This involves selecting the appropriate AI models, setting up access permissions, and ensuring the project is properly structured for document processing workflows.
+1. **Create a project in Microsoft Foundry portal:**
+   The workflow begins by creating a project in the Microsoft Foundry portal and configuring the required Azure AI resources. This setup enables access to Azure AI Language and Translator capabilities for performing text analysis and language processing tasks.
 
-1. **Extract named entities with Azure AI Language in Microsoft Foundry portal:**
-Extracting named entities using Azure AI Language in Microsoft Foundry helps businesses automate data categorization, improve text analytics, and enhance information retrieval. It identifies critical data points such as names, locations, organizations, and dates from unstructured text, making it invaluable for industries like finance, legal, and customer service.
+2. **Extract named entities with Azure AI Language:**
+   Named Entity Recognition (NER) identifies important elements within unstructured text, such as people, organizations, locations, and dates. This capability helps structure unorganized text data and enables better information extraction and categorization.
 
-1. **Extract key phrases with Azure AI Language in Microsoft Foundry portal:** Key phrase extraction in Azure AI Language helps automatically identify important topics and keywords from large text datasets, enabling faster insights and improved searchability. It enhances workflows like sentiment analysis, content categorization, and business intelligence by streamlining text processing. Integrating this with Microsoft Foundry allows businesses to automate data-driven decision-making efficiently.
+3. **Extract key phrases with Azure AI Language:**
+   Key phrase extraction automatically identifies the most important words or phrases within a document. This helps highlight the main topics discussed in the text and enables quicker understanding of large volumes of information.
 
-1. **Summarize text with Azure AI Language in Microsoft Foundry portal:** Text summarization in Azure AI Language enables automatic condensation of lengthy documents into concise summaries, preserving key information while improving readability. This helps businesses quickly extract insights from reports, articles, and customer feedback. Integrated with Microsoft Foundry, it enhances efficiency in knowledge management, decision-making, and content automation.
+4. **Summarize text with Azure AI Language:**
+   Text summarization generates a concise overview of longer content by selecting the most relevant sentences. This helps users quickly understand the main ideas in documents such as reviews, reports, or feedback.
+
+5. **Analyze sentiment in text:**
+   Sentiment analysis evaluates the emotional tone of text by determining whether it expresses positive, neutral, or negative sentiment. This is commonly used to analyze customer feedback and understand user opinions.
+
+6. **Detect language in text:**
+   Language detection identifies the language in which text is written and provides a confidence score. This enables applications to process multilingual content more effectively.
+
+7. **Translate text with Azure AI Translator:**
+   Azure AI Translator converts text from one language to another while preserving its meaning and context. This capability enables organizations to analyze and understand content written in different languages.
 
 ## Architecture Diagram
 
-![](../media/lab6-arch.png)
+![](../media/archdiagramlab06.png)
 
 ## Explanation of Components:
 
