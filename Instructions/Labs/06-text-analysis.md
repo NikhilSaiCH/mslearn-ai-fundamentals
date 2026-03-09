@@ -2,11 +2,11 @@
 
 ## Lab overview
 
-Natural Language Processing (NLP) is a branch of AI that deals with written and spoken language. You can use NLP to build solutions that extract semantic meaning from text or speech, or that formulate meaningful responses in natural language.
+Natural Language Processing (NLP) is a branch of AI that focuses on understanding and processing written and spoken language. NLP enables solutions that can extract meaning from text, identify important information, analyze sentiment, detect languages, and generate meaningful responses in natural language.
 
-Azure AI Language service includes Text Analytics, with capabilities such as entity recognition, key phrase extraction, summarization, and sentiment analysis. For example, suppose the fictitious travel agent Margie's Travel encourages customers to submit reviews for hotel stays. You could use the Language service to extract named entities, identify key phrases, summarize text, and more.
+Azure AI Language service includes capabilities such as entity recognition, key phrase extraction, text summarization, sentiment analysis, and language detection. Additionally, Azure AI Translator enables seamless translation of text between multiple languages. For example, suppose the fictitious travel agent Margie's Travel encourages customers to submit reviews for hotel stays. Using these AI services, you can extract key insights from reviews, analyze customer sentiment, detect the language used, and translate feedback to better understand customer experiences.
 
-In this exercise, you will use Azure AI Language in Microsoft Foundry portal, Microsoft's platform for creating intelligent applications, to analyze hotel reviews. 
+In this exercise, you will use Azure AI Language and Azure AI Translator in the Microsoft Foundry portal, Microsoft's platform for building intelligent applications, to analyze and interpret hotel reviews using various natural language processing capabilities.
 
 ## Lab objectives
 
@@ -16,6 +16,10 @@ In this lab, you will perform:
 - Task 2: Extract named entities with Azure AI Language in the Microsoft Foundry portal
 - Task 3: Extract key phrases with Azure AI Language in the Microsoft Foundry portal
 - Task 4: Summarize text with Azure AI Language in the Microsoft Foundry portal
+
+- Task 5: Analyze sentiment in text
+
+- Task 6: Detect language and translate text
 
 ## Task 1: Create a project in the Microsoft Foundry portal
 
@@ -72,7 +76,7 @@ In this task, we are creating an Microsoft Foundry project and configuring the n
 
    <validation step="07c3e734-e32f-44b6-b8e8-7b5b85f4a45b" />
 
-### Task 2: Extract named entities with Azure AI Language in the Microsoft Foundry portal
+## Task 2: Extract named entities with Azure AI Language in the Microsoft Foundry portal
 
 This task demonstrates how to use Azure AI Language Playground for Named Entity Recognition (NER). By analyzing a hotel review, Azure AI extracts key entities like locations, dates, and organizations, along with confidence scores. 
 
@@ -153,12 +157,108 @@ In this task, we are using Azure AI Language to generate an extractive summary b
 
    ![](./media/mod6-p2t4p3.png)
 
+## Task 5: Analyze sentiment in text
+
+In this task, we are using Azure AI Language to generate an extractive summary by identifying key sentences from a hotel review.
+
+1. In the Language playground, select **Classify text (1)** and then select the **Analyze sentiment (2)** tile.
+
+   ![](./media/lab06-p2t5p1.png)
+
+1. Under *Sample*, enter the following review **(1)**:
+    
+    ```
+    Disappointing Stay at The City Hotel
+    The City Hotel, London
+    9/5/2018
+    My experience at The City Hotel in London was far from pleasant. The constant noise from nearby train tracks made it nearly impossible to sleep, with vibrations felt throughout the building. The rooms were outdated, dusty, and poorly maintained—dripping faucets, squeaky beds, and broken fixtures were just the beginning. Sound insulation was nonexistent, so every conversation from neighboring rooms was clearly audible. While the location near public transport was convenient and the staff were friendly, these positives couldn't make up for the overall discomfort and lack of value. I wouldn’t recommend this hotel to anyone seeking a restful or enjoyable stay.
+    ```
+
+1. Then click on **Run (2)**. 
+
+   ![](./media/lab06-p2t5p2.png)
+
+1. Review the results displayed in the **Details** pane. Notice that the analysis provides an **overall sentiment classification** for the entire text, along with **individual sentiment scores (positive, neutral, and negative)**. You can also see the **sentence-level analysis**, where each sentence is evaluated separately to determine its sentiment.
+
+    ![](./media/lab06-p2t5p3.png)
+
+## Task 6: Detect language and translate text
+
+In this task, you will use Azure AI Language to detect the language of a hotel review and then use Azure AI Translator to translate the detected text from French to English, demonstrating how AI services can identify and convert text across languages while preserving its meaning and context.
+
+### Detect language
+
+Let's start by detecting the language a review is written in.
+
+1. Select the **Classify Text (1)** tab from the options at the top of the **Language Playground**. Then choose the **Detect language (2)** tile to analyze text and identify the language used in the provided content.
+
+   ![](./media/lab06-p2t6p1.png)
+
+1. Under *Sample*, enter the following review **(1)**:
+    
+    ```
+    Un séjour mémorable à l’Hôtel d’Ville
+    l’Hôtel d’Ville, Paris
+    9/5/2018
+    J’ai passé un excellent séjour à l’Hôtel d’Ville à Paris. L’emplacement est idéal, en plein cœur de la ville, ce qui permet de découvrir facilement les principaux sites touristiques. Le personnel était chaleureux, professionnel et toujours prêt à aider. La chambre était propre, confortable et bien équipée, avec une vue charmante sur les rues parisiennes. Le petit-déjeuner était varié et délicieux, parfait pour commencer la journée. Je recommande vivement cet hôtel à tous ceux qui recherchent une expérience parisienne authentique et agréable.
+    ```
+
+1. Then select **Run (2)**.
+
+   ![](./media/lab06-p2t6p2.png)
+
+1. Review the results in the **Details** pane. Notice that the service identifies the **language of the text**, displays the **ISO language code**, and provides a **confidence score** indicating how accurately the language was detected.
+
+   ![](./media/lab06-p2t6p3.png) 
+
+### Translate text
+
+Now let's translate the French review to English.
+
+1. From the left navigation pane, click on **Playgrounds** twice. 
+
+   ![](./media/lab06-p2t7p1.png)
+
+1. From the list of playgrounds, locate the **Translator playground** tile and select **Try the Translator playground**.
+
+   ![](./media/lab06-p2t7p2.png)
+
+1. In the Translator playground, select **Text translation (1)**.
+
+1. In the **Configure** pane, select the following language options:
+
+    - **Translate from**: French **(2)**
+    - **Translate to**: English **(3)**
+
+      ![](./media/lab06-p2t7p3.png)
+
+1. Under *Sample*, enter the French-language review **(1)**:
+    
+    ```
+    Un séjour mémorable à l’Hôtel d’Ville
+    l’Hôtel d’Ville, Paris
+    9/5/2018
+    J’ai passé un excellent séjour à l’Hôtel d’Ville à Paris. L’emplacement est idéal, en plein cœur de la ville, ce qui permet de découvrir facilement les principaux sites touristiques. Le personnel était chaleureux, professionnel et toujours prêt à aider. La chambre était propre, confortable et bien équipée, avec une vue charmante sur les rues parisiennes. Le petit-déjeuner était varié et délicieux, parfait pour commencer la journée. Je recommande vivement cet hôtel à tous ceux qui recherchent une expérience parisienne authentique et agréable.
+    ```
+
+1. Select **Translate (2)**. 
+
+   ![](./media/lab06-p2t7p4.png)
+
+1. Review the translated output in the **Translation** pane. Notice that the service automatically converts the original **French text** into **English**, preserving the meaning and context of the content.
+
+    ![](./media/lab06-p2t7p5.png)
+
 ### Review
+
 In this exercise, you have completed the following tasks:
-- Created a project in the Microsoft Foundry portal
-- Extracted named entities with Azure AI Language in the Microsoft Foundry portal
-- Extracted key phrases with Azure AI Language in the Microsoft Foundry portal
-- Summarized text with Azure AI Language in the Microsoft Foundry portal 
+
+- Created a project in the **Microsoft Foundry portal**
+- Extracted **named entities** with **Azure AI Language** in the Microsoft Foundry portal
+- Extracted **key phrases** with **Azure AI Language** in the Microsoft Foundry portal
+- Summarized text with **Azure AI Language** in the Microsoft Foundry portal
+- Analyzed **sentiment in text** using Azure AI Language
+- Detected the **language of text and translated it** using Azure AI Language and Azure AI Translator in the Microsoft Foundry portal
 
 ## Learn more
 
