@@ -1,0 +1,18 @@
+
+[
+    {
+      "Name": "Automated Machine learning using AML",
+      "Language": "English",
+      "Files": [
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/refs/heads/ms-spl/Instructions/Labs/AI900-Gettingstarted/M1b-Gettingstarted.md",
+          "Order": 1
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/mslearn-ai-fundamentals/refs/heads/ms-spl/Instructions/Labs/1b-machine-learning.md",
+          "Order": 2
+        }
+      ]
+    }
+  ]
+  
